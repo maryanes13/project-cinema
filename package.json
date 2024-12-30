@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://maryanes13.github.io/project-actors/",
+  "homepage": "https://maryanes13.github.io/project-cinema/",
   "type": "module",
   "scripts": {
     "test": "npm run editorconfig && npm run stylelint",
@@ -31,6 +31,7 @@
     "gulp-file-include": "^2.3.0",
     "gulp-fonter": "^0.3.0",
     "gulp-format-html": "^3.0.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-libsquoosh": "^1.1.2",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",

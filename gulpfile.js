@@ -18,11 +18,13 @@ import formatHTML from 'gulp-format-html';
 import ttf2woff from 'gulp-ttf2woff';
 import ttf2woff2 from 'gulp-ttf2woff2';
 import fonter from 'gulp-fonter';
-const ghPages = require('gh-pages');
-const path = require('path');
+import ghPages from 'gulp-gh-pages';
 
 //deploy
-ghPages.publish('dist', function(err) {});
+gulp.task('deploy', () => {
+    return gulp.src('./build/**/*')
+        .pipe(ghPages())
+})
 
 //resourses
 const vendors = () => {
