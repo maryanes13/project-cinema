@@ -1,0 +1,109 @@
+.section-blog {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid $white;
+}
+.blog-heading {
+    border-top: 2px solid $white;
+    padding: 35px 85px 35px 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid $white;
+    .section-title {
+        text-transform: uppercase;
+        color: $light-blue;
+    }
+
+    .section-link {
+        margin: 0;
+    }
+
+    @media (max-width: $desktop1300-width) {
+        flex-direction: column;
+    }
+
+    @media (max-width: $mobile480-width) {
+        padding: 20px;
+    }
+}
+
+.blog-list {
+    display: flex;
+    color: $white;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 100px;
+
+    @media (max-width: $desktop1300-width) {
+        gap: 50px;
+    }
+
+    @media (max-width: $desktop1300-width) {
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    @media (max-width: $tablet900-width) {
+
+        padding: 30px;
+    }
+}
+.blog-list__item {
+    max-width: 396px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .section-text {
+        margin-bottom: 20px;
+    }
+}
+.blog-list__item-title {
+    @include fontface-medium;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 20px;
+
+    @media (max-width: $desktop1300-width) {
+        font-size: 14px;
+    }
+}
+
+.blog-figure {
+    margin: 0;
+}
+.blog-figure__img {
+    max-width: 396px;
+    max-height: 333px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+.blog-figcaption {
+    display: flex;
+    justify-content: space-between;
+}
+.blog-figcaption__date {
+    @include fontface-extralight;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: $grey;
+}
+.blog-figcaption__link {
+    display: inline-block;
+    text-decoration: none;
+    @include fontface-medium;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-transform: uppercase;
+    color: $white;
+
+    &:hover {
+        color: $light-blue;
+    }
+}

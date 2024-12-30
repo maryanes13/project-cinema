@@ -1,0 +1,257 @@
+.header {
+    display: flex;
+    background-color: $black;
+}
+.page-header__nav {
+    display: flex;
+    color: $white;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 2px $white;
+    width: 100%;
+    margin: 0 auto;
+    transition: 0.4s all ease;
+}
+.page-header__bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+.page-header__logo {
+    width: 110px;
+    height: 37px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid $white;
+    border-left: 2px solid $white;
+    position: relative;
+}
+.navigation-list__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 2px $white;
+    min-width: 140px;
+    &:last-child {
+        border-right: none;
+    }
+    &:hover {
+        .navigation-list__item-link {
+            color: $black;
+        }
+
+        background-color: $light-blue;
+    }
+
+    &:active {
+        .navigation-list__item-link {
+            color: $black;
+        }
+
+        background-color: $light-blue;
+    }
+}
+
+.navigation-item-parent {
+    position: relative;
+}
+
+.navigation-children-list {
+    display: none;
+    width: auto;
+    position: absolute;
+    bottom: -65px;
+    left: -1px;
+    z-index: 2000;
+    background-color: $black;
+    width: 320px;
+}
+
+.navigation-children-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    &:hover {
+        .navigation-list__item-link {
+            color: $black;
+        }
+
+        background-color: $light-blue;
+    }
+
+}
+
+.navigation-item-parent:hover .navigation-children-list {
+    display: flex;
+
+}
+
+.navigation-children-list-item__link {
+    color: $white;
+    @include fontface-semibold;
+    font-size: 16px;
+    line-height: 24.8px;
+    text-decoration: none;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-list__item-link {
+    @include fontface-semibold;
+    font-size: 16px;
+    line-height: 24.8px;
+    color: $white;
+    text-decoration: none;
+    padding: 40px 25px;
+}
+
+.social-list {
+    display: flex;
+    gap: 8px;
+    padding: 26px 0;
+    border-left: 2px solid $white;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.social-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+        background-color: $light-blue;
+    }
+
+}
+
+.telegram-link {
+    border: 1px solid $white;
+}
+
+.whatsapp-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+        path {
+            fill: $light-blue;
+        }
+
+    }
+}
+
+.user-list {
+    display: flex;
+    border-left: solid 2px $white;
+    height: 100%;
+
+    @media (max-width: $tablet-width) {
+        border-left: none;
+    }
+}
+.user-list__item {
+    padding: 25px 15px;
+}
+
+.user-reg__link {
+    color: $white;
+    text-decoration: none;
+    padding: 12px;
+    border: solid 1px $white;
+    display: inline-block;
+    text-align: center;
+    width: 164px;
+
+    &:hover {
+        background-color: $light-blue;
+        color: $black;
+    }
+}
+
+.user-log {
+    border-left: 2px solid $white;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-log__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    height: 100%;
+    &:hover {
+        background-color: $light-blue;
+    }
+
+}
+
+.user-log.current-item {
+
+    &:hover {
+        path {
+            stroke: $black
+        }
+    }
+}
+
+.user-log__mobile {
+    display: none;
+    border-left: 2px solid $white;
+    padding-left: 45px;
+    padding-right: 45px;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        path {
+            stroke: $light-blue;
+        }
+    }
+}
+
+.user-reg {
+    @media (max-width: $tablet-width) {
+        display: none;
+    }
+}
+
+.current-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    background-color: $light-blue;
+
+}
+

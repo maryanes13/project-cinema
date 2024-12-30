@@ -1,0 +1,96 @@
+.footer-page {
+    color: $white;
+    border-bottom: 2px solid $white;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr max-content;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid $white;
+    padding-left: 55px;
+    padding-right: 55px;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    .section-link {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+.footer-item__title {
+    padding: 0;
+    margin: 20px 0;
+    @include fontface-regular;
+    font-size: 24px;
+    line-height: 24.8px;
+}
+.footer-courses {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.footer-courses__item-link {
+    @include fontface-regular;
+    display: inline-block;
+    text-decoration: none;
+    color: $white;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-navigation__item {
+    padding: 5px;
+}
+.footer-navigation__item-link {
+    color: $white;
+    text-decoration: none;
+    @include fontface-semibold;
+    font-size: 16px;
+    line-height: 24.8px;
+
+    &:hover {
+        color: $light-blue;
+    }
+}
+
+.phone-link {
+    @include fontface-regular;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-decoration: none;
+    color: $white;
+    margin-bottom: 50px;
+
+    &:hover {
+        color: $light-blue;
+    }
+}
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 290px;
+}
+
+.footer-robokassa {
+    margin-top: 30px;
+    filter: grayscale(100%);
+}
+
+.footer-current-item {
+
+    color: $light-blue;
+
+}

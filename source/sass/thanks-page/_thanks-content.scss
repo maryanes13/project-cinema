@@ -1,0 +1,176 @@
+.thanks-content {
+    color: $white;
+}
+
+/* свойства модального окна по умолчанию */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1;
+	pointer-events: auto;
+    overflow-y: auto;
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: 100% ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $black;
+    background-image: url("../img/background.png");
+    background-size: cover;
+}
+
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+    color: $white;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: 0;
+    width: 100% ;
+    margin: 0 auto;
+}
+
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+.thanks-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    @include fontface-special;
+    font-size: 128px;
+    line-height: 60px;
+    margin: 0 auto 50px;
+
+    @media(max-width: $tablet-width) {
+        font-size: 100px;
+        line-height: 40px;
+    }
+
+    @media(max-width: $mobile480-width) {
+        font-size: 70px;
+    }
+}
+
+/* свойства для кнопки "Закрыть" */
+.close {
+    width: 57px;
+    height: 57px;
+    display: inline-block;
+    background-color: $light-blue;
+    position: absolute;
+    right: 44px;
+    top: 35px;
+    z-index: 2;
+
+    @media(max-width: $tablet-width) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @media(max-width: $mobile480-width) {
+        right: 20px;
+        top: 20px;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 34px;
+        background-color: $black;
+        top: calc(50% - 17px);
+        right: calc(50% - 1px);
+
+        @media(max-width: $tablet-width) {
+            width: 2px;
+            height: 20px;
+            top: calc(50% - 10px);
+        }
+
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+.thanks-text {
+    @include fontface-semibold;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+
+    @media(max-width: $tablet-width) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    @media(max-width: $mobile480-width) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
