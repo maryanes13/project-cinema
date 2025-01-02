@@ -1,0 +1,62 @@
+/**** Эффекты ****/
+
+// 1. fade
+.anim-items.fade {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.fade.anim-active {
+    opacity: 1;
+    transition: all 1s ease 0.8s;
+}
+
+//fade с задержкой
+.fade-second.anim-active {
+    opacity: 1;
+    transition: all 1s ease 1.3s;
+}
+
+// 2. Transform
+
+// transform-left
+.anim-items.transform-anim-top {
+    opacity: 0;
+    transform: translateY(-120%);
+    transition: all 0.3s ease;
+}
+
+//transform-right
+
+.anim-items.transform-anim-right {
+    opacity: 0;
+    transform: translateX(120%);
+    transition: all 0.3s ease;
+}
+
+//transform-bottom
+
+.anim-items.transform-anim-bottom {
+    opacity: 0;
+    transform: translateY(-120%);
+    transition: all 0.3s ease;
+}
+
+//transform-left
+
+.anim-items.transform-anim-left {
+    transform: translateX(-120%);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+// появление
+.transform-anim-top.anim-active,
+.transform-anim-right.anim-active,
+.transform-anim-bottom.anim-active,
+.transform-anim-left.anim-active
+ {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 0.8s ease 0.1s;
+}

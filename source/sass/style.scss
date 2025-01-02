@@ -3,20 +3,21 @@
 @import "fonts.scss";
 @import "mixins.scss";
 @import "variables.scss";
-@import "button.scss";
-@import "section-style.scss";
-@import "visually-hidden.scss";
-@import "burger.scss";
 
 // Global-Section
 @import "global-scss/header";
 @import "global-scss/footer";
+@import "global-scss/burger.scss";
 @import "global-scss/footer-copyright";
-@import "global-scss/global-media";
+@import "global-scss/section-style.scss";
+@import "global-scss/button.scss";
 @import "global-scss/nav-menu-burger";
 @import "global-scss/style-page-title";
 @import "global-scss/page-form";
 @import "global-scss/distribution";
+@import "global-scss/visually-hidden.scss";
+@import "global-scss/global-media";
+
 
 //  page main
 @import "main/intro";
@@ -74,6 +75,9 @@
 
 //thanks-page
 @import "thanks-page/thanks-content";
+
+// animate
+@import "global-scss/animate";
 
 body {
   margin: 0 auto;

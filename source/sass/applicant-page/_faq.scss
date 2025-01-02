@@ -39,7 +39,7 @@
     line-height: 34.45px;
     text-transform: uppercase;
     padding: 0;
-    margin: 0;
+    margin: 10px 0;
 
     @media (max-width: $tablet-width) {
         font-size: 25px;
@@ -80,6 +80,3 @@
     transition: max-height 0.5s ease;
 }
 
-.accordion-list__item.active .accordeon-item__header {
-    margin-bottom: 20px;
-}

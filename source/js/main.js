@@ -1,55 +1,103 @@
-// const { document } = require("postcss");
+window.addEventListener('DOMContentLoaded', () => {
+  let body = document.querySelector('body')
+  let header = document.querySelector(".header")
+  let navPage = document.querySelector('.page-header__nav');
+  let navToggle = document.querySelector('.burger-button');
+  let navClosed = document.querySelector('.button-closed');
+  let navFooter = document.querySelector(".footer-navigation");
+  let animItems = document.querySelectorAll(".anim-items")
 
-let navPage = document.querySelector('.page-header__nav');
-let navToggle = document.querySelector('.burger-button');
-let navClosed = document.querySelector('.button-closed');
-let navFooter = document.querySelector(".footer-navigation")
+  if(animItems.length > 0) {
+    window.addEventListener("scroll", animOnScroll);
+    function animOnScroll(params) {
+      for(let index = 0; index < animItems.length; index++) {
+        const animItem = animItems[index];
+        const animItemHeight = animItem.offsetHeight;
+        const animItemOffset = offset(animItem).top;
+        const animStart = 4;
 
-// current-item
-if(navPage) {
+        let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
-  const links = navPage.getElementsByTagName('a');
-  for (let i = 0; i < links.length; i++) {
+        if(animItemHeight > window.innerHeight) {
+          animItemPoint = window.innerHeight - window.innerHeight / animStart;
+        }
 
-    if (links[i].href === window.location.href) {
-      console.log(links[i].href)
-      links[i].classList.add('current-item');
+        if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+          animItem.classList.add("anim-active")
+        } else {
+          animItem.classList.remove("anim-active")
+        }
+      }
     }
 
-
-  }
-}
-
-if(navFooter) {
-  const links = navFooter.getElementsByTagName('a');
-  for (let i = 0; i < links.length; i++) {
-
-    if (links[i].href === window.location.href) {
-      console.log(links[i].href)
-      links[i].classList.add('footer-current-item');
-      break;
+    // функция получения позиции сверху или слева
+    function offset(el) {
+      const rect = el.getBoundingClientRect(),
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
     }
-  }
-}
 
-// Menu
-if(navPage) {
-  navToggle.addEventListener('click', function() {
-    if (navPage.classList.contains('active')) {
-      navPage.classList.remove('active');
+    setTimeout(() => {
+      animOnScroll()
+    }, 500)
+
+  }
+
+  // header fixed при скролле
+  window.addEventListener("scroll", () => {
+    let scrollTop = window.scrollY;
+
+    if(scrollTop >= header.offsetHeight * 3) {
+      header.classList.add("fixed")
+      body.style.marginTop =`${header.offsetHeight}px`
     } else {
-      navPage.classList.add('active');
+      header.classList.remove("fixed")
+      body.style.marginTop = `0px`
     }
-  });
+  })
 
-  navClosed.addEventListener('click', function() {
-    if (navPage.classList.contains('active')) {
-      navPage.classList.remove('active');
+  // Menu
+  if(navPage) {
+
+    navToggle.addEventListener('click', function() {
+      if (navPage.classList.contains('active')) {
+        navPage.classList.remove('active');
+      } else {
+        navPage.classList.add('active');
+      }
+    });
+
+    navClosed.addEventListener('click', function() {
+      if (navPage.classList.contains('active')) {
+        navPage.classList.remove('active');
+      }
+    });
+
+    // Активная вкладка
+    const links = navPage.getElementsByTagName('a');
+    for (let i = 0; i < links.length; i++) {
+
+      if (links[i].href === window.location.href) {
+        links[i].classList.add('current-item');
+      }
+
+
     }
-  });
-}
+  }
 
+  // current-item в footer
 
+  if(navFooter) {
+    const links = navFooter.getElementsByTagName('a');
+    for (let i = 0; i < links.length; i++) {
+
+      if (links[i].href === window.location.href) {
+        links[i].classList.add('footer-current-item');
+        break;
+      }
+    }
+  }
 
   //Slider
   if(document.querySelector(".courses-slider")) {
@@ -295,122 +343,128 @@ if(navPage) {
     });
 
   }
-//Accordeon
 
-if(document.querySelector(".accordeon-list")) {
+  //Accordeon
 
-  const accordeonItems = document.querySelectorAll(".accordion-list__item");
+  if(document.querySelector(".accordeon-list")) {
 
-  for (let i = 0; i < accordeonItems.length; i++) {
-    accordeonItems[i].addEventListener('click', function(el) {
+    const accordeonItems = document.querySelectorAll(".accordion-list__item");
 
-      el.currentTarget.classList.toggle('active');
+    for (let i = 0; i < accordeonItems.length; i++) {
+      accordeonItems[i].addEventListener('click', function(el) {
 
-      for (let j = 0; j < accordeonItems.length; j++) {
-        if (accordeonItems[j] !== el.currentTarget && accordeonItems[j].className === "accordion-list__item active") {
-          accordeonItems[j].classList.remove('active');
+        el.currentTarget.classList.toggle('active');
+
+        for (let j = 0; j < accordeonItems.length; j++) {
+          if (accordeonItems[j] !== el.currentTarget && accordeonItems[j].className === "accordion-list__item active") {
+            accordeonItems[j].classList.remove('active');
+          }
         }
-      }
-    });
-  };
-}
-
-//Tabs
-
-if(document.querySelector(".section-tabs")) {
-
-  const tabs = document.querySelectorAll(".tabs-button ");
-  const contents = document.querySelectorAll(".tabs-panel");
-
-  for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", ( event ) => {
-
-      let tabsChildren = event.target.parentElement.children;
-      console.log(tabsChildren)
-      for (let t = 0; t < tabsChildren.length; t++) {
-        tabsChildren[t].classList.remove("tabs-button-active");
-      }
-
-      tabs[i].classList.add("tabs-button-active");
-
-      let tabContentChildren = event.target.parentElement.nextElementSibling.children;
-      for (let c = 0; c < tabContentChildren.length; c++) {
-        tabContentChildren[c].classList.remove("tabs-panel-show");
-      }
-
-      contents[i].classList.add("tabs-panel-show");
-    });
+      });
+    };
   }
-}
 
-if(document.querySelector(".section-courses-slider")) {
+  //Tabs
 
-  const tabs = document.querySelectorAll(".section-directions__item");
-  const contents = document.querySelectorAll(".section-directions-panel");
+  if(document.querySelector(".section-tabs")) {
 
-  for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", ( event ) => {
+    const tabs = document.querySelectorAll(".tabs-button ");
+    const contents = document.querySelectorAll(".tabs-panel");
 
-      let tabsChildren = event.target.parentElement.children;
-      console.log(tabsChildren)
-      for (let t = 0; t < tabsChildren.length; t++) {
-        tabsChildren[t].classList.remove("directions-active");
-      }
+    for (let i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener("click", ( event ) => {
 
-      tabs[i].classList.add("directions-active");
+        let tabsChildren = event.target.parentElement.children;
+        console.log(tabsChildren)
+        for (let t = 0; t < tabsChildren.length; t++) {
+          tabsChildren[t].classList.remove("tabs-button-active");
+        }
 
-      let tabContentChildren = event.target.parentElement.nextElementSibling.children;
-      console.log(tabContentChildren)
+        tabs[i].classList.add("tabs-button-active");
 
-      for (let c = 0; c < tabContentChildren.length; c++) {
-        tabContentChildren[c].classList.remove("section-directions-panel-show");
-      }
+        let tabContentChildren = event.target.parentElement.nextElementSibling.children;
+        for (let c = 0; c < tabContentChildren.length; c++) {
+          tabContentChildren[c].classList.remove("tabs-panel-show");
+        }
 
-      contents[i].classList.add("section-directions-panel-show");
-    });
-  }
-}
-
-//Modal
-if(document.querySelector(".thanks-content")) {
-  document.addEventListener("DOMContentLoaded", function(){
-    let scrollbar = document.body.clientWidth - window.innerWidth + 'px';
-    console.log(scrollbar);
-    document.querySelector('[href="#openModal"]').addEventListener('click',function(){
-      document.body.style.overflow = 'hidden';
-      document.querySelector('#openModal').style.marginLeft = scrollbar;
-    });
-    document.querySelector('[href="#close"]').addEventListener('click',function(){
-      document.body.style.overflow = 'visible';
-      document.querySelector('#openModal').style.marginLeft = '0px';
-    });
-  });
-}
-
-// Progress-bar
-if(document.querySelector(".progress-bar")) {
-
-  function progressBar() {
-    let historyContainer = document.querySelector(".about-history")
-    let scroll = document.body.scrollTop || document.documentElement.scrollTop;
-    let height = historyContainer.offsetHeight;
-    let scrolled = (scroll / height * 100) - 100;
-    let progressNow = document.querySelector(".progress-bar-now")
-    progressNow.style.height = scrolled + '%';
-
-    if(scrolled >= 50) {
-      document.querySelector(".progress-dots__second").classList.add("dots-active")
-    } else {
-      document.querySelector(".progress-dots__second").classList.remove("dots-active")
+        contents[i].classList.add("tabs-panel-show");
+      });
     }
-    if (scrolled >= 95) {
-      document.querySelector(".progress-dots__third").classList.add("dots-active")
-      progressNow.style.height = 100 + '%'
-    } else {
-      document.querySelector(".progress-dots__third").classList.remove("dots-active")
+  }
+
+  if(document.querySelector(".section-courses-slider")) {
+
+    const tabs = document.querySelectorAll(".section-directions__item");
+    const contents = document.querySelectorAll(".section-directions-panel");
+
+    for (let i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener("click", ( event ) => {
+
+        let tabsChildren = event.target.parentElement.children;
+        console.log(tabsChildren)
+        for (let t = 0; t < tabsChildren.length; t++) {
+          tabsChildren[t].classList.remove("directions-active");
+        }
+
+        tabs[i].classList.add("directions-active");
+
+        let tabContentChildren = event.target.parentElement.nextElementSibling.children;
+        console.log(tabContentChildren)
+
+        for (let c = 0; c < tabContentChildren.length; c++) {
+          tabContentChildren[c].classList.remove("section-directions-panel-show");
+        }
+
+        contents[i].classList.add("section-directions-panel-show");
+      });
+    }
+  }
+
+  //Modal
+  if(document.querySelector(".thanks-content")) {
+    document.addEventListener("DOMContentLoaded", function(){
+      let scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModal"]').addEventListener('click',function(){
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModal').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click',function(){
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal').style.marginLeft = '0px';
+      });
+    });
+  }
+
+  // Progress-bar
+  if(document.querySelector(".progress-bar")) {
+
+    function progressBar() {
+      let historyContainer = document.querySelector(".about-history")
+      let scroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = historyContainer.offsetHeight;
+      let scrolled = (scroll / height * 100) - 100;
+      let progressNow = document.querySelector(".progress-bar-now")
       progressNow.style.height = scrolled + '%';
-    }
-}
 
-  window.addEventListener('scroll', progressBar);
-}
+      if(scrolled >= 50) {
+        document.querySelector(".progress-dots__second").classList.add("dots-active")
+      } else {
+        document.querySelector(".progress-dots__second").classList.remove("dots-active")
+      }
+      if (scrolled >= 95) {
+        document.querySelector(".progress-dots__third").classList.add("dots-active")
+        progressNow.style.height = 100 + '%'
+      } else {
+        document.querySelector(".progress-dots__third").classList.remove("dots-active")
+        progressNow.style.height = scrolled + '%';
+      }
+  }
+
+    window.addEventListener('scroll', progressBar);
+  }
+
+})
+
+
+
