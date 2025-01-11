@@ -1,21 +1,23 @@
 .footer-copyright {
-    display: flex;
-    padding: 45px 40px 45px 70px;
-    border-top: 2px solid $white;
+  display: flex;
+  padding: 45px 40px 45px 70px;
+  justify-content: space-between;
 }
-.footer-copyright__link {
-    text-decoration: none;
-    margin-right: 125px;
-    font-weight: 400;
-    color: $white;
 
-    &:hover {
-        color: $light-blue;
-    }
+.footer-copyright__link {
+  text-decoration: none;
+  margin-right: 125px;
+  font-weight: 400;
+  color: $white;
+
+  &:hover {
+    color: $light-blue;
+  }
 }
+
 .footer-copyright__text {
-    text-decoration: none;
-    margin-left: auto;
-    font-weight: 400;
-    color: $white;
+  text-decoration: none;
+  margin-left: auto;
+  font-weight: 400;
+  color: $white;
 }

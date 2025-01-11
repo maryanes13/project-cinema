@@ -1,101 +1,62 @@
 .section-distribution {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 110px 20px 60px;
-    border-bottom: 2px solid $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 110px 20px 60px;
 
-    @media (max-width: $desktop1300-width) {
-        padding: 20px 60px;
-    }
+  @media (max-width: $desktop1300-width) {
+    padding: 20px 60px;
+  }
 
-    @media (max-width: $tablet900-width) {
-        flex-direction: column;
-    }
+  @media (max-width: $tablet900-width) {
+    flex-direction: column;
+  }
 
-    @media (max-width: $mobile480-width) {
-        padding: 20px;
-    }
+  @media (max-width: $mobile480-width) {
+    padding: 20px;
+  }
 }
 
 .distribution-logo {
-    max-width: 342px;
-    max-height: 113px;
-    object-fit: cover;
-    width: 100%;
-    @media (max-width: $mobile480-width) {
-        object-fit: contain;
-    }
+  max-width: 342px;
+  max-height: 113px;
+  object-fit: cover;
+  width: 100%;
+
+  @media (max-width: $mobile480-width) {
+    object-fit: contain;
+  }
 }
+
 .distribution-content {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 
-    @media (max-width: $tablet-width) {
-        flex-direction: column;
-    }
-
-    @media (max-width: $mobile480-width) {
-        width: 100%;
-    }
-}
-.social {
-    display: flex;
-    gap: 16px;
-    align-self: flex-end;
-
-    @media (max-width: $tablet-width) {
-        align-self: center;
-    }
-}
-.social-link {
-    width: 43px;
-    height: 43px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $white;
-
-    &.telegram-link {
-        path {
-            fill: $black
-        }
-    }
-
-    &.telegram-link:hover {
-        border: 1px solid $white;
-        background-color: $black;
-        path {
-            fill: $white
-        }
-    }
-
-    &.whatsapp-link:hover {
-        border: 1px solid $white;
-        rect {
-            fill: $white
-        }
-        path {
-            fill: $black
-        }
-    }
-}
-.distribution-mail {
-    display: flex;
+  @media (max-width: $tablet-width) {
     flex-direction: column;
+  }
 
-    @media (max-width: $mobile480-width) {
-        width: 100%;
-    }
+  @media (max-width: $mobile480-width) {
+    width: 100%;
+  }
 }
+
+.distribution-mail {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile480-width) {
+    width: 100%;
+  }
+}
+
 .distribution-mail__title {
-    @include fontface-semibold;
-    font-size: 13px;
-    line-height: 24.8px;
-    padding: 0;
-    margin: 0;
-    color: $white;
-    margin-bottom: 7px;
+  @include fontface-semibold;
+  font-size: 13px;
+  line-height: 24.8px;
+  padding: 0;
+  margin: 0;
+  color: $white;
+  margin-bottom: 7px;
 }
-

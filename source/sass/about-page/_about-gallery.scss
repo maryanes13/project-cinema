@@ -1,36 +1,34 @@
 .section-about-page-gallery {
-    border-top: 2px solid $white;
+  border-top: 2px solid $white;
 }
 
 .about-gallery-wrapper {
-    padding: 15px 30px 50px;
-    border-bottom: 2px solid $white;
+  padding: 15px 30px 50px;
+  border-bottom: 2px solid $white;
 
-    @media (max-width: $mobile480-width) {
-        padding: 20px;
-     }
+  @media (max-width: $mobile480-width) {
+    padding: 20px;
+  }
 }
 
 .about-gallery-slider {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 20px;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  overflow: hidden;
 
-    @media (max-width: $mobile480-width) {
-        gap: 0;
-     }
+  @media (max-width: $mobile480-width) {
+    gap: 0;
+  }
 }
+
 .about-gallery-list {
-    display: flex;
+  display: flex;
 }
 
 .about-gallery-list__item-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-
-

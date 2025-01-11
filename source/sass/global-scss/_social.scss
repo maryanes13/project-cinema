@@ -1,0 +1,93 @@
+.social-list {
+  display: flex;
+  gap: 8px;
+  padding: 26px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+
+  &:hover {
+    background-color: $light-blue;
+  }
+}
+
+.telegram-link {
+  border: 1px solid $white;
+}
+
+.whatsapp-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    path {
+      fill: $light-blue;
+    }
+  }
+}
+
+//блок distribution
+.social {
+  display: flex;
+  gap: 16px;
+  align-self: flex-end;
+
+  @media (max-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.social-link {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+
+  &.telegram-link {
+    path {
+      fill: $black;
+    }
+  }
+
+  &.telegram-link:hover {
+    border: 1px solid $white;
+    background-color: $black;
+
+    path {
+      fill: $white;
+    }
+  }
+
+  &.whatsapp-link:hover {
+    border: 1px solid $white;
+
+    rect {
+      fill: $white;
+    }
+
+    path {
+      fill: $black;
+    }
+  }
+}

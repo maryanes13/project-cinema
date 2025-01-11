@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher</title>
-    <link rel="stylesheet" href="vendors/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="page-content container">
-        @@include('html/global-html/_header.html')
-        <main>
-            @@include('html/teacher-page/_techer-heading.html')
-            @@include('html/teacher-page/_techer-reputation.html')
-            @@include('html/teacher-page/_teacher-sliders.html')
 
-        </main>
-        @@include('html/global-html/_distribution.html')
-        @@include('html/global-html/_footer.html')
-    </div>
-    <script src="vendors/swiper-bundle.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher</title>
+  <link rel="stylesheet" href="vendors/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    @@include('html/global-html/_header.html')
+    <main class="page-content container">
+      @@include('html/teacher-page/_techer-heading.html')
+      @@include('html/teacher-page/_techer-reputation.html')
+      @@include('html/teacher-page/_teacher-sliders.html')
+    </main>
+    @@include('html/global-html/_distribution.html')
+    @@include('html/global-html/_footer.html')
+  <script src="vendors/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

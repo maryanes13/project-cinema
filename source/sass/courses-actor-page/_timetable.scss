@@ -1,188 +1,193 @@
 .section-timetable {
-    padding-top: 50px;
-    padding-bottom: 115px;
-    border-bottom: 2px solid $white;
+  padding-top: 50px;
+  padding-bottom: 115px;
+  border-bottom: 2px solid $white;
 
-    @media (max-width: $mobile480-width) {
-        padding-bottom: 40px;
-    }
+  @media (max-width: $mobile480-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .timetable {
-    margin-top: 35px;
-    color: $white;
-    border-top: 2px solid $white;
+  margin-top: 35px;
+  color: $white;
+  border-top: 2px solid $white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $desktop-width) {
+    tbody {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+  }
+}
+
+.timetable-tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid $white;
+  height: 100px;
+
+  @media (max-width: $desktop-width) {
+    height: 80px;
     width: 100%;
-    display: flex;
-    align-items: center;
+  }
+
+  @media (max-width: $desktop1300-width) {
+    height: auto;
+    flex-direction: column;
+    width: 25%;
+    border-right: 2px solid $white;
     justify-content: center;
 
-    @media (max-width: $desktop-width) {
-        tbody {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-        }
+    &:last-child {
+      border-right: none;
     }
-}
-.timetable-tr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid $white;
-    height: 100px;
+  }
 
-    @media (max-width: $desktop-width) {
-        height: 80px;
-        width: 100%;
-    }
+  @media (max-width: $tablet900-width) {
+    width: 50%;
+  }
 
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  td {
     @media (max-width: $desktop1300-width) {
-        height: auto;
-        flex-direction: column;
-        width: 25%;
-        border-right: 2px solid $white;
-        justify-content: center;
-        &:last-child {
-            border-right: none;
-        }
+      padding: 15px 0;
     }
-
-    @media (max-width: $tablet900-width) {
-        width: 50%;
-    }
-
-    @media (max-width: $tablet-width) {
-        width: 100%;
-    }
-
-    td {
-        @media (max-width: $desktop1300-width){
-            padding: 15px 0;
-        }
-    }
+  }
 }
+
 .timetable-date,
 .timetable-time {
-    @include fontface-regular-pro;
-    font-size: 48px;
-    line-height: 45.94px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 2px solid $white;
-    height: 100%;
+  @include fontface-regular-pro;
+  font-size: 48px;
+  line-height: 45.94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid $white;
+  height: 100%;
 
-    @media (max-width: $desktop-width) {
-        font-size: 35px;
-        line-height: 40px;
-    }
+  @media (max-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 40px;
+  }
 
-    @media (max-width: $desktop1300-width) {
-        border-right: none;
-        border-bottom: 2px solid $white;
-    }
+  @media (max-width: $desktop1300-width) {
+    border-right: none;
+    border-bottom: 2px solid $white;
+  }
 }
 
 .timetable-date {
-    width: 276px;
+  width: 276px;
 
-    @media (max-width: $desktop-width) {
-        max-width: 276px;
-        width: 100%;
-    }
+  @media (max-width: $desktop-width) {
+    max-width: 276px;
+    width: 100%;
+  }
 
-    @media (max-width: $desktop1300-width) {
-        width: 100%;
-        max-width: 100%;
-    }
+  @media (max-width: $desktop1300-width) {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .timetable-time {
-    width: 241px;
+  width: 241px;
 
-    @media (max-width: $desktop-width) {
-        max-width: 241px;
-        width: 100%;
-    }
+  @media (max-width: $desktop-width) {
+    max-width: 241px;
+    width: 100%;
+  }
 
-    @media (max-width: $desktop1300-width) {
-        width: 100%;
-        max-width: 100%;
-    }
+  @media (max-width: $desktop1300-width) {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .timetable-text {
-    width: 408px;
-    @include fontface-medium;
-    font-size: 16px;
-    line-height: 19.36px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    border-right: 2px solid $white;
-    height: 100%;
-    padding-left: 50px;
-    justify-content: center;
-    @media (max-width: $desktop-width) {
-        font-size: 14px;
-        line-height: 14px;
-        max-width: 408px;
-        width: 100%;
-    }
+  @include fontface-medium;
+  width: 408px;
+  font-size: 16px;
+  line-height: 19.36px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  border-right: 2px solid $white;
+  height: 100%;
+  padding-left: 50px;
+  justify-content: center;
 
-    @media (max-width: $desktop1300-width) {
-        border-right: none;
-        border-bottom: 2px solid $white;
-        width: 100%;
-        justify-content: center;
-        padding-left: 0;
-        max-width: 100%;
-    }
+  @media (max-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 14px;
+    max-width: 408px;
+    width: 100%;
+  }
+
+  @media (max-width: $desktop1300-width) {
+    border-right: none;
+    border-bottom: 2px solid $white;
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+    max-width: 100%;
+  }
 }
 
-.timetable-text+.timetable-text {
-    width: 302px;
+.timetable-text + .timetable-text {
+  width: 302px;
 
-    @media (max-width: $desktop-width) {
-        max-width: 302px;
-        width: 100%;
-    }
+  @media (max-width: $desktop-width) {
+    max-width: 302px;
+    width: 100%;
+  }
 
-    @media (max-width: $desktop1300-width) {
-        width: 100%;
-        max-width: 100%;
-    }
+  @media (max-width: $desktop1300-width) {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .timetable-link {
-    width: 375px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  width: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .section-link {
+    margin: 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+
     .section-link {
-        margin: 0;
+      max-width: 150px;
     }
+  }
 
-    @media (max-width: $desktop-width) {
-        max-width: 375px;
-        padding-left: 20px;
-        padding-right: 20px;
-        .section-link {
-            max-width: 150px;
-        }
-    }
-
-    @media (max-width: $desktop1300-width) {
-        border: 0;
-        width: auto;
-        max-width: 100%;
-    }
+  @media (max-width: $desktop1300-width) {
+    border: 0;
+    width: auto;
+    max-width: 100%;
+  }
 }
 
 .timetable-tr:hover {
-    background-color: $white;
-    color: $black;
+  background-color: $white;
+  color: $black;
 }

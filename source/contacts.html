@@ -8,16 +8,14 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="page-contacts container">
-        @@include('html/global-html/_header.html')
-      <main>
-        @@include('html/contacts-html/_contacts-heading.html')
-        @@include('html/contacts-html/_contacts-map.html')
-        @@include('html/contacts-html/_contacts-form.html')
-      </main>
-        @@include('html/global-html/_distribution.html')
-        @@include('html/global-html/_footer.html')
-    </div>
+    @@include('html/global-html/_header.html')
+    <main class="page-contacts container">
+      @@include('html/contacts-html/_contacts-heading.html')
+      @@include('html/contacts-html/_contacts-map.html')
+      @@include('html/contacts-html/_contacts-form.html')
+    </main>
+      @@include('html/global-html/_distribution.html')
+      @@include('html/global-html/_footer.html')
     <script src="vendors/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

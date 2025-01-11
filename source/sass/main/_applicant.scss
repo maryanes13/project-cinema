@@ -1,164 +1,125 @@
 .section-applicant {
-    padding-bottom:  50px;
-    background-color: $white;
+  padding-bottom: 50px;
+  color: $white;
 
-    .section-title {
-        color: $black;
-    }
-
-    .section-link {
-        background-color: $white;
-        color: $black;
-        border: 1px solid $black;
-        margin-left: auto;
-        margin-right: 80px;
-
-        &:hover {
-            background-color: $light-blue;
-            color: $black;
-        }
-    }
-
-    @media (max-width: $tablet900-width) {
-        padding-bottom: 20px;
-    }
+  @media (max-width: $tablet900-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .applicant-heading {
-    padding: 40px 80px;
-    border-bottom: 2px solid $black;
-    position: relative;
+  padding: 40px 80px;
+  position: relative;
 
-    &::before {
-        content: "";
-        width: 80px;
-        height: 80px;
-        background-image: url("../../img/arrow.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        right: 84px;
-        top: 68px;
-        z-index: 2;
+  .section-title {
+    color: $light-blue;
+  }
 
-        @media (max-width: $tablet900-width) {
-            right: calc(50% - 40px);
-            top: initial;
-            bottom: 5px;
-        }
+  @media (max-width: $tablet900-width) {
+    padding-bottom: 40px;
 
-        @media (max-width: $mobile480-width) {
-            width: 50px;
-            height: 50px;
-            right: calc(50% - 25px);
-        }
+    .section-title {
+      text-align: center;
     }
+  }
 
-    @media (max-width: $tablet900-width) {
-        padding-bottom: 80px;
-
-        .section-title {
-            text-align: center;
-        }
-    }
-
-    @media (max-width: $mobile480-width) {
-        padding: 20px 20px 60px;
-    }
+  @media (max-width: $mobile480-width) {
+    padding: 20px;
+  }
 }
 
 .section-applicant__title {
-    padding: 0 80px;
-    margin: 50px 0 30px;
-    @include fontface-regular-pro;
-    font-size: 48px;
-    line-height: 45.94px;
+  @include fontface-regular-pro;
+  padding: 0 80px;
+  margin: 0;
+  font-size: 48px;
+  line-height: 45.94px;
 
-    @media (max-width: $tablet900-width) {
-        font-size: 35px;
-        text-align: center;
-        margin: 30px 0;
-    }
+  @media (max-width: $tablet900-width) {
+    font-size: 35px;
+    text-align: center;
+  }
 
-    @media (max-width: $tablet-width) {
-        padding: 0;
-        font-size: 25px;
-    }
-
-    @media (max-width: $mobile480-width) {
-        line-height: 40px;
-        margin: 15px 0;
-    }
-}
-.applicant {
-    padding: 70px 80px 0;
-    border-top: 1px solid $black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 45px;
-
-    @media (max-width: $desktop1300-width) {
-        gap: 10px;
-    }
-
-    @media (max-width: $tablet900-width) {
-        padding: 40px 80px 0;
-    }
-
-    @media (max-width: $tablet-width) {
-        padding: 20px 40px 0;
-    }
-
-    @media (max-width: $mobile480-width) {
-        padding: 20px;
-    }
-}
-.aplicant-item {
-    padding: 64px 35px;
-    background-color: $black;
-    color: $white;
-
-    @media (max-width: $desktop-width) {
-        padding: 50px 20px;
-    }
-
-    @media (max-width: $tablet900-width) {
-        grid-column: span 3;
-    }
-
-    @media (max-width: $mobile480-width) {
-        padding: 20px;
-    }
-}
-.applicant-item__title {
-    @include fontface-regular-pro;
-    font-size: 32px;
-    line-height: 30.62px;
+  @media (max-width: $tablet-width) {
     padding: 0;
-    margin: 0;
-    text-transform: uppercase;
+    font-size: 25px;
+  }
 
-    @media (max-width: $desktop-width) {
-        font-size: 25px;
-        line-height: 25px;
-    }
-
-    @media (max-width: $desktop1300-width) {
-        text-transform: none;
-    }
-
-    @media (max-width: $tablet900-width) {
-        text-transform: uppercase;
-    }
-
-    @media (max-width: $mobile480-width) {
-        font-size: 20px;
-    }
+  @media (max-width: $mobile480-width) {
+    line-height: 40px;
+  }
 }
+
+.applicant {
+  padding: 70px 80px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 45px;
+
+  @media (max-width: $desktop1300-width) {
+    gap: 10px;
+  }
+
+  @media (max-width: $tablet900-width) {
+    padding: 40px 80px 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 40px 0;
+  }
+
+  @media (max-width: $mobile480-width) {
+    padding: 20px;
+  }
+}
+
+.aplicant-item {
+  padding: 64px 35px;
+  background-color: $black-secondary;
+  color: $white;
+
+  @media (max-width: $desktop-width) {
+    padding: 50px 20px;
+  }
+
+  @media (max-width: $tablet900-width) {
+    grid-column: span 3;
+  }
+
+  @media (max-width: $mobile480-width) {
+    padding: 20px;
+  }
+}
+
+.applicant-item__title {
+  @include fontface-regular-pro;
+  font-size: 32px;
+  line-height: 30.62px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (max-width: $desktop-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $desktop1300-width) {
+    text-transform: none;
+  }
+
+  @media (max-width: $tablet900-width) {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $mobile480-width) {
+    font-size: 20px;
+  }
+}
+
 .applicant-item__text {
-    @include fontface-regular-pro;
-    font-size: 16px;
-    line-height: 15.68px;
-    text-transform: uppercase;
+  @include fontface-regular-pro;
+  font-size: 16px;
+  line-height: 15.68px;
+  text-transform: uppercase;
 }
-

@@ -8,23 +8,22 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="page-content container">
+    <canvas class="space"></canvas>
       @@include('html/global-html/_header.html')
-      <main>
+      <main class="page-content container">
         @@include('html/main/_intro.html')
         @@include('html/main/_video.html')
         @@include('html/main/_courses.html')
-        @@include('html/main/_professors.html')
         @@include('html/main/_about-us.html')
-        @@include('html/main/_reviews-main.html')
         @@include('html/main/_applicant.html')
         @@include('html/main/_blog.html')
         @@include('html/thanks-page/_thanks-content.html')
       </main>
       @@include('html/global-html/_distribution.html')
       @@include('html/global-html/_footer.html')
-    </div>
     <script src="vendors/swiper-bundle.min.js"></script>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/canvas.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

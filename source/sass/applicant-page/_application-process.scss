@@ -1,61 +1,64 @@
 .section-application-process {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .application-process-list {
-    display: flex;flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
 .application-process-list__item {
-    border-bottom: 2px solid $white;
-    display: grid;
-    grid-template-columns: 245px 1fr;
-    align-items: center;
+  border-bottom: 2px solid $white;
+  display: grid;
+  grid-template-columns: 245px 1fr;
+  align-items: center;
 
-    @media (max-width: $tablet-width) {
-        grid-template-columns: 100px 1fr;
-    }
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 100px 1fr;
+  }
 
-    @media (max-width: $mobile480-width) {
-        grid-template-columns: 1fr;
-    }
+  @media (max-width: $mobile480-width) {
+    grid-template-columns: 1fr;
+  }
 }
-.application-process-list__item-number {
-    @include fontface-regular-pro;
-    font-size: 128px;
-    line-height: 135px;
-    color: $light-blue;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    @media (max-width: $tablet-width) {
-        font-size: 75px;
-        line-height: 90px;
-    }
+.application-process-list__item-number {
+  @include fontface-regular-pro;
+  font-size: 128px;
+  line-height: 135px;
+  color: $light-blue;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 75px;
+    line-height: 90px;
+  }
 }
 
 .application-process-list__item-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    padding: 30px 300px 30px 80px;
-    border-left: 2px solid $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 300px 30px 80px;
+  border-left: 2px solid $white;
 
-    @media (max-width: $desktop1300-width) {
-        padding-right: 100px;
-        padding-left: 50px;
-    }
+  @media (max-width: $desktop1300-width) {
+    padding-right: 100px;
+    padding-left: 50px;
+  }
 
-    @media (max-width: $tablet-width) {
-        padding: 20px;
-    }
+  @media (max-width: $tablet-width) {
+    padding: 20px;
+  }
 
-    @media (max-width: $mobile480-width) {
-        border-left: none;
-        border-top: 2px solid $white;
-    }
+  @media (max-width: $mobile480-width) {
+    border-left: none;
+    border-top: 2px solid $white;
+  }
 }

@@ -1,27 +1,25 @@
 .applicant-page {
+  .section-heading {
+    display: flex;
+    gap: 23px;
 
-    .section-heading {
-        display: flex;
-        gap: 23px;
-
-        .section-text {
-            max-width: 380px;
-        }
-
-        @media (max-width: $desktop1300-width) {
-            .section-text {
-                max-width: 300px;
-            }
-        }
-
-        @media (max-width: $tablet900-width) {
-
-            .heading-title {
-                padding-left: 0;
-            }
-
-            flex-direction: column;
-            padding-right: 0;
-        }
+    .section-text {
+      max-width: 380px;
     }
+
+    @media (max-width: $desktop1300-width) {
+      .section-text {
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: $tablet900-width) {
+      .heading-title {
+        padding-left: 0;
+      }
+
+      flex-direction: column;
+      padding-right: 0;
+    }
+  }
 }

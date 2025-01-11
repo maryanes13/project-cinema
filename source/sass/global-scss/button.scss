@@ -1,203 +1,204 @@
 .button {
-    @include fontface-semibold;
-    font-size: 16px;
-    line-height: 24.8px;
-    text-align: center;
-    padding: 12px 0;
-    background-color: $black;
-    border: solid 1px $white;
-    color: $white;
-    cursor: pointer;
+  @include fontface-semibold;
+  font-size: 16px;
+  line-height: 24.8px;
+  text-align: center;
+  padding: 12px 0;
+  background-color: $black;
+  border: solid 1px $white;
+  color: $white;
+  cursor: pointer;
 
-    @media (max-width: $tablet-width) {
-        font-size: 10px;
-        line-height: 13px;
-    }
+  @media (max-width: $tablet-width) {
+    font-size: 10px;
+    line-height: 13px;
+  }
 
-    &:hover {
-        background-color: $light-blue;
-    }
+  &:hover {
+    background-color: $light-blue;
+  }
 
-    &:active {
-        background-color: $light-blue;
-    }
+  &:active {
+    background-color: $light-blue;
+  }
 }
 
 /* Header */
 .button-reviews {
-    width: 348px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 27px 0;
-    color: $black;
-    background-color: $white;
-    border: 1px solid $black;
+  width: 348px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 27px 0;
+  color: $black;
+  background-color: $white;
+  border: 1px solid $black;
 
-    &:hover {
-        background-color: $black;
-        color: $white;
-    }
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
 
-    @media (max-width: $tablet-width) {
-       width: 300px;
-       padding: 10px;
-    }
+  @media (max-width: $tablet-width) {
+    width: 300px;
+    padding: 10px;
+  }
 
-    @media (max-width: $mobile480-width) {
-        width: 200px;
-        margin: 10px 0;
-    }
-
+  @media (max-width: $mobile480-width) {
+    width: 200px;
+    margin: 10px 0;
+  }
 }
 
 /* Intro */
 .button-promo {
+  width: 220px;
 
-    width: 220px;
-    span {
-        text-transform: uppercase;
-    }
+  span {
+    text-transform: uppercase;
+  }
 
-    @media (max-width: $desktop1300-width) {
-        width: 190px;
-    }
+  @media (max-width: $desktop1300-width) {
+    width: 190px;
+  }
 
-    @media (max-width: $tablet-width) {
-        width: 120px;
-    }
-
+  @media (max-width: $tablet-width) {
+    width: 120px;
+  }
 }
 
 /* Courses */
 .courses-button {
-    width: 155px;
-    height: 49px;
-    font-size: 13px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 155px;
+  height: 49px;
+  font-size: 13px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .courses-button__prev {
-    border: 1px solid $black;
-    background-color: $white;
-    color: $black;
+  border: 1px solid $black;
+  background-color: $white;
+  color: $black;
 }
+
 .courses-button__next {
-    border: none;
-    color: $white;
+  border: none;
+  background-color: $black-secondary;
+  color: $white;
 }
 
 .button-slider {
-    width: 203px;
-    border: solid 1px $black;
-    background-color: $white;
-    color: $black;
+  width: 203px;
+  border: solid 1px $white;
+  background: transparent;
+  color: $white;
+  border-radius: 50px;
 
-    @media (max-width: $tablet900-width) {
-        width: 100%;
-    }
+  @media (max-width: $tablet900-width) {
+    width: 100%;
+  }
 }
 
 .button-slider__recording {
-    background-color: $black;
-    color: $white;
-    border: none;
+  background-color: $white;
+  color: $black;
+  border: none;
 }
 
 /* Professors */
 .professors-button {
-    width: 244px;
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 25px;
+  width: 244px;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 25px;
 
-    span {
-        text-transform: uppercase;
-    }
+  span {
+    text-transform: uppercase;
+  }
 
-    @media (max-width: $desktop1300-width) {
-        margin-bottom: 0;
-    }
+  @media (max-width: $desktop1300-width) {
+    margin-bottom: 0;
+  }
 }
 
-
 .professors-link {
-    margin-left: 12px;
-    grid-area: 2/2/3/3;
-    font-family: Inter;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 24.8px;
-    text-decoration-line: underline;
-    color: $white;
+  @include fontface-semibold;
+  margin-left: 12px;
+  grid-area: 2/2/3/3;
+  font-size: 13px;
+  line-height: 24.8px;
+  text-decoration-line: underline;
+  color: $white;
 
-    &:hover {
-        color: $light-blue;
-    }
+  &:hover {
+    color: $light-blue;
+  }
 
-    @media (max-width: $mobile480-width) {
-        grid-area: 3/2/4/3;
-    }
+  @media (max-width: $mobile480-width) {
+    grid-area: 3/2/4/3;
+  }
 }
 
 /* distribution */
-
 .distribution-mail__button {
-    width: 307px;
-    position: relative;
-    padding-left: 26px;
-    text-align: left;
-    background-image: url("../../img/arrow-mail-right.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
+  width: 307px;
+  position: relative;
+  padding-left: 26px;
+  text-align: left;
+  background-image: url("../../img/arrow-mail-right.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
 
-    @media (max-width: $tablet-width) {
-        padding: 10px;
-    }
+  @media (max-width: $tablet-width) {
+    padding: 10px;
+  }
 
-    @media (max-width: $mobile480-width) {
-        width: 100%;
-    }
+  @media (max-width: $mobile480-width) {
+    width: 100%;
+  }
 }
 
 /* Submit */
 .form__button {
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    text-transform: uppercase;
-    padding: 12px;
-    height: 66px;
-    font-size: 15px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 12px;
+  height: 66px;
+  font-size: 15px;
 }
 
 .registration-page {
-    .form__button {
-        background-color: $white;
-        color: $black;
-        position: relative;
-        background-image: url("../img/Arrow-right.svg");
-        background-repeat: no-repeat;
-        background-position: 95% 50%;
-        text-transform: none;
-        &:hover {
-            background-color: $light-blue;
-        }
+  .form__button {
+    background-color: $white;
+    color: $black;
+    position: relative;
+    background-image: url("../img/Arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    text-transform: none;
 
-        @media (max-width: $desktop1300-width) {
-            background-image: none;
-        }
-
-        @media (max-width: $tablet900-width) {
-            background-image: url("../img/Arrow-right.svg");
-        }
-
-        @media (max-width: $tablet-width) {
-            background-image: none;
-        }
+    &:hover {
+      background-color: $light-blue;
     }
+
+    @media (max-width: $desktop1300-width) {
+      background-image: none;
+    }
+
+    @media (max-width: $tablet900-width) {
+      background-image: url("../img/Arrow-right.svg");
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: none;
+    }
+  }
 }

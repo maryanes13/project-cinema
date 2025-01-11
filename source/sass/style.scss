@@ -6,6 +6,8 @@
 
 // Global-Section
 @import "global-scss/header";
+@import "global-scss/social";
+@import "global-scss/user";
 @import "global-scss/footer";
 @import "global-scss/burger.scss";
 @import "global-scss/footer-copyright";
@@ -23,9 +25,7 @@
 @import "main/intro";
 @import "main/video";
 @import "main/courses";
-@import "main/professors";
 @import "main/about";
-@import "main/reviews.scss";
 @import "main/applicant.scss";
 @import "main/blog";
 
@@ -82,37 +82,23 @@
 body {
   margin: 0 auto;
   background-color: $black;
-  padding: 0 15px;
   background-image: url("../img/background.png");
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.page-content,
-.courses-actor-page,
-.courses-page,
-.page-contacts,
-.reviews-page,
-.applicant-page,
-.teacher-page,
-.teacher-name-page,
-.registration-page,
-.login-page,
-.article-page {
-  border-left: solid 2px $white;
-  border-right: solid 2px $white;
-  margin: 0 auto;
 }
 
 .applicant-page {
@@ -152,6 +138,5 @@ ul, li {
     max-width: $desktop-width;
     margin: 0 auto;
   }
-
 }
 
