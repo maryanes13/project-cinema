@@ -100,13 +100,13 @@
   border-right: none;
 }
 .navigation-list__item:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 .navigation-list__item:hover .navigation-list__item-link {
   color: #000000;
 }
 .navigation-list__item:active {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 .navigation-list__item:active .navigation-list__item-link {
   color: #000000;
@@ -118,7 +118,6 @@
 
 .navigation-children-list {
   display: none;
-  width: auto;
   position: absolute;
   bottom: -65px;
   left: -1px;
@@ -136,7 +135,7 @@
   text-align: center;
 }
 .navigation-children-list-item:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 .navigation-children-list-item:hover .navigation-list__item-link {
   color: #000000;
@@ -147,10 +146,10 @@
 }
 
 .navigation-children-list-item__link {
-  color: #ffffff;
-  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   font-style: normal;
+  color: #ffffff;
   font-size: 16px;
   line-height: 24.8px;
   text-decoration: none;
@@ -160,7 +159,7 @@
 }
 
 .navigation-list__item-link {
-  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 16px;
@@ -177,7 +176,7 @@
   justify-content: center;
   align-items: center;
   color: #000000;
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 
 .header.fixed {
@@ -210,7 +209,7 @@
   height: 50px;
 }
 .social-list__link:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 
 .telegram-link {
@@ -227,7 +226,7 @@
   height: 100%;
 }
 .whatsapp-link:hover path {
-  fill: #00CEDB;
+  fill: #00cedb;
 }
 
 .social {
@@ -292,7 +291,7 @@
   width: 164px;
 }
 .user-reg__link:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
   color: #000000;
 }
 
@@ -311,7 +310,7 @@
   height: 100%;
 }
 .user-log__link:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 
 .user-log.current-item:hover path {
@@ -326,7 +325,7 @@
   justify-content: center;
 }
 .user-log__mobile:hover path {
-  stroke: #00CEDB;
+  stroke: #00cedb;
 }
 
 @media (max-width: 768px) {
@@ -356,11 +355,11 @@
 }
 
 .footer-item__title {
-  padding: 0;
-  margin: 20px 0;
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Regular", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
+  padding: 0;
+  margin: 20px 0;
   font-size: 24px;
   line-height: 24.8px;
 }
@@ -372,7 +371,7 @@
 }
 
 .footer-courses__item-link {
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Regular", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   display: inline-block;
@@ -390,20 +389,20 @@
 }
 
 .footer-navigation__item-link {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   font-style: normal;
+  color: #ffffff;
+  text-decoration: none;
   font-size: 16px;
   line-height: 24.8px;
 }
 .footer-navigation__item-link:hover {
-  color: #00CEDB;
+  color: #00cedb;
 }
 
 .phone-link {
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Regular", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -413,7 +412,7 @@
   margin-bottom: 50px;
 }
 .phone-link:hover {
-  color: #00CEDB;
+  color: #00cedb;
 }
 
 .footer-address {
@@ -429,7 +428,7 @@
 }
 
 .footer-current-item {
-  color: #00CEDB;
+  color: #00cedb;
 }
 
 .burger {
@@ -455,7 +454,7 @@
   cursor: pointer;
 }
 .burger-button:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 
 .burger-item {
@@ -507,7 +506,7 @@
   color: #ffffff;
 }
 .footer-copyright__link:hover {
-  color: #00CEDB;
+  color: #00cedb;
 }
 
 .footer-copyright__text {
@@ -518,13 +517,13 @@
 }
 
 .section-text {
+  font-family: "Inter-Light", "Arial", "Helvetica", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   padding: 0;
   margin: 0;
   font-size: 15px;
   line-height: 20px;
-  font-family: "Inter-Light", Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-style: normal;
 }
 @media (max-width: 1300px) {
   .section-text {
@@ -539,18 +538,18 @@
 }
 
 .page-title {
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding: 0;
   margin: 0;
   text-transform: uppercase;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 48px;
   line-height: 71px;
   margin-bottom: 10px;
 }
 .page-title span {
-  font-family: "Bergamasco", Arial, Helvetica, sans-serif;
+  font-family: "Bergamasco", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 64px;
@@ -558,7 +557,7 @@
 }
 
 .section-title {
-  font-family: "Bergamasco", Arial, Helvetica, sans-serif;
+  font-family: "Bergamasco", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 96px;
@@ -592,14 +591,14 @@
 }
 
 .section-subtitle {
-  padding: 0;
-  margin: 0;
-  font-family: "Inter-Light", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Light", "Arial", "Helvetica", sans-serif;
   font-weight: 300;
   font-style: normal;
+  padding: 0;
+  margin: 0;
   font-size: 20px;
   line-height: 24px;
-  color: #A8A8A8;
+  color: #a8a8a8;
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
@@ -610,12 +609,15 @@
 }
 
 .section-link {
-  display: block;
+  display: flex;
   text-decoration: none;
   font-size: 13px;
   width: 203px;
   margin-top: 30px;
   border-radius: 50px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .section-link {
@@ -623,7 +625,7 @@
   }
 }
 .section-link:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
   color: #000000;
 }
 @media (max-width: 480px) {
@@ -633,7 +635,7 @@
 }
 
 .button {
-  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 16px;
@@ -652,10 +654,10 @@
   }
 }
 .button:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 .button:active {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 
 /* Header */
@@ -724,7 +726,7 @@
 
 .courses-button__next {
   border: none;
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
   color: #ffffff;
 }
 
@@ -764,17 +766,18 @@
 }
 
 .professors-link {
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
+  font-weight: 600;
+  font-style: normal;
   margin-left: 12px;
   grid-area: 2/2/3/3;
-  font-family: Inter;
   font-size: 13px;
-  font-weight: 600;
   line-height: 24.8px;
   text-decoration-line: underline;
   color: #ffffff;
 }
 .professors-link:hover {
-  color: #00CEDB;
+  color: #00cedb;
 }
 @media (max-width: 480px) {
   .professors-link {
@@ -826,7 +829,7 @@
   text-transform: none;
 }
 .registration-page .form__button:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 @media (max-width: 1300px) {
   .registration-page .form__button {
@@ -877,7 +880,7 @@
 }
 
 .information-list__item-text {
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 32px;
@@ -892,7 +895,7 @@
 }
 
 .information-phone {
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Regular", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 36px;
@@ -910,7 +913,7 @@
 }
 
 .contacts__heading {
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Regular", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
@@ -925,12 +928,12 @@
 }
 
 .contacts__address {
+  font-family: "Inter-Regular", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 30px;
   line-height: 30px;
   padding: 0 0 10px;
@@ -947,10 +950,10 @@
 }
 
 .page-nav-text {
-  display: none;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: none;
   font-size: 35.96px;
   line-height: 53.2px;
   text-transform: uppercase;
@@ -1087,10 +1090,10 @@
   color: #ffffff;
 }
 .page-header__nav.active .navigation-list__item-link {
-  color: #000000;
-  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   font-style: normal;
+  color: #000000;
   font-size: 32px;
   line-height: 24.8px;
   padding: 25px 0;
@@ -1110,7 +1113,6 @@
   }
 }
 .page-header__nav.active .user-list {
-  align-items: flex-end;
   justify-content: center;
   grid-area: 4/3/5/-1;
   width: 100%;
@@ -1118,7 +1120,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 @media (max-width: 480px) {
   .page-header__nav.active .user-list {
@@ -1144,7 +1145,6 @@
 }
 .page-header__nav.active .user-reg__link {
   color: #000000;
-  border-color: #000000;
   font-size: 32px;
   line-height: 24px;
   display: flex;
@@ -1222,12 +1222,14 @@
   }
 }
 @media (max-width: 768px) {
-  .page-header__nav.active .navigation-children-list-item__link, .page-header__nav.active .navigation-list__item-link {
+  .page-header__nav.active .navigation-children-list-item__link,
+  .page-header__nav.active .navigation-list__item-link {
     font-size: 14px;
   }
 }
 @media (max-width: 480px) {
-  .page-header__nav.active .navigation-children-list-item__link, .page-header__nav.active .navigation-list__item-link {
+  .page-header__nav.active .navigation-children-list-item__link,
+  .page-header__nav.active .navigation-list__item-link {
     padding: 10px;
     font-size: 13px;
     text-align: left;
@@ -1244,16 +1246,16 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 .page-header__nav.active .user-list__item.user-log__mobile:hover {
   background-color: #000000;
 }
 .page-header__nav.active .user-list__item.user-log__mobile:hover svg {
-  fill: white;
+  fill: #ffffff;
 }
 .page-header__nav.active .user-log__link.current-item svg {
-  fill: white;
+  fill: #ffffff;
 }
 
 .section-heading {
@@ -1314,7 +1316,7 @@
 }
 
 .heading-title {
-  font-family: "Bergamasco", Arial, Helvetica, sans-serif;
+  font-family: "Bergamasco", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 50px;
@@ -1326,7 +1328,7 @@
   padding-left: 105px;
 }
 .heading-title span {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
@@ -1350,11 +1352,11 @@
 }
 
 .designation-section-title {
-  padding: 25px 0 25px 105px;
-  margin: 50px 0 0 0;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
+  padding: 25px 0 25px 105px;
+  margin: 50px 0 0;
   font-size: 48px;
   line-height: 50.62px;
   text-transform: uppercase;
@@ -1442,7 +1444,7 @@
 }
 .registration-page .page-form-content .field-group__item.field-checkbox input[type=checkbox],
 .login-page .page-form-content .field-group__item.field-checkbox input[type=checkbox] {
-  accent-color: #00CEDB;
+  accent-color: #00cedb;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -1450,7 +1452,7 @@
 .registration-page .page-form-content .field__select,
 .login-page .page-form-content .field__select {
   color: #ffffff;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
 }
 
 .page-form-content__item {
@@ -1488,14 +1490,14 @@
 }
 
 .form-page__title {
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-style: normal;
   color: #000000;
   padding-left: 60px;
   padding-top: 50px;
   margin-bottom: 40px;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-style: normal;
   font-weight: 700;
   font-size: 45px;
 }
@@ -1555,7 +1557,7 @@
   gap: 5px;
 }
 .field span {
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -1582,15 +1584,15 @@
 }
 
 .field__input {
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   display: flex;
   width: 100%;
   border: none;
   background-color: transparent;
   outline: none;
   padding: 38px 0;
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-style: normal;
   font-size: 16px;
   line-height: 19.36px;
   color: #000000;
@@ -1601,7 +1603,7 @@
 }
 @media (max-width: 1300px) {
   .field__input {
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
   }
 }
 
@@ -1620,7 +1622,7 @@
   }
 }
 .field-file span {
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -1635,6 +1637,9 @@
 }
 
 .field__select {
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   display: flex;
   align-items: center;
   padding: 30px 0;
@@ -1642,9 +1647,6 @@
   outline: none;
   width: 100%;
   text-decoration: underline;
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-style: normal;
   font-size: 16px;
   line-height: 19.36px;
   color: #000000;
@@ -1655,12 +1657,12 @@
 }
 @media (max-width: 1300px) {
   .field__select {
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
   }
 }
 
 .form__additional {
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -1744,7 +1746,7 @@
 }
 
 .distribution-mail__title {
-  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 13px;
@@ -1802,7 +1804,7 @@
 @media (max-width: 900px) {
   .footer-copyright {
     padding: 25px;
-    border-top: 2px solid #fff;
+    border-top: 2px solid #ffffff;
   }
   .footer-copyright__link {
     margin-right: 50px;
@@ -1844,7 +1846,7 @@
 .intro {
   width: 100%;
   height: 100%;
-  background-image: url("../img/intro.webp");
+  background-image: url("../img/intro.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -1879,7 +1881,7 @@
   color: #000000;
 }
 .promo-list__item:first-child .button-promo:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
   color: #000000;
 }
 
@@ -1927,7 +1929,6 @@
   }
 }
 .section-video {
-  padding: 20px 0;
   max-width: 100%;
   padding: 20px 130px;
 }
@@ -1943,13 +1944,13 @@
 
 /* Section-courses */
 .courses .section-title {
-  color: #00CEDB;
+  color: #00cedb;
 }
 
 .courses-information {
   display: flex;
   align-items: center;
-  padding: 0px 87px;
+  padding: 0 87px;
 }
 @media (max-width: 1300px) {
   .courses-information {
@@ -2016,7 +2017,7 @@
   padding: 45px 31px;
   color: #ffffff;
   cursor: pointer;
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
 }
 .courses-slider-list-item .section-text {
   margin-bottom: 35px;
@@ -2037,17 +2038,17 @@
   color: #000000;
 }
 .courses-slider-list-item:hover .button-slider__recording {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 
 .courses-slider-item__title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
   line-height: 30.62px;
   text-transform: uppercase;
-  margin: 0 0 11px 0;
+  margin: 0 0 11px;
   padding: 0;
 }
 @media (max-width: 900px) {
@@ -2057,7 +2058,7 @@
 }
 
 .lesson-text {
-  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 24px;
@@ -2072,7 +2073,7 @@
 }
 
 .discount-text {
-  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 24px;
@@ -2088,7 +2089,7 @@
 }
 
 .cost {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 36px;
@@ -2105,7 +2106,7 @@
 }
 
 .currency {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
@@ -2152,177 +2153,6 @@
   fill: #666666;
 }
 
-/* Section-professors */
-.section-professors {
-  color: #ffffff;
-  padding-top: 32px;
-  border-bottom: solid 2px #ffffff;
-}
-.section-professors .section-title {
-  color: #ffffff;
-}
-.section-professors .section-title span {
-  color: #00CEDB;
-}
-
-.professors-information {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0 98px 31px;
-  border-bottom: 2px solid #ffffff;
-}
-@media (max-width: 768px) {
-  .professors-information {
-    padding: 0 30px 30px;
-    gap: 10px;
-  }
-}
-
-.professors-information__heading {
-  display: flex;
-  position: relative;
-}
-@media (max-width: 1300px) {
-  .professors-information__heading {
-    grid-column: span 2;
-  }
-}
-.professors-information__heading .section-text {
-  max-width: 442px;
-  position: absolute;
-  top: 25px;
-  right: 0;
-  z-index: 1;
-}
-@media (max-width: 1300px) {
-  .professors-information__heading .section-text {
-    max-width: 300px;
-  }
-}
-@media (max-width: 768px) {
-  .professors-information__heading .section-text {
-    max-width: 200px;
-    top: 5px;
-  }
-}
-@media (max-width: 480px) {
-  .professors-information__heading .section-text {
-    max-width: 170px;
-    top: 0px;
-  }
-}
-
-.professors-information__navigations {
-  justify-self: flex-end;
-  align-self: flex-end;
-}
-@media (max-width: 1300px) {
-  .professors-information__navigations {
-    grid-column: span 2;
-  }
-}
-
-.professors-slider {
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 20px;
-}
-.professors-slider .courses-slider__swiper-navigation {
-  margin-right: 100px;
-}
-@media (max-width: 900px) {
-  .professors-slider .courses-slider__swiper-navigation {
-    margin-right: 50px;
-  }
-}
-
-.professors-slider-list {
-  display: flex;
-  align-items: center;
-}
-
-.professors-item {
-  padding: 30px 0 15px 10px;
-  display: grid;
-  grid-template-columns: 203px 1fr;
-  border: 2px solid #ffffff;
-  height: auto;
-}
-@media (max-width: 480px) {
-  .professors-item {
-    grid-template-columns: 1fr 1fr;
-    border: none;
-    border-bottom: 2px solid #ffffff;
-    height: 750px;
-    padding-bottom: 0;
-  }
-}
-
-.professors-item-image {
-  width: 100%;
-  height: 100%;
-}
-@media (max-width: 480px) {
-  .professors-item-image {
-    grid-column: span 2;
-    margin-top: auto;
-  }
-}
-.professors-item-image img {
-  object-fit: contain;
-  width: 100%;
-}
-
-.professors-info {
-  grid-area: 1/2/2/3;
-  padding-left: 12px;
-}
-@media (max-width: 480px) {
-  .professors-info {
-    padding-left: 0;
-    grid-column: span 2;
-  }
-}
-
-.professors-item__title {
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 29.05px;
-  margin-bottom: 10px;
-  padding: 0;
-  margin-top: 10px;
-}
-
-.professors-item__text {
-  font-family: "Inter-ExtraLight", Arial, Helvetica, sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 18.15px;
-}
-
-.professors-item__text + .section-text {
-  margin-bottom: 10px;
-}
-
-.professors-item-list {
-  display: flex;
-  flex-direction: column;
-  padding-left: 25px;
-  margin-bottom: 4px;
-}
-@media (max-width: 480px) {
-  .professors-item-list {
-    padding-left: 15px;
-  }
-}
-
-.professors-item-list__item {
-  list-style-type: circle;
-}
-
 .section-about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2337,10 +2167,10 @@
 .about-heading {
   display: flex;
   flex-direction: column;
-  padding: 38px 95px 0px 100px;
+  padding: 38px 95px 0 100px;
 }
 .about-heading .section-title {
-  color: #00CEDB;
+  color: #00cedb;
   margin-bottom: 5px;
 }
 @media (max-width: 1300px) {
@@ -2360,12 +2190,12 @@
 }
 
 .about-text {
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Regular", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 48px;
   line-height: 58.09px;
-  color: #00CEDB;
+  color: #00cedb;
   margin: 0;
   padding: 0;
   margin-bottom: 5px;
@@ -2424,7 +2254,9 @@
   justify-content: center;
 }
 .services-list__item-grafity span {
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Regular", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 40px;
   font-weight: 400;
   line-height: 48.41px;
@@ -2490,232 +2322,6 @@
   }
 }
 
-.section-reviews {
-  color: #ffffff;
-  padding-top: 45px;
-  padding-bottom: 23px;
-}
-@media (max-width: 480px) {
-  .section-reviews {
-    padding-top: 0;
-  }
-}
-.section-reviews .section-title {
-  text-transform: uppercase;
-  color: #00CEDB;
-  margin-bottom: 42px;
-  margin-left: 100px;
-}
-@media (max-width: 480px) {
-  .section-reviews .section-title {
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-  }
-}
-
-.reviews-heading {
-  border-top: 2px solid #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 105px 30px;
-}
-@media (max-width: 1300px) {
-  .reviews-heading {
-    gap: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-@media (max-width: 900px) {
-  .reviews-heading {
-    padding: 20px 50px;
-  }
-}
-@media (max-width: 480px) {
-  .reviews-heading {
-    padding: 20px;
-  }
-}
-
-.reviews-title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 48px;
-  line-height: 45.94px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-@media (max-width: 900px) {
-  .reviews-title {
-    font-size: 25px;
-    line-height: 35px;
-  }
-}
-
-.reviews-info {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.reviews-info__text {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 65.85px;
-  line-height: 63.02px;
-  padding: 0;
-  margin: 0;
-}
-@media (max-width: 900px) {
-  .reviews-info__text {
-    font-size: 35px;
-    line-height: 45px;
-  }
-}
-
-.reviews-rating {
-  display: flex;
-  flex-direction: column;
-}
-
-.reviews-rating__star {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  max-width: 167px;
-  margin-bottom: 5px;
-}
-
-.rating-star {
-  padding: 0;
-  margin: 0;
-}
-.rating-star svg {
-  width: 32px;
-  height: 32px;
-}
-
-.reviews-rating__text {
-  padding: 0 0 0 10px;
-  margin: 0;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 17.12px;
-  line-height: 19.69px;
-  color: #737373;
-}
-.reviews-rating__text span {
-  color: #181818;
-}
-
-.swiper-reviews {
-  padding: 0 70px 50px;
-  overflow: hidden;
-  border-bottom: 2px solid #ffffff;
-}
-@media (max-width: 900px) {
-  .swiper-reviews {
-    padding: 0 40px 20px;
-  }
-}
-@media (max-width: 768px) {
-  .swiper-reviews {
-    padding: 20px;
-  }
-}
-
-.reviews {
-  display: flex;
-}
-
-.reviews-item {
-  border: 1px solid #ffffff;
-  padding: 30px 25px;
-}
-
-.reviews-item__heading {
-  display: flex;
-  gap: 5px;
-  margin-bottom: 25px;
-}
-@media (max-width: 480px) {
-  .reviews-item__heading {
-    flex-wrap: wrap;
-  }
-}
-
-.reviews-item__author {
-  width: 36px;
-  height: 36px;
-}
-
-.reviews-text {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15.75px;
-  line-height: 18.12px;
-  padding: 0;
-  margin: 0;
-  color: #737373;
-}
-
-.author-flag {
-  width: 19px;
-  height: 12px;
-}
-
-.reviews-item__rating {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-.reviews-item__rating svg {
-  width: 26px;
-  height: 23px;
-}
-@media (max-width: 480px) {
-  .reviews-item__rating {
-    margin: 0;
-  }
-  .reviews-item__rating svg {
-    width: 16px;
-    height: 13px;
-  }
-}
-
-.rating-value {
-  padding: 0;
-  margin: 0;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14.63px;
-  line-height: 16.82px;
-  color: #181818;
-  margin-left: 6px;
-}
-.rating-value span {
-  color: #737373;
-}
-
-.reviews-item__link {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 13.5px;
-  line-height: 15.53px;
-  color: #737373;
-  display: inline-block;
-  margin-top: 8px;
-}
-
 .section-applicant {
   padding-bottom: 50px;
   color: #ffffff;
@@ -2731,7 +2337,7 @@
   position: relative;
 }
 .applicant-heading .section-title {
-  color: #00CEDB;
+  color: #00cedb;
 }
 @media (max-width: 900px) {
   .applicant-heading {
@@ -2748,11 +2354,11 @@
 }
 
 .section-applicant__title {
-  padding: 0 80px;
-  margin: 0;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
+  padding: 0 80px;
+  margin: 0;
   font-size: 48px;
   line-height: 45.94px;
 }
@@ -2803,7 +2409,7 @@
 
 .aplicant-item {
   padding: 64px 35px;
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
   color: #ffffff;
 }
 @media (max-width: 1600px) {
@@ -2823,7 +2429,7 @@
 }
 
 .applicant-item__title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
@@ -2855,7 +2461,7 @@
 }
 
 .applicant-item__text {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -2876,7 +2482,7 @@
 }
 .blog-heading .section-title {
   text-transform: uppercase;
-  color: #00CEDB;
+  color: #00cedb;
 }
 .blog-heading .section-link {
   margin: 0;
@@ -2929,7 +2535,7 @@
 }
 
 .blog-list__item-title {
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -2962,31 +2568,63 @@
 }
 
 .blog-figcaption__date {
-  font-family: "Inter-ExtraLight", Arial, Helvetica, sans-serif;
+  font-family: "Inter-ExtraLight", "Arial", "Helvetica", sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 16px;
   line-height: 19.36px;
-  color: #A8A8A8;
+  color: #a8a8a8;
 }
 
 .blog-figcaption__link {
-  display: inline-block;
-  text-decoration: none;
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
+  display: inline-block;
+  text-decoration: none;
   font-size: 16px;
   line-height: 19.36px;
   text-transform: uppercase;
   color: #ffffff;
 }
 .blog-figcaption__link:hover {
-  color: #00CEDB;
+  color: #00cedb;
 }
 
 .section-courses-slider {
   color: #ffffff;
+}
+.section-courses-slider .swiper-slide {
+  width: 330px;
+  height: 804px;
+  transition: 1s;
+}
+@media (max-width: 1300px) {
+  .section-courses-slider .swiper-slide {
+    max-width: 230px;
+  }
+}
+@media (max-width: 768px) {
+  .section-courses-slider .swiper-slide {
+    max-width: 100%;
+    max-height: 500px;
+  }
+}
+.section-courses-slider .swiper-slide-active {
+  width: 680px;
+  height: 804px;
+  transition: 1s;
+}
+@media (max-width: 1300px) {
+  .section-courses-slider .swiper-slide-active {
+    max-width: 480px;
+  }
+}
+@media (max-width: 768px) {
+  .section-courses-slider .swiper-slide-active {
+    max-width: 100%;
+    max-height: 500px;
+  }
 }
 .section-courses-slider .courses-slider__swiper-navigation {
   margin-right: 20px;
@@ -3073,7 +2711,7 @@
 }
 
 .courses-slider__title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 48px;
@@ -3160,7 +2798,7 @@
 }
 
 .courses-slider__costs {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 36px;
@@ -3174,40 +2812,7 @@
 }
 @media (max-width: 480px) {
   .courses-slider__costs {
-    margin-bottom: 0px;
-  }
-}
-
-.section-courses-slider .swiper-slide {
-  width: 330px;
-  height: 804px;
-  transition: 1s;
-}
-@media (max-width: 1300px) {
-  .section-courses-slider .swiper-slide {
-    max-width: 230px;
-  }
-}
-@media (max-width: 768px) {
-  .section-courses-slider .swiper-slide {
-    max-width: 100%;
-    max-height: 500px;
-  }
-}
-.section-courses-slider .swiper-slide-active {
-  width: 680px;
-  height: 804px;
-  transition: 1s;
-}
-@media (max-width: 1300px) {
-  .section-courses-slider .swiper-slide-active {
-    max-width: 480px;
-  }
-}
-@media (max-width: 768px) {
-  .section-courses-slider .swiper-slide-active {
-    max-width: 100%;
-    max-height: 500px;
+    margin-bottom: 0;
   }
 }
 
@@ -3231,7 +2836,7 @@
   }
 }
 .courses-page .heading-title {
-  color: #00CEDB;
+  color: #00cedb;
   margin-right: 35px;
 }
 .courses-page .section-subtitle {
@@ -3247,25 +2852,23 @@
 }
 
 .section-directions__item {
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding: 0;
   display: flex;
   align-items: center;
   width: 100%;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 48px;
   line-height: 45.94px;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
   padding-left: 105px;
   margin: 0;
-  width: 100%;
   border: none;
   border-bottom: 2px solid #ffffff;
   background-color: transparent;
   cursor: pointer;
+  color: #ffffff;
 }
 .section-directions__item:first-child {
   padding-top: 50px;
@@ -3340,7 +2943,7 @@
 }
 
 .actors-text {
-  font-family: "Inter-ExtraLight", Arial, Helvetica, sans-serif;
+  font-family: "Inter-ExtraLight", "Arial", "Helvetica", sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 24px;
@@ -3386,7 +2989,7 @@
 }
 
 .actors-author {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -3480,7 +3083,7 @@
 }
 
 .course-detail-information__text {
-  font-family: "Inter-ExtraLight", Arial, Helvetica, sans-serif;
+  font-family: "Inter-ExtraLight", "Arial", "Helvetica", sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 24px;
@@ -3495,7 +3098,7 @@
     font-size: 20px;
     line-height: 25px;
   }
-  .course-detail-information__text:before {
+  .course-detail-information__text::before {
     content: "";
     width: 460px;
     height: 560px;
@@ -3549,7 +3152,7 @@
 }
 
 .programm-course-title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
@@ -3581,7 +3184,7 @@
   border-top: 2px solid #000000;
 }
 .programms-course-list .section-text {
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Regular", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -3624,7 +3227,7 @@
 }
 
 .programms-course-list__item-title {
-  font-family: "Inter-Bold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Bold", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
@@ -3693,7 +3296,7 @@
 }
 
 .section-course-teacher__title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 48px;
@@ -3737,7 +3340,7 @@
 }
 
 .course-teacher__title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 64px;
@@ -3798,11 +3401,11 @@
 }
 
 .course-teacher__subtitle {
-  padding: 0;
-  margin: 0 0 35px;
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
+  padding: 0;
+  margin: 0 0 35px;
   font-size: 16px;
   line-height: 19.36px;
   text-transform: uppercase;
@@ -3904,8 +3507,7 @@
 @media (max-width: 1600px) {
   .timetable tbody {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     width: 100%;
   }
 }
@@ -3953,7 +3555,7 @@
 
 .timetable-date,
 .timetable-time {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 48px;
@@ -4012,10 +3614,10 @@
 }
 
 .timetable-text {
-  width: 408px;
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
+  width: 408px;
   font-size: 16px;
   line-height: 19.36px;
   text-transform: uppercase;
@@ -4123,6 +3725,18 @@
     grid-template-columns: 140px 1fr 1fr;
   }
 }
+@media (max-width: 768px) {
+  .course-payment .heading-title {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .course-payment .heading-title {
+    padding: 10px;
+  }
+}
 
 .course-lesson {
   padding: 75px 130px 60px 105px;
@@ -4195,7 +3809,7 @@
 }
 @media (max-width: 768px) {
   .course-lesson__info-item {
-    padding: 15px 0px;
+    padding: 15px 0;
     align-items: center;
     text-align: center;
   }
@@ -4210,7 +3824,7 @@
 }
 
 .course-lesson__info-item-title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
@@ -4218,7 +3832,7 @@
 }
 
 .course-lesson__info-item-definition {
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -4228,7 +3842,7 @@
 }
 
 .course-lesson__info-item-cost {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 48px;
@@ -4271,7 +3885,7 @@
 }
 
 .course-payment__title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 36px;
@@ -4389,19 +4003,6 @@
   grid-area: 5/2/6/-1;
 }
 
-@media (max-width: 768px) {
-  .section-course-payment .heading-title {
-    font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-@media (max-width: 480px) {
-  .section-course-payment .heading-title {
-    padding: 10px;
-  }
-}
-
 .section-contacts-map {
   display: grid;
   grid-template-columns: max-content max-content 1fr;
@@ -4441,11 +4042,11 @@
 }
 
 .contacts-phone {
-  display: flex;
-  flex-direction: column;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts-phone__text {
@@ -4463,11 +4064,11 @@
 }
 
 .contacts-address {
-  display: flex;
-  flex-direction: column;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts-address__text {
@@ -4484,7 +4085,7 @@
 }
 
 .contacts-support {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -4494,7 +4095,7 @@
 }
 
 .contacts-schedule {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -4557,7 +4158,7 @@
 }
 
 .contacts-location__title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 48px;
@@ -4598,7 +4199,7 @@
 }
 
 .contacts-location__item-link {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -4614,7 +4215,7 @@
 }
 
 .contacts-location__text {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -4678,12 +4279,19 @@
   }
 }
 .reviews-page .reviews {
+  display: flex;
   gap: 26px;
 }
 @media (max-width: 1300px) {
   .reviews-page .reviews {
     flex-direction: column;
   }
+}
+
+.reviews-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .page-reviews-info {
@@ -4705,9 +4313,11 @@
   display: flex;
   gap: 34px;
   justify-content: center;
+  align-items: center;
 }
 .reviews-nav .section-link {
   text-transform: uppercase;
+  width: 300px;
 }
 .reviews-nav .section-link:nth-child(2) {
   background-color: #ffffff;
@@ -4723,6 +4333,140 @@
     flex-direction: column;
     gap: 10px;
   }
+}
+
+.reviews-info__text {
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 65.85px;
+  line-height: 63.02px;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .reviews-info__text {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+.reviews-rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-rating__star {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  max-width: 167px;
+  margin-bottom: 5px;
+}
+
+.rating-star {
+  padding: 0;
+  margin: 0;
+}
+.rating-star svg {
+  width: 32px;
+  height: 32px;
+}
+
+.reviews-rating__text {
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 0 0 10px;
+  margin: 0;
+  font-size: 17.12px;
+  line-height: 19.69px;
+  color: #737373;
+}
+.reviews-rating__text span {
+  color: #181818;
+}
+
+.reviews-item {
+  border: 1px solid #ffffff;
+  padding: 30px 25px;
+}
+
+.reviews-item__heading {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+@media (max-width: 480px) {
+  .reviews-item__heading {
+    flex-wrap: wrap;
+  }
+}
+
+.reviews-item__author {
+  width: 36px;
+  height: 36px;
+}
+
+.reviews-text {
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15.75px;
+  line-height: 18.12px;
+  padding: 0;
+  margin: 0;
+  color: #737373;
+}
+
+.author-flag {
+  width: 19px;
+  height: 12px;
+}
+
+.reviews-item__rating {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.reviews-item__rating svg {
+  width: 26px;
+  height: 23px;
+}
+@media (max-width: 480px) {
+  .reviews-item__rating {
+    margin: 0;
+  }
+  .reviews-item__rating svg {
+    width: 16px;
+    height: 13px;
+  }
+}
+
+.rating-value {
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  font-size: 14.63px;
+  line-height: 16.82px;
+  color: #181818;
+  margin-left: 6px;
+}
+.rating-value span {
+  color: #737373;
+}
+
+.reviews-item__link {
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13.5px;
+  line-height: 15.53px;
+  color: #737373;
+  display: inline-block;
+  margin-top: 8px;
 }
 
 .applicant-page .section-heading {
@@ -4795,7 +4539,7 @@
 }
 
 .info-admission-list__item-title {
-  font-family: "Bergamasco", Arial, Helvetica, sans-serif;
+  font-family: "Bergamasco", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 48px;
@@ -4845,12 +4589,12 @@
 }
 
 .application-process-list__item-number {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 128px;
   line-height: 135px;
-  color: #00CEDB;
+  color: #00cedb;
   padding: 0;
   margin: 0;
   display: flex;
@@ -4929,7 +4673,7 @@
 }
 
 .accordeon-title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 36px;
@@ -4965,7 +4709,7 @@
 
 .accordeon-item__content {
   padding-right: 120px;
-  max-height: 0px;
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
 }
@@ -5005,7 +4749,7 @@
 }
 @media (max-width: 1300px) {
   .teacher-reputation__item {
-    padding: 40px 50px 60px 50px;
+    padding: 40px 50px 60px;
   }
 }
 @media (max-width: 768px) {
@@ -5015,7 +4759,7 @@
 }
 
 .teacher-page-title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 48px;
@@ -5035,7 +4779,7 @@
 }
 
 .teacher-reputation__item-text {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -5129,7 +4873,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border: 1px solid $white; */
 }
 
 .teacher-page-sliders__item-info {
@@ -5143,7 +4886,7 @@
 }
 
 .teacher-page-slider__item-title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -5153,7 +4896,7 @@
 }
 
 .teacher-page-sliders__item-text {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -5265,7 +5008,7 @@
 }
 
 .teacher-biography__title {
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -5305,6 +5048,10 @@
 }
 
 .tabs-button {
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5313,9 +5060,6 @@
   background-color: transparent;
   width: 100%;
   height: 120px;
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 24px;
   font-weight: 700;
   line-height: 25.31px;
@@ -5354,7 +5098,7 @@
 
 .tabs-button-active {
   pointer-events: none;
-  background-color: #00CEDB;
+  background-color: #00cedb;
   color: #000000;
 }
 
@@ -5380,7 +5124,7 @@
 }
 
 .section-events-title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
@@ -5443,13 +5187,13 @@
 }
 
 .events-content-date {
-  font-family: "Bergamasco", Arial, Helvetica, sans-serif;
+  font-family: "Bergamasco", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 48px;
   line-height: 50.62px;
   text-transform: uppercase;
-  color: #00CEDB;
+  color: #00cedb;
   padding: 0;
   margin: 0;
 }
@@ -5465,7 +5209,7 @@
 }
 
 .events-content-title {
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -5495,7 +5239,7 @@
 }
 
 .events-content-share__text {
-  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 24px;
@@ -5523,7 +5267,7 @@
   border: 1px solid #ffffff;
 }
 .events-content-share__list-item:hover {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 @media (max-width: 768px) {
   .events-content-share__list-item {
@@ -5598,7 +5342,7 @@
 }
 
 .section-missions-content__info-title {
-  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-family: "Gotham Pro", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 64px;
@@ -5642,7 +5386,7 @@
 }
 
 .section-missions-content__description-title {
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -5720,7 +5464,7 @@
     row-gap: 0;
   }
   .about-history .section-text {
-    font-family: "Inter-ExtraLight", Arial, Helvetica, sans-serif;
+    font-family: "Inter-ExtraLight", "Arial", "Helvetica", sans-serif;
     font-weight: 200;
     font-style: normal;
     font-size: 10px;
@@ -5745,8 +5489,7 @@
   grid-row: span 2;
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: center;
-  align-content: flex-start;
+  place-content: flex-start center;
   column-gap: 120px;
   width: 100%;
   height: 100%;
@@ -5910,7 +5653,7 @@
 }
 
 .about-history__item-content-info-title {
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-family: "Inter-Medium", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -5941,7 +5684,7 @@
 
 .progress-bar {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: calc(50% - 1px);
   width: 2px;
   height: 100%;
@@ -5960,7 +5703,7 @@
   width: 2px;
   height: 0%;
   max-height: 100%;
-  background: #00CEDB;
+  background: #00cedb;
   top: 0;
   right: calc(50% - 1px);
   z-index: 5;
@@ -6026,7 +5769,7 @@
 }
 
 .dots-active {
-  background-color: #00CEDB;
+  background-color: #00cedb;
 }
 
 .section-about-page-gallery {
@@ -6116,26 +5859,21 @@
 
 /* свойства модального окна по умолчанию */
 .modal {
+  pointer-events: none;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 100;
   opacity: 0;
-  -webkit-transition: opacity 200ms ease-in;
-  -moz-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in;
-  pointer-events: none;
   margin: 0;
   padding: 0;
 }
 
 /* при отображении модального окно */
 .modal:target {
-  opacity: 1;
   pointer-events: auto;
+  opacity: 1;
   overflow-y: auto;
 }
 
@@ -6156,19 +5894,10 @@
 /* свойства для блока, содержащего контент модального окна */
 .modal-content {
   color: #ffffff;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   outline: 0;
   width: 100%;
@@ -6177,26 +5906,15 @@
 
 /* свойства для заголовка модального окна */
 .modal-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
 }
 
 .thanks-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: "Bergamasco", Arial, Helvetica, sans-serif;
+  font-family: "Bergamasco", "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 128px;
@@ -6220,7 +5938,7 @@
   width: 57px;
   height: 57px;
   display: inline-block;
-  background-color: #00CEDB;
+  background-color: #00cedb;
   position: absolute;
   right: 44px;
   top: 35px;
@@ -6264,16 +5982,13 @@
 /* свойства для блока, содержащего основное содержимое окна */
 .modal-body {
   position: relative;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 15px;
   overflow: auto;
 }
 
 .thanks-text {
-  font-family: "Inter-SemiBold", Arial, Helvetica, sans-serif;
+  font-family: "Inter-SemiBold", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 40px;
@@ -6392,11 +6107,14 @@ body {
   background-size: cover;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
