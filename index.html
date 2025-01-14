@@ -132,7 +132,7 @@
         <li class="information-list__item">
           <p class="information-list__item-text">Контакты</p>
           <p class="information-list__item-text">
-            <a href="+7 (900) 000 00 00" class="information-phone">+7 (900) 000 00 00</a>
+            <a href="tel:+79000000000" class="information-phone">+7 (900) 000 00 00</a>
           </p>
         </li>
         <li class="information-list__item">
@@ -148,8 +148,8 @@
       </ul>
     </nav>
   </header>
-  <main class="page-content container">
-    <section class="section-intro">
+  <div class="page-content container scroll-wrapper active-section1">
+    <section class="section-intro scroll-section scroll-section1">
       <div class="container">
         <div class="intro">
           <div class="intro-information anim-items fade">
@@ -177,19 +177,16 @@
         </div>
       </div>
     </section>
-    <section class="section-video">
-      <iframe src="https://vkvideo.ru/video_ext.php?oid=-223377008&id=456239168&hash=e9778c2f697c90ac" width="1328" height="480" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </section>
-    <section class="section-courses">
+    <section class="section-courses scroll-section scroll-section2">
       <div class="container">
         <div class="courses">
-          <div class="courses-information anim-items transform-anim-left">
+          <div class="courses-information">
             <div class="courses-information__heading">
               <h2 class="section-title">Курсы</h2>
               <p class="section-text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить </p>
             </div>
           </div>
-          <div class="courses-slider slider anim-items transform-anim-right">
+          <div class="courses-slider slider">
             <div class="courses-slider__swiper-navigation">
               <div class="swiper-click swiper-prev">
                 <svg width="64px" height="64px" viewBox="-0.64 -0.64 33.28 33.28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000">
@@ -310,13 +307,13 @@
         </div>
       </div>
     </section>
-    <section class="section-about container">
-      <div class="about-heading anim-items transform-anim-top">
+    <section class="section-about container scroll-section scroll-section3">
+      <div class="about-heading">
         <h2 class="section-title">О нас</h2>
         <p class="about-text">1000 Учеников</p>
         <p class="section-text">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнитьРыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить </p>
       </div>
-      <ul class="about-services services-list anim-items transform-anim-left">
+      <ul class="about-services services-list">
         <li class="services-list__item">
           <p class="services-list__item-grafity">
             <span>>100</span>
@@ -336,7 +333,7 @@
           <p class="section-text">Рыбатекст используется дизайнерами</p>
         </li>
       </ul>
-      <div class="about-image__item-one anim-items transform-anim-right">
+      <div class="about-image__item-one">
         <picture>
           <source srcset="img/about-1.webp" type="image/webp">
           <img src="img/about-1.png" alt="фото репетиции" width="572" height="288">
@@ -346,7 +343,7 @@
           <img src="img/about-2.png" alt="фото репетиции" width="572" height="288">
         </picture>
       </div>
-      <div class="about-image__item-second anim-items fade fade-second">
+      <div class="about-image__item-second">
         <picture>
           <source srcset="img/about-3.webp" type="image/webp">
           <img src="img/about-3.png" alt="фото репетиции" width="412" height="461">
@@ -361,7 +358,7 @@
         </picture>
       </div>
     </section>
-    <section class="section-applicant container">
+    <section class="section-applicant container scroll-section scroll-section4">
       <div class="applicant-heading">
         <h2 class="section-title">Абитуриентам</h2>
       </div>
@@ -384,7 +381,7 @@
         </li>
       </ul>
     </section>
-    <section class="section-blog container">
+    <section class="section-blog container scroll-section scroll-section5">
       <div class="blog-heading">
         <h2 class="section-title">Блог</h2>
         <a href="blog-page.html" class="button section-link">Показать все статьи</a>
@@ -447,123 +444,126 @@
         </div>
       </div>
     </div>
-  </main>
-  <section class="section-distribution container">
-    <picture>
-      <source srcset="img/logo.webp" type="image/webp">
-      <img src="img/logo.png" alt="логотип" class="distribution-logo" width="342" height="113">
-    </picture>
-    <div class="distribution-content">
-      <div class="social">
-        <a href="" class="social-link telegram-link">
-          <svg width="25px" height="25px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z" fill="#FFFFFF"></path>
-            </g>
-          </svg>
-        </a>
-        <a href="" class="social-link whatsapp-link">
-          <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_2102_613)">
-              <rect width="43" height="43" fill="black" />
-              <path d="M21.7212 10.1787C15.6173 10.1787 10.6729 15.0891 10.6729 21.1589C10.6729 23.5459 11.4571 25.7965 12.787 27.6038L11.389 31.6958L15.6514 30.3318C17.3905 31.4912 19.5047 32.1391 21.7553 32.1391C27.8592 32.1391 32.8378 27.2287 32.8378 21.1589C32.8037 15.0891 27.8251 10.1787 21.7212 10.1787ZM28.2002 25.6942C27.9274 26.4444 26.5975 27.1605 26.0178 27.2287C25.4381 27.2969 25.4381 27.7061 22.1304 26.4444C18.8568 25.1486 16.7767 21.8409 16.6062 21.6022C16.4357 21.3976 15.2763 19.8631 15.2763 18.2945C15.2763 16.7259 16.0947 15.9416 16.4016 15.6347C16.7085 15.3278 17.0495 15.2255 17.2541 15.2255C17.4587 15.2255 17.6974 15.2596 17.8679 15.2596C18.0725 15.2596 18.3112 15.1573 18.584 15.8052C18.8568 16.4531 19.5047 18.0217 19.5729 18.1922C19.6411 18.3627 19.7093 18.5332 19.607 18.7378C19.5047 18.9424 19.4365 19.0788 19.3001 19.2834C19.1296 19.4539 18.9591 19.6926 18.8227 19.829C18.6522 19.9995 18.4817 20.17 18.6863 20.4769C18.8909 20.7838 19.5388 21.8409 20.4936 22.6934C21.7212 23.7846 22.7783 24.1256 23.0852 24.2961C23.3921 24.4666 23.5967 24.4325 23.7672 24.2279C23.9718 24.0233 24.5856 23.3072 24.7902 22.9662C24.9948 22.6593 25.2335 22.6934 25.5063 22.7957C25.8132 22.898 27.3818 23.6823 27.7228 23.8528C28.0297 24.0233 28.2684 24.0915 28.3366 24.2279C28.4389 24.2961 28.4389 24.944 28.2002 25.6942Z" fill="white" />
-              <path d="M42.0002 0L3.00046 -0.5C-2.93293 -0.5 7.11679e-05 0 0.000132442 10.7841V32.25C0.000132442 38.154 -4.93305 43 1.00034 43H43.0001C48.9335 43 43.0001 38.154 43.0001 32.2159V10.7841C42.966 4.84603 47.9336 0 42.0002 0ZM21.7218 34.2294C19.8875 34.2294 18.16 33.8663 16.5729 33.191C15.77 32.8493 14.8739 32.7411 14.0424 33.0055L13.7528 33.0976C11.3912 33.8486 9.18065 31.5914 9.98089 29.246C10.2686 28.4027 10.1506 27.4837 9.77517 26.6756C8.9934 24.9929 8.55921 23.1193 8.55921 21.1587C8.55921 13.9238 14.4585 8.0881 21.7218 8.0881C28.9851 8.0881 34.8843 13.9238 34.8843 21.1587C34.8843 28.3937 28.9851 34.2294 21.7218 34.2294Z" fill="white" />
-            </g>
-            <defs> </defs>
-          </svg>
-        </a>
-      </div>
-      <div class="distribution-mail">
-        <h6 class="distribution-mail__title">Подписка на рассылку</h6>
-        <button class="button distribution-mail__button">pochta@mail.ru</button>
-      </div>
-    </div>
-  </section>
-  <footer class="footer-page">
-    <ul class="footer">
-      <li class="footer-item">
-        <h3 class="footer-item__title">Курсы</h3>
-        <ul class="footer-courses">
-          <li class="footer-courses__item">
-            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-          </li>
-          <li class="footer-courses__item">
-            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-          </li>
-          <li class="footer-courses__item">
-            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-          </li>
-          <li class="footer-courses__item">
-            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-          </li>
-          <li class="footer-courses__item">
-            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-          </li>
-          <li class="footer-courses__item">
-            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-          </li>
-          <li class="footer-courses__item">
-            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-          </li>
-          <li class="footer-courses__item">
-            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-          </li>
-          <li class="footer-courses__item">
-            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-          </li>
-        </ul>
-      </li>
-      <li class="footer-item">
-        <h3 class="footer-item__title">О компании</h3>
-        <ul class="footer-navigation footer-navigation">
-          <li class="footer-navigation__item">
-            <a href="index.html" class="footer-navigation__item-link">Главная</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a href="applicant-page.html" class="footer-navigation__item-link">Абитуриентам</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a href="blog-page.html" class="footer-navigation__item-link">Блог</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a href="reviews-page.html" class="footer-navigation__item-link">Отзывы</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a href="teacher-page.html" class="footer-navigation__item-link">Преподаватели</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a href="Contacts.html" class="footer-navigation__item-link">Контакты</a>
-          </li>
-        </ul>
-        <button class="button section-link">Оставить ОТЗЫВ</button>
-      </li>
-      <li class="footer-item">
-        <h3 class="footer-item__title">Контакты</h3>
-        <a href="+79000000000" class="phone-link">+7 (900) 000 00 00</a>
-        <div class="footer-address">
-          <h5 class="footer-address__title section-text">Адрес:</h5>
-          <p class="address-text section-text">Рыбатекст используется дизайнерами</p>
-          <p class="address-text section-text">Рыбатекст используется дизайнерами</p>
-        </div>
-      </li>
-      <li class="footer-item">
+    <footer class="scroll-section scroll-section6">
+      <section class="section-distribution container">
         <picture>
-          <source srcset="img/robokassa.webp" type="image/webp">
-          <img src="img/robokassa.png" alt="robokassa" class="footer-robokassa" width="175" height="27">
+          <source srcset="img/logo.webp" type="image/webp">
+          <img src="img/logo.png" alt="логотип" class="distribution-logo" width="342" height="113">
         </picture>
-      </li>
-    </ul>
-    <section class="footer-copyright">
-      <a href="#openModal" class="footer-copyright__link section-text">Политика конфиденциальности</a>
-      <a href="#" class="footer-copyright__link section-text">Пользовательское соглашение</a>
-      <a href="#" class="footer-copyright__text section-text">Сделано в tw</a>
-    </section>
-  </footer>
+        <div class="distribution-content">
+          <div class="social">
+            <a href="" class="social-link telegram-link">
+              <svg width="25px" height="25px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g></g>
+                <g stroke-linecap="round" stroke-linejoin="round"></g>
+                <g>
+                  <path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z" fill="#FFFFFF"></path>
+                </g>
+              </svg>
+            </a>
+            <a href="" class="social-link whatsapp-link">
+              <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2102_613)">
+                  <rect width="43" height="43" fill="black" />
+                  <path d="M21.7212 10.1787C15.6173 10.1787 10.6729 15.0891 10.6729 21.1589C10.6729 23.5459 11.4571 25.7965 12.787 27.6038L11.389 31.6958L15.6514 30.3318C17.3905 31.4912 19.5047 32.1391 21.7553 32.1391C27.8592 32.1391 32.8378 27.2287 32.8378 21.1589C32.8037 15.0891 27.8251 10.1787 21.7212 10.1787ZM28.2002 25.6942C27.9274 26.4444 26.5975 27.1605 26.0178 27.2287C25.4381 27.2969 25.4381 27.7061 22.1304 26.4444C18.8568 25.1486 16.7767 21.8409 16.6062 21.6022C16.4357 21.3976 15.2763 19.8631 15.2763 18.2945C15.2763 16.7259 16.0947 15.9416 16.4016 15.6347C16.7085 15.3278 17.0495 15.2255 17.2541 15.2255C17.4587 15.2255 17.6974 15.2596 17.8679 15.2596C18.0725 15.2596 18.3112 15.1573 18.584 15.8052C18.8568 16.4531 19.5047 18.0217 19.5729 18.1922C19.6411 18.3627 19.7093 18.5332 19.607 18.7378C19.5047 18.9424 19.4365 19.0788 19.3001 19.2834C19.1296 19.4539 18.9591 19.6926 18.8227 19.829C18.6522 19.9995 18.4817 20.17 18.6863 20.4769C18.8909 20.7838 19.5388 21.8409 20.4936 22.6934C21.7212 23.7846 22.7783 24.1256 23.0852 24.2961C23.3921 24.4666 23.5967 24.4325 23.7672 24.2279C23.9718 24.0233 24.5856 23.3072 24.7902 22.9662C24.9948 22.6593 25.2335 22.6934 25.5063 22.7957C25.8132 22.898 27.3818 23.6823 27.7228 23.8528C28.0297 24.0233 28.2684 24.0915 28.3366 24.2279C28.4389 24.2961 28.4389 24.944 28.2002 25.6942Z" fill="white" />
+                  <path d="M42.0002 0L3.00046 -0.5C-2.93293 -0.5 7.11679e-05 0 0.000132442 10.7841V32.25C0.000132442 38.154 -4.93305 43 1.00034 43H43.0001C48.9335 43 43.0001 38.154 43.0001 32.2159V10.7841C42.966 4.84603 47.9336 0 42.0002 0ZM21.7218 34.2294C19.8875 34.2294 18.16 33.8663 16.5729 33.191C15.77 32.8493 14.8739 32.7411 14.0424 33.0055L13.7528 33.0976C11.3912 33.8486 9.18065 31.5914 9.98089 29.246C10.2686 28.4027 10.1506 27.4837 9.77517 26.6756C8.9934 24.9929 8.55921 23.1193 8.55921 21.1587C8.55921 13.9238 14.4585 8.0881 21.7218 8.0881C28.9851 8.0881 34.8843 13.9238 34.8843 21.1587C34.8843 28.3937 28.9851 34.2294 21.7218 34.2294Z" fill="white" />
+                </g>
+                <defs> </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="distribution-mail">
+            <h6 class="distribution-mail__title">Подписка на рассылку</h6>
+            <button class="button distribution-mail__button">pochta@mail.ru</button>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-page">
+        <ul class="footer">
+          <li class="footer-item">
+            <h3 class="footer-item__title">Курсы</h3>
+            <ul class="footer-courses">
+              <li class="footer-courses__item">
+                <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+              </li>
+              <li class="footer-courses__item">
+                <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+              </li>
+              <li class="footer-courses__item">
+                <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+              </li>
+              <li class="footer-courses__item">
+                <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+              </li>
+              <li class="footer-courses__item">
+                <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+              </li>
+              <li class="footer-courses__item">
+                <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+              </li>
+              <li class="footer-courses__item">
+                <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+              </li>
+              <li class="footer-courses__item">
+                <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+              </li>
+              <li class="footer-courses__item">
+                <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-item">
+            <h3 class="footer-item__title">О компании</h3>
+            <ul class="footer-navigation footer-navigation">
+              <li class="footer-navigation__item">
+                <a href="index.html" class="footer-navigation__item-link">Главная</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="applicant-page.html" class="footer-navigation__item-link">Абитуриентам</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="blog-page.html" class="footer-navigation__item-link">Блог</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="reviews-page.html" class="footer-navigation__item-link">Отзывы</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="teacher-page.html" class="footer-navigation__item-link">Преподаватели</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a href="Contacts.html" class="footer-navigation__item-link">Контакты</a>
+              </li>
+            </ul>
+            <button class="button section-link">Оставить ОТЗЫВ</button>
+          </li>
+          <li class="footer-item">
+            <h3 class="footer-item__title">Контакты</h3>
+            <a href="+79000000000" class="phone-link">+7 (900) 000 00 00</a>
+            <div class="footer-address">
+              <h5 class="footer-address__title section-text">Адрес:</h5>
+              <p class="address-text section-text">Рыбатекст используется дизайнерами</p>
+              <p class="address-text section-text">Рыбатекст используется дизайнерами</p>
+            </div>
+          </li>
+          <li class="footer-item">
+            <picture>
+              <source srcset="img/robokassa.webp" type="image/webp">
+              <img src="img/robokassa.png" alt="robokassa" class="footer-robokassa" width="175" height="27">
+            </picture>
+          </li>
+        </ul>
+        <section class="footer-copyright">
+          <a href="#openModal" class="footer-copyright__link section-text">Политика конфиденциальности</a>
+          <a href="#" class="footer-copyright__link section-text">Пользовательское соглашение</a>
+          <a href="#" class="footer-copyright__text section-text">Сделано в tw</a>
+        </section>
+      </footer>
+    </footer>
+  </div>
   <script src="vendors/swiper-bundle.min.js"></script>
   <script src="vendors/jquery.min.js"></script>
   <script src="vendors/canvas.js"></script>
+  <script src="vendors/animate-script.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
