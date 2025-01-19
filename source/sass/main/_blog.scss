@@ -1,29 +1,19 @@
 .section-blog {
-  padding-top: 50px;
   padding-bottom: 15px;
 }
 
 .blog-heading {
-  padding: 35px 85px 35px 105px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 50px;
 
   .section-title {
     text-transform: uppercase;
-    color: $light-blue;
   }
 
-  .section-link {
-    margin: 0;
-  }
-
-  @media (max-width: $desktop1300-width) {
-    flex-direction: column;
-  }
-
-  @media (max-width: $mobile480-width) {
-    padding: 20px;
+  @media (max-width: $tablet900-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -32,20 +22,14 @@
   color: $white;
   align-items: center;
   justify-content: center;
-  padding: 50px;
   gap: 100px;
 
   @media (max-width: $desktop1300-width) {
     gap: 50px;
   }
 
-  @media (max-width: $desktop1300-width) {
-    padding: 30px;
-    flex-direction: column;
-  }
-
-  @media (max-width: $tablet900-width) {
-    padding: 20px;
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
   }
 }
 
@@ -62,7 +46,7 @@
 }
 
 .blog-list__item-title {
-  @include fontface-medium;
+  @include fontface-regular;
   font-size: 16px;
   line-height: 19.36px;
   text-transform: uppercase;
@@ -92,22 +76,9 @@
 }
 
 .blog-figcaption__date {
-  @include fontface-extralight;
+  @include fontface-regular;
   font-size: 16px;
   line-height: 19.36px;
   color: $grey;
 }
 
-.blog-figcaption__link {
-  @include fontface-medium;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 19.36px;
-  text-transform: uppercase;
-  color: $white;
-
-  &:hover {
-    color: $light-blue;
-  }
-}

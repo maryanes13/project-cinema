@@ -27,26 +27,22 @@
     padding-left: 25px;
     padding-right: 25px;
 
-    &:nth-child(3) {
-      border-right: none;
-    }
-
     &:last-child {
       grid-column: span 3;
-      border-top: 2px solid $white;
       padding: 30px 0;
     }
   }
 
   .footer-robokassa {
-    margin-top: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (max-width: $tablet900-width) {
   .footer-copyright {
     padding: 25px;
-    border-top: 2px solid $white;
   }
 
   .footer-copyright__link {
@@ -69,9 +65,7 @@
 
   .footer-item {
     justify-content: center;
-    border-left: 0;
-    border-right: 0;
-    border-top: 2px solid $white;
+    align-items: center;
   }
 
   .footer-courses {

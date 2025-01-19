@@ -1,9 +1,52 @@
+.page-title {
+  @include fontface-regular;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 71px;
+  margin-bottom: 10px;
+
+  span {
+    @include fontface-regular;
+    font-size: 64px;
+    line-height: 71px;
+  }
+
+  @media (max-width: $desktop1300-width) {
+    font-size: 35px;
+    line-height: 50px;
+
+    span {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    span {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  color: $white;
+}
+
 .section-text {
-  @include fontface-light;
+  @include fontface-regular;
   padding: 0;
   margin: 0;
   font-size: 15px;
   line-height: 20px;
+  color: $white;
 
   @media (max-width: $desktop1300-width) {
     font-size: 12px;
@@ -15,27 +58,11 @@
   }
 }
 
-.page-title {
-  @include fontface-regular-pro;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 48px;
-  line-height: 71px;
-  margin-bottom: 10px;
-
-  span {
-    @include fontface-special;
-    font-size: 64px;
-    line-height: 71px;
-  }
-}
-
 .section-title {
-  @include fontface-special;
+  @include fontface-regular;
   font-size: 96px;
   line-height: 105.84px;
-  color: $light-black;
+  color: $white;
   padding: 0;
   margin: 0;
 
@@ -60,7 +87,7 @@
 }
 
 .section-subtitle {
-  @include fontface-light;
+  @include fontface-regular;
   padding: 0;
   margin: 0;
   font-size: 20px;
@@ -74,27 +101,75 @@
   }
 }
 
-.section-link {
-  display: flex;
-  text-decoration: none;
-  font-size: 13px;
-  width: 203px;
-  margin-top: 30px;
-  border-radius: 50px;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
+.page-section {
+  padding: 0 90px 50px;
 
-  @media (max-width: $tablet-width) {
-    padding: 10px;
+  @media (max-width: $tablet900-width) {
+    padding: 0 40px 20px;
+  }
+}
+
+.teacher-name-page {
+  .heading-title {
+    max-width: 750px;
+    font-size: 48px;
+    line-height: 50px;
+
+    @media (max-width: $mobile480-width) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+.heading-title {
+  @include fontface-regular;
+  font-size: 50px;
+  line-height: 55.13px;
+  color: $white;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+
+  span {
+    @include fontface-regular;
+    font-size: 40px;
+    line-height: 43.21px;
   }
 
-  &:hover {
-    background-color: $light-blue;
-    color: $black;
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+
+    span {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+}
+
+.designation-section-title {
+  @include fontface-bold;
+  padding: 25px 0 25px 105px;
+  margin: 50px 0 0;
+  font-size: 48px;
+  line-height: 50.62px;
+  text-transform: uppercase;
+  background-color: $white;
+  color: $black;
+
+  @media (max-width: $desktop1300-width) {
+    padding-left: 50px;
+  }
+
+  @media (max-width: $tablet900-width) {
+    font-size: 38px;
+    line-height: 44px;
   }
 
   @media (max-width: $mobile480-width) {
-    width: 100%;
+    font-size: 26px;
+    line-height: 34px;
+    padding: 20px;
   }
 }

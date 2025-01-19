@@ -44,7 +44,7 @@
 }
 
 .info-admission-list__item-title {
-  @include fontface-special;
+  @include fontface-bold;
   font-size: 48px;
   line-height: 50.62px;
   text-transform: uppercase;

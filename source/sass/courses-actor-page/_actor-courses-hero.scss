@@ -1,0 +1,12 @@
+.section-hero {
+  width: 100%;
+  min-height: 767px;
+  background-image: url("../img/course-actor.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: $tablet900-width) {
+    background-position: 25% 50%;
+  }
+}

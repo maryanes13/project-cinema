@@ -30,7 +30,7 @@
     row-gap: 0;
 
     .section-text {
-      @include fontface-extralight;
+      @include fontface-regular;
       font-size: 10px;
       line-height: 15px;
     }
@@ -200,7 +200,7 @@
 }
 
 .about-history__item-content-info-title {
-  @include fontface-medium;
+  @include fontface-regular;
   font-size: 16px;
   line-height: 19.36px;
   text-transform: uppercase;

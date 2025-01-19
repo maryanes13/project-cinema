@@ -72,7 +72,7 @@
 }
 
 .reviews-info__text {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   font-size: 65.85px;
   line-height: 63.02px;
   padding: 0;
@@ -108,7 +108,7 @@
 }
 
 .reviews-rating__text {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   padding: 0 0 0 10px;
   margin: 0;
   font-size: 17.12px;
@@ -141,7 +141,7 @@
 }
 
 .reviews-text {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   font-size: 15.75px;
   line-height: 18.12px;
   padding: 0;
@@ -175,7 +175,7 @@
 }
 
 .rating-value {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   padding: 0;
   margin: 0;
   font-size: 14.63px;
@@ -189,7 +189,7 @@
 }
 
 .reviews-item__link {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   font-size: 13.5px;
   line-height: 15.53px;
   color: $dark-grey;

@@ -1,85 +1,84 @@
 .section-programm-course {
-  display: flex;
-  flex-direction: column;
-  background-color: $white;
+  background-color: $black-secondary;
+  color: $white;
+  padding-top: 45px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .heading-programm-course {
   display: flex;
+  margin-bottom: 45px;
 
-  @media (max-width: $desktop1300-width) {
-    flex-direction: column;
-  }
-}
-
-.heading-programm-course__item {
-  width: 50%;
-
-  &:first-child {
-    border-right: 2px solid $black;
-  }
-
-  @media (max-width: $desktop1300-width) {
-    width: 100%;
-
-    &:first-child {
-      border-right: none;
-    }
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
   }
 }
 
 .programm-course-title {
-  @include fontface-regular-pro;
-  font-size: 40px;
-  line-height: 38.28px;
+  @include fontface-regular;
+  font-size: 96px;
+  line-height: 115.49px;
   text-transform: uppercase;
-  padding: 50px 0 30px 105px;
   margin: 0;
 
-  @media (max-width: $desktop1300-width) {
-    padding: 30px 0 30px 50px;
+  @media (max-width: $tablet900-width) {
+    font-size: 60px;
+    line-height: 93px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 63px;
   }
 
   @media (max-width: $mobile480-width) {
-    padding: 20px;
-    font-size: 30px;
-    line-height: 33px;
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 
 .programms-course-list {
-  display: flex;
+  display: grid;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  padding: 50px 70px;
-  border-top: 2px solid $black;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
 
   .section-text {
     @include fontface-regular;
   }
 
-  @media (max-width: $tablet-width) {
-    padding: 20px;
+  @media (max-width: $tablet900-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mobile480-width) {
+    grid-template-columns: 1fr;
   }
 }
 
 .programms-course-list__item {
-  padding: 40px 30px 20px;
+  padding: 20px 30px;
   max-width: 408px;
   height: 588px;
-  border: 1px solid $black;
   display: flex;
   flex-direction: column;
+  background-color: $grey-darker;
 
   @media (max-width: $tablet900-width) {
-    height: auto;
+    max-height: 500px;
     padding: 30px;
   }
 
   @media (max-width: $tablet-width) {
     padding: 10px;
+    max-height: 400px;
+  }
+
+  @media (max-width: $mobile480-width) {
+    max-height: 350px;
   }
 }
 
@@ -96,13 +95,17 @@
 }
 
 .programms-course-list__item-title {
-  @include fontface-bold;
-  font-size: 36px;
-  line-height: 43.57px;
+  @include fontface-regular;
+  font-size: 30px;
+  line-height: 40px;
   letter-spacing: -0.02em;
   padding: 0;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   text-transform: uppercase;
+
+  @media (max-width: $desktop1300-width) {
+    font-size: 25px;
+  }
 
   @media (max-width: $tablet-width) {
     margin-bottom: 10px;
@@ -117,8 +120,7 @@
   max-width: 396px;
   max-height: 197px;
   object-fit: cover;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .programms-course-list__item-text {

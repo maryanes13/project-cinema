@@ -6,52 +6,23 @@
 
   .heading-title {
     width: 100%;
-    padding-top: 35px;
-    padding-left: 105px;
-    padding-bottom: 35px;
-    border-top: 2px solid $white;
-
-    @media (max-width: $tablet-width) {
-      padding-left: 50px;
-    }
-
-    @media (max-width: $mobile480-width) {
-      padding-left: 5px;
-    }
-  }
-
-  .heading-title + span {
-    border-top: 2px solid $white;
-    border-left: 2px solid $white;
+    grid-column: span 2;
   }
 
   @media (max-width: $desktop1300-width) {
     grid-template-columns: 1fr;
-
-    .heading-title + span {
-      border: none;
-    }
   }
 }
 
 .section-course-teacher__title {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   font-size: 48px;
   line-height: 45.94px;
   text-transform: uppercase;
   color: $black;
   margin: 0;
-  padding: 35px 105px;
-  background-color: $white;
+  padding: 0;
   grid-column: span 2;
-
-  @media (max-width: $tablet-width) {
-    padding-left: 50px;
-  }
-
-  @media (max-width: $mobile480-width) {
-    padding-left: 20px;
-  }
 }
 
 .course-teacher {
@@ -60,8 +31,7 @@
 
 .course-teacher__grid {
   display: grid;
-  grid-template-columns: 1fr 650px;
-  border-bottom: 2px solid $white;
+  grid-template-columns: 1fr 1fr;
 
   @media (max-width: $desktop1300-width) {
     grid-template-columns: 1fr 1fr;
@@ -73,42 +43,42 @@
 }
 
 .course-teacher__title {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   font-size: 64px;
-  line-height: 61.25px;
+  line-height: 76px;
   text-transform: uppercase;
-  padding: 36px 0 10px 105px;
   margin: 0;
-  border-right: 2px solid $white;
+  grid-column: span 2;
+  max-width: 800px;
 
   @media (max-width: $desktop1300-width) {
-    padding-left: 50px;
     font-size: 45px;
-  }
-
-  @media (max-width: $tablet900-width) {
-    grid-column: span 2;
   }
 
   @media (max-width: $tablet-width) {
     font-size: 25px;
     line-height: 40px;
-    padding-top: 20px;
   }
 
   @media (max-width: $mobile480-width) {
-    padding-left: 20px;
     font-size: 20px;
     line-height: 25px;
   }
 }
 
+.course-teacher__subtitle {
+  @include fontface-regular;
+  padding: 0;
+  margin: 0 0 35px;
+  font-size: 16px;
+  line-height: 19.36px;
+  text-transform: uppercase;
+  max-width: 395px;
+}
+
 .course-teacher__slider {
-  grid-area: 2/1/2/2;
-  border-top: 2px solid $white;
-  border-right: 2px solid $white;
-  border-bottom: 2px solid $white;
-  padding: 40px 105px;
+  grid-area: 3/1/4/2;
+  padding: 0;
   overflow: hidden;
 
   @media (max-width: $desktop1300-width) {
@@ -122,16 +92,6 @@
   @media (max-width: $mobile480-width) {
     padding: 20px 20px 30px;
   }
-}
-
-.course-teacher__subtitle {
-  @include fontface-medium;
-  padding: 0;
-  margin: 0 0 35px;
-  font-size: 16px;
-  line-height: 19.36px;
-  text-transform: uppercase;
-  max-width: 395px;
 }
 
 .course-teacher__slider-wrapper {
@@ -154,22 +114,20 @@
   @media (max-width: $tablet900-width) {
     img {
       width: 80%;
-      height: 80%;
     }
   }
 }
 
 .course-teacher__info {
-  grid-area: 2/2/3/3;
-  border-top: 2px solid $white;
-  border-bottom: 2px solid $white;
+  grid-area: 3/2/4/3;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0 30px;
 
   @media (max-width: $tablet-width) {
-    grid-area: 3/1/4/2;
+    grid-area: 4/1/5/2;
+    grid-column: span 2;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -180,6 +138,7 @@
   flex-direction: column;
   margin-top: 90px;
   padding-left: 30px;
+  margin-bottom: 60px;
 
   li {
     list-style-type: disc;
@@ -192,13 +151,7 @@
 
 .course-teacher-nav {
   grid-area: 3/2/4/3;
-  border-left: 2px solid $white;
   padding: 55px 0 70px 30px;
-
-  .section-link {
-    margin: 0;
-    width: 390px;
-  }
 
   @media (max-width: $tablet-width) {
     grid-area: 4/1/5/2;

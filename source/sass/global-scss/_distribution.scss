@@ -9,11 +9,11 @@
   }
 
   @media (max-width: $tablet900-width) {
-    flex-direction: column;
+    padding: 20px;
   }
 
-  @media (max-width: $mobile480-width) {
-    padding: 20px;
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
   }
 }
 
@@ -22,22 +22,17 @@
   max-height: 113px;
   object-fit: cover;
   width: 100%;
-
-  @media (max-width: $mobile480-width) {
-    object-fit: contain;
-  }
+  height: 100%;
 }
 
 .distribution-content {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 16px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
-  }
-
-  @media (max-width: $mobile480-width) {
+    align-items: center;
     width: 100%;
   }
 }
@@ -47,12 +42,12 @@
   flex-direction: column;
 
   @media (max-width: $mobile480-width) {
-    width: 100%;
+    align-items: center;
   }
 }
 
 .distribution-mail__title {
-  @include fontface-semibold;
+  @include fontface-regular;
   font-size: 13px;
   line-height: 24.8px;
   padding: 0;

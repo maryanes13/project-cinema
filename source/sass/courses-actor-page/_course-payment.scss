@@ -1,29 +1,19 @@
 .section-course-payment {
   color: $white;
 
-  .heading-title {
-    padding-top: 35px;
-    padding-bottom: 35px;
+  & > .heading-title {
+    margin-bottom: 20px;
+    padding: 0 90px;
+
+    @media (max-width: $tablet900-width) {
+      padding: 0 40px;
+    }
   }
+
 }
 
 .course-payment {
-  border-top: 2px solid $white;
-  border-bottom: 2px solid $white;
   display: grid;
-  grid-template-columns: 665px 1fr 405px;
-
-  @media (max-width: $desktop1300-width) {
-    grid-template-columns: 500px 1fr 310px;
-  }
-
-  @media (max-width: $tablet900-width) {
-    grid-template-columns: 190px 1fr 1fr;
-  }
-
-  @media (max-width: $mobile480-width) {
-    grid-template-columns: 140px 1fr 1fr;
-  }
 
   .heading-title {
     @media (max-width: $tablet-width) {
@@ -39,13 +29,11 @@
 }
 
 .course-lesson {
-  padding: 75px 130px 60px 105px;
-  border-right: 2px solid $white;
-  grid-column: span 2;
+  background-color: $grey-darker;
+  padding: 20px 0 35px;
 
   & > div {
-    border: 2px solid $white;
-    margin-bottom: 30px;
+    padding-bottom: 0;
   }
 
   .section-text {
@@ -65,16 +53,6 @@
     }
   }
 
-  @media (max-width: $desktop-width) {
-    grid-column: span 3;
-    border-right: none;
-  }
-
-  @media (max-width: $desktop1300-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   @media (max-width: $tablet-width) {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -83,16 +61,16 @@
 
 .course-lesson__title {
   padding-bottom: 20px;
-  border-bottom: 2px solid $white;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.31px;
 }
 
 .course-lesson__info {
+  max-width: 950px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 410px;
-
-  @media (max-width: $tablet900-width) {
-    grid-template-columns: 1fr 1fr 1fr 310px;
-  }
+  grid-template-columns: repeat(3, 100px) 1fr;
+  column-gap: 45px;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -103,7 +81,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 45px 20px 45px 30px;
+  padding: 45px 0 45px;
 
   @media (max-width: $tablet-width) {
     padding: 15px 0;
@@ -121,13 +99,14 @@
 }
 
 .course-lesson__info-item-title {
-  @include fontface-regular-pro;
-  font-size: 40px;
-  line-height: 38.28px;
+  @include fontface-regular;
+  font-size: 64px;
+  line-height: 77px;
+  margin-bottom: 20px;
 }
 
 .course-lesson__info-item-definition {
-  @include fontface-medium;
+  @include fontface-regular;
   font-size: 16px;
   line-height: 19.36px;
   text-transform: uppercase;
@@ -135,14 +114,16 @@
 }
 
 .course-lesson__info-item-cost {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   font-size: 48px;
   line-height: 45.94px;
   padding: 17px 0 8px;
   width: 100%;
   text-align: center;
-  background-color: $white;
-  color: $black;
+  background-color: $black;
+  color: $white;
+  border-radius: 40px;
+  margin-bottom: 10px;
 
   & + .course-lesson__info-item-definition {
     margin: 0 auto;
@@ -150,84 +131,54 @@
 }
 
 .instalment {
-  grid-column: span 2;
-  padding: 40px 0 18px 105px;
-  border-top: 2px solid $white;
+  padding-top: 50px;
+  padding-bottom: 0;
 
-  @media (max-width: $tablet900-width) {
-    padding-left: 50px;
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+  }
+}
+
+.instalment-info,
+.discounts-info {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  column-gap: 50px;
+
+  @media (max-width: $desktop1300-width) {
+    grid-template-columns: 350px 1fr;
+    column-gap: 20px;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 20px 0 20px 30px;
+    grid-template-columns: 200px 1fr;
+    column-gap: 20px;
   }
 
   @media (max-width: $mobile480-width) {
-    padding: 10px;
+    grid-template-columns: 1fr;
+    gap: 20px 0;
   }
 }
 
-.empty {
-  display: block;
-  border-top: 2px solid $white;
-  border-left: 2px solid $white;
-}
-
 .course-payment__title {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   font-size: 36px;
-  line-height: 34.45px;
+  line-height: 43px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin: 0 0 30px;
 
   @media (max-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 10px;
   }
 }
 
-.course-payment__bank-year {
-  grid-column: span 2;
-  border-top: 2px solid $white;
-  border-bottom: 2px solid $white;
-  padding: 20px 0 25px 105px;
-
-  @media (max-width: $tablet900-width) {
-    padding-left: 50px;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding-left: 30px;
-  }
-
-  @media (max-width: $mobile480-width) {
-    padding: 10px;
-  }
-}
-
-.course-payment__bank-month {
-  border-top: 2px solid $white;
-  border-bottom: 2px solid $white;
-  border-left: 2px solid $white;
-  padding: 20px 0 25px 75px;
-
-  @media (max-width: $tablet900-width) {
-    padding-left: 50px;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding-left: 30px;
-  }
-
-  @media (max-width: $mobile480-width) {
-    padding: 10px;
-  }
-}
-
-.discounts-title {
-  padding: 55px 0 35px 105px;
-  border-bottom: 2px solid $white;
+.discounts {
+  padding-top: 50px;
+  padding-bottom: 0;
 
   .section-text {
     position: relative;
@@ -246,36 +197,22 @@
     }
   }
 
-  @media (max-width: $tablet900-width) {
-    padding-left: 50px;
-  }
-
   @media (max-width: $tablet-width) {
-    padding: 20px 0 20px 30px;
-  }
-
-  @media (max-width: $mobile480-width) {
-    padding: 10px;
+    padding-top: 20px;
   }
 }
 
-.discounts-text {
-  padding: 25px 0 25px 50px;
-  grid-column: span 2;
-  color: $dark-grey;
-  border-bottom: 2px solid $white;
-  border-left: 2px solid $white;
+.percent__text {
+  @include fontface-regular;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 57.74px;
+  letter-spacing: 0.12em;
+  padding: 0;
+  margin: 0;
 
   @media (max-width: $tablet-width) {
-    padding: 20px 0 20px 30px;
+    font-size: 35px;
+    line-height: 48px;
   }
-
-  @media (max-width: $mobile480-width) {
-    padding: 10px;
-  }
-}
-
-.percent__title {
-  border-left: 2px solid $white;
-  grid-area: 5/2/6/-1;
 }

@@ -32,7 +32,7 @@
 }
 
 .information-list__item-text {
-  @include fontface-medium;
+  @include fontface-regular;
   font-size: 32px;
   line-height: 24.8px;
   padding: 0;
@@ -91,7 +91,7 @@
 }
 
 .page-nav-text {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   display: none;
   font-size: 35.96px;
   line-height: 53.2px;
@@ -250,7 +250,7 @@
   }
 
   .navigation-list__item-link {
-    @include fontface-semibold;
+    @include fontface-regular;
     color: $black;
     font-size: 32px;
     line-height: 24.8px;

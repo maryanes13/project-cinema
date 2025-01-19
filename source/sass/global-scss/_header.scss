@@ -93,7 +93,7 @@
 }
 
 .navigation-children-list-item__link {
-  @include fontface-semibold;
+  @include fontface-regular;
   color: $white;
   font-size: 16px;
   line-height: 24.8px;
@@ -104,7 +104,7 @@
 }
 
 .navigation-list__item-link {
-  @include fontface-semibold;
+  @include fontface-regular;
   font-size: 16px;
   line-height: 24.8px;
   color: $white;

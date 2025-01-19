@@ -24,7 +24,7 @@
 }
 
 .application-process-list__item-number {
-  @include fontface-regular-pro;
+  @include fontface-bold;
   font-size: 128px;
   line-height: 135px;
   color: $light-blue;

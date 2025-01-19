@@ -49,11 +49,6 @@
 .social {
   display: flex;
   gap: 16px;
-  align-self: flex-end;
-
-  @media (max-width: $tablet-width) {
-    align-self: center;
-  }
 }
 
 .social-link {

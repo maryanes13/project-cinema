@@ -57,7 +57,7 @@
 }
 
 .thanks-title {
-  @include fontface-special;
+  @include fontface-bold;
   font-size: 128px;
   line-height: 60px;
   margin: 0 auto 50px;
@@ -128,7 +128,7 @@
 }
 
 .thanks-text {
-  @include fontface-semibold;
+  @include fontface-regular;
   font-size: 40px;
   line-height: 60px;
   text-align: center;

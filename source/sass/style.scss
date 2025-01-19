@@ -14,7 +14,6 @@
 @import "global-scss/section-style.scss";
 @import "global-scss/button.scss";
 @import "global-scss/nav-menu-burger";
-@import "global-scss/style-page-title";
 @import "global-scss/page-form";
 @import "global-scss/distribution";
 @import "global-scss/visually-hidden.scss";
@@ -23,17 +22,18 @@
 
 //  page main
 @import "main/intro";
-@import "main/video";
 @import "main/courses";
 @import "main/about";
 @import "main/applicant.scss";
 @import "main/blog";
 
 //  courses-page
-@import "courses-page/courses-slider";
 @import "courses-page/courses-heading";
+@import "courses-page/section-directions";
+@import "courses-page/courses-slider";
 
 //  courses-actor page
+@import "courses-actor-page/actor-courses-hero";
 @import "courses-actor-page/actor-courses-information";
 @import "courses-actor-page/course-detail";
 @import "courses-actor-page/programm-course";
@@ -80,6 +80,8 @@
 @import "global-scss/animate";
 
 body {
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   background-color: $black;
   background-image: url("../img/background.png");
@@ -101,8 +103,20 @@ li {
   padding: 0;
 }
 
-.applicant-page {
-  color: $white;
+.courses-page {
+  padding-top: 90px;
+
+  @media (max-width: $tablet900-width) {
+    padding-top: 40px;
+  }
+}
+
+.courses-actor-page {
+  padding-top: 60px;
+
+  @media (max-width: $tablet900-width) {
+    padding-top: 40px;
+  }
 }
 
 .page-contacts {
@@ -113,15 +127,15 @@ li {
 }
 
 .container {
-
+  overflow: hidden;
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
-  overflow: hidden;
 
   @media (min-width: $mobile480-width) {
     max-width: $tablet-width;
     margin: 0 auto;
+
   }
 
   @media (min-width: $tablet-width) {
@@ -137,6 +151,20 @@ li {
   @media (min-width: $desktop1300-width) {
     max-width: $desktop-width;
     margin: 0 auto;
+  }
+}
+
+.actors-author {
+  @include fontface-regular;
+  font-size: 24px;
+  line-height: 25.31px;
+  margin: 0;
+  padding: 25px 0 25px 65px;
+  overflow: hidden;
+
+  p {
+    margin: 0;
+    max-width: 440px;
   }
 }
 

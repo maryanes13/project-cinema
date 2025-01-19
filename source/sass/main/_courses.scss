@@ -1,64 +1,16 @@
 /* Section-courses */
+.section-courses {
+  padding-top: 60px;
 
-.courses {
-  .section-title {
-    color: $light-blue;
-  }
-}
-
-.courses-information {
-  display: flex;
-  align-items: center;
-  padding: 0 87px;
-
-  @media (max-width: $desktop1300-width) {
-    flex-direction: column;
-    padding: 0;
-    height: auto;
-  }
-}
-
-.courses-information__heading {
-  display: flex;
-  align-items: center;
-  gap: 45px;
-  max-width: 960px;
-  height: 100%;
-  padding-top: 40px;
-
-  @media (max-width: $desktop1300-width) {
-    width: 100%;
-    max-width: 100%;
-    padding: 40px 0 0 120px;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding: 20px 0 0 80px;
-    flex-direction: column;
-    gap: 0;
-  }
-
-  @media (max-width: $mobile480-width) {
-    padding: 20px;
+  @media (max-width: $tablet900-width) {
+    padding-top: 20px;
   }
 }
 
 .courses-slider {
-  padding-left: 87px;
-  padding-right: 87px;
   overflow: hidden;
   position: relative;
   padding-bottom: 22px;
-
-  @media (max-width: $tablet900-width) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 .courses-slider-list {
@@ -74,98 +26,79 @@
 
   .section-text {
     margin-bottom: 35px;
+
+    @media (max-width: $tablet900-width) {
+      margin-bottom: 10px;
+    }
   }
 
   &:hover {
-    background-color: $dark-grey;
+    background-color: $grey-darker;
+
+    .courses-slider-item__title {
+      color: $light-blue;
+    }
 
     .slider-item__img {
       filter: grayscale(0);
     }
 
-    .button-slider {
-      background-color: $black;
-      border: 1px solid $white;
-      color: $white;
-
-      &:hover {
-        background-color: $white;
-        color: $black;
-      }
+    .button {
+      background-color: $light-blue
     }
+  }
 
-    .button-slider__recording {
-      background-color: $light-blue;
-    }
+  @media (max-width: $tablet900-width) {
+    padding: 20px;
   }
 }
 
 .courses-slider-item__title {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   font-size: 32px;
   line-height: 30.62px;
   text-transform: uppercase;
   margin: 0 0 11px;
   padding: 0;
 
-  @media (max-width: $tablet900-width) {
-    font-size: 25px;
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
 .lesson-text {
-  @include fontface-semibold;
+  @include fontface-regular;
   font-size: 24px;
   line-height: 24.8px;
-  margin-bottom: 25px;
+
+  @media (max-width: $tablet900-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 0;
+  }
 }
 
 .slider-item__img {
   width: 100%;
   height: 100%;
   filter: grayscale(100%);
-}
-
-.discount-text {
-  @include fontface-semibold;
-  font-size: 24px;
-  line-height: 24.8px;
-  display: flex;
-  align-items: center;
+  margin-bottom: 95px;
 
   @media (max-width: $tablet900-width) {
-    flex-direction: column;
-    align-items: start;
+    margin-bottom: 20px;
   }
-}
-
-.cost {
-  @include fontface-regular-pro;
-  font-size: 36px;
-  line-height: 34.45px;
-  margin-left: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  @media (max-width: $tablet900-width) {
-    margin-left: 0;
-  }
-}
-
-.currency {
-  @include fontface-regular-pro;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 30.62px;
 }
 
 .courses-slider-item__navigations {
   display: flex;
-  gap: 3px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
 
   @media (max-width: $tablet900-width) {
     flex-direction: column;
+    gap: 10px;
   }
 }
 

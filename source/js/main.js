@@ -1,4 +1,18 @@
-window.addEventListener('DOMContentLoaded', () => {
+  // header fixed при скролле
+
+  window.addEventListener("scroll", () => {
+    let scrollTop = window.scrollY;
+
+    if (scrollTop >= header.offsetHeight * 3) {
+      header.classList.add("fixed")
+      body.style.marginTop = `${header.offsetHeight}px`
+    } else {
+      header.classList.remove("fixed")
+      body.style.marginTop = `0px`
+    }
+  })
+
+document.addEventListener('DOMContentLoaded', () => {
   let body = document.querySelector('body')
   let header = document.querySelector(".header")
   let navPage = document.querySelector('.page-header__nav');
@@ -7,6 +21,35 @@ window.addEventListener('DOMContentLoaded', () => {
   let navFooter = document.querySelector(".footer-navigation");
   let animItems = document.querySelectorAll(".anim-items")
 
+  /* Hover button */
+
+  let btnHovers = document.querySelectorAll('.button');
+
+  btnHovers.forEach((btn)=> {
+    let span = btn.querySelector('.button-bg');
+    btn.addEventListener('mouseenter', function(e) {
+      let parentOffset = btn.getBoundingClientRect(),
+          relX = e.clientX - parentOffset.left,
+          relY = e.clientY - parentOffset.top;
+
+      span.style.top = relY + 'px';
+      span.style.left = relX + 'px';
+    });
+
+    btn.addEventListener('mouseout', function(e) {
+      let parentOffset = btn.getBoundingClientRect(),
+          relX = e.clientX - parentOffset.left,
+          relY = e.clientY - parentOffset.top;
+
+
+      span.style.top = relY + 'px';
+      span.style.left = relX + 'px';
+    });
+  })
+
+
+
+   /* Animation */
   if (animItems.length > 0) {
     window.addEventListener("scroll", animOnScroll);
     function animOnScroll(params) {
@@ -43,19 +86,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }, 500)
 
   }
-
-  // header fixed при скролле
-  window.addEventListener("scroll", () => {
-    let scrollTop = window.scrollY;
-
-    if (scrollTop >= header.offsetHeight * 3) {
-      header.classList.add("fixed")
-      body.style.marginTop = `${header.offsetHeight}px`
-    } else {
-      header.classList.remove("fixed")
-      body.style.marginTop = `0px`
-    }
-  })
 
   // Menu
   if (navPage) {
@@ -105,10 +135,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let swiper = new Swiper(".courses-slider", {
       slidesPerView: 3,
       spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
-      },
+      freeMode: true,
       watchOverflow: false,
       slidesPerGroup: 1,
       breakpoints: {
@@ -116,7 +143,7 @@ window.addEventListener('DOMContentLoaded', () => {
           slidesPerView: 1,
         },
         480: {
-          slidesPerView: 1,
+          slidesPerView: 2,
         },
         768: {
           slidesPerView: 2,
@@ -193,7 +220,7 @@ window.addEventListener('DOMContentLoaded', () => {
       slidesPerView: "auto",
       coverflowEffect: {
         rotate: 10,
-        stretch: 500,
+        stretch: 450,
         depth: 200,
         modifier: 1,
         slideShadows: true,
@@ -202,15 +229,15 @@ window.addEventListener('DOMContentLoaded', () => {
       breakpoints: {
         400: {
           coverflowEffect: {
-            stretch: 100,
+            stretch: 450,
             rotate: 10,
-            depth: 200,
+            depth: 250,
             modifier: 1,
           },
         },
         800: {
           coverflowEffect: {
-            stretch: 300,
+            stretch: 350,
             rotate: 10,
             depth: 200,
             modifier: 1,
@@ -219,8 +246,8 @@ window.addEventListener('DOMContentLoaded', () => {
         1300: {
           coverflowEffect: {
             rotate: 10,
-            stretch: 600,
-            depth: 200,
+            stretch: 450,
+            depth: 300,
             modifier: 1,
           },
         },
@@ -463,8 +490,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', progressBar);
   }
-
 })
-
-
-

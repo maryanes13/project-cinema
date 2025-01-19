@@ -33,7 +33,7 @@
 }
 
 .section-missions-content__info-title {
-  @include fontface-regular-pro;
+  @include fontface-bold;
   font-size: 64px;
   line-height: 61.25px;
   text-transform: uppercase;
@@ -70,7 +70,7 @@
 }
 
 .section-missions-content__description-title {
-  @include fontface-medium;
+  @include fontface-regular;
   font-size: 16px;
   line-height: 19.36px;
   padding: 0;

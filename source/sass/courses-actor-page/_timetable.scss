@@ -1,7 +1,7 @@
 .section-timetable {
   padding-top: 50px;
   padding-bottom: 115px;
-  border-bottom: 2px solid $white;
+  background-color: $black;
 
   @media (max-width: $mobile480-width) {
     padding-bottom: 40px;
@@ -11,11 +11,14 @@
 .timetable {
   margin-top: 35px;
   color: $white;
-  border-top: 2px solid $white;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
+  tbody {
+    width: 100%;
+  }
 
   @media (max-width: $desktop-width) {
     tbody {
@@ -29,9 +32,10 @@
 .timetable-tr {
   display: flex;
   justify-content: space-between;
+  column-gap: 15px;
   align-items: center;
-  border-bottom: 2px solid $white;
   height: 100px;
+  cursor: pointer;
 
   @media (max-width: $desktop-width) {
     height: 80px;
@@ -42,12 +46,7 @@
     height: auto;
     flex-direction: column;
     width: 25%;
-    border-right: 2px solid $white;
     justify-content: center;
-
-    &:last-child {
-      border-right: none;
-    }
   }
 
   @media (max-width: $tablet900-width) {
@@ -67,14 +66,13 @@
 
 .timetable-date,
 .timetable-time {
-  @include fontface-regular-pro;
+  @include fontface-regular;
   font-size: 48px;
   line-height: 45.94px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-right: 2px solid $white;
   height: 100%;
+  width: 15%;
 
   @media (max-width: $desktop-width) {
     font-size: 35px;
@@ -82,19 +80,11 @@
   }
 
   @media (max-width: $desktop1300-width) {
-    border-right: none;
-    border-bottom: 2px solid $white;
+    justify-content: center;
   }
 }
 
 .timetable-date {
-  width: 276px;
-
-  @media (max-width: $desktop-width) {
-    max-width: 276px;
-    width: 100%;
-  }
-
   @media (max-width: $desktop1300-width) {
     width: 100%;
     max-width: 100%;
@@ -102,13 +92,6 @@
 }
 
 .timetable-time {
-  width: 241px;
-
-  @media (max-width: $desktop-width) {
-    max-width: 241px;
-    width: 100%;
-  }
-
   @media (max-width: $desktop1300-width) {
     width: 100%;
     max-width: 100%;
@@ -116,78 +99,41 @@
 }
 
 .timetable-text {
-  @include fontface-medium;
-  width: 408px;
+  @include fontface-regular;
   font-size: 16px;
   line-height: 19.36px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  border-right: 2px solid $white;
   height: 100%;
-  padding-left: 50px;
-  justify-content: center;
+  width: 20%;
 
   @media (max-width: $desktop-width) {
     font-size: 14px;
     line-height: 14px;
     max-width: 408px;
-    width: 100%;
   }
 
   @media (max-width: $desktop1300-width) {
-    border-right: none;
-    border-bottom: 2px solid $white;
-    width: 100%;
     justify-content: center;
     padding-left: 0;
-    max-width: 100%;
-  }
-}
-
-.timetable-text + .timetable-text {
-  width: 302px;
-
-  @media (max-width: $desktop-width) {
-    max-width: 302px;
     width: 100%;
-  }
-
-  @media (max-width: $desktop1300-width) {
-    width: 100%;
-    max-width: 100%;
   }
 }
 
 .timetable-link {
-  width: 375px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-
-  .section-link {
-    margin: 0;
-  }
-
-  @media (max-width: $desktop-width) {
-    max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    .section-link {
-      max-width: 150px;
-    }
-  }
+  width: 25%;
 
   @media (max-width: $desktop1300-width) {
-    border: 0;
-    width: auto;
-    max-width: 100%;
+    width: 70%;
   }
+
 }
 
 .timetable-tr:hover {
-  background-color: $white;
-  color: $black;
+  background-color: $grey-darker;
 }

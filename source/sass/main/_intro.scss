@@ -1,29 +1,41 @@
 .section-intro {
-  width: 100%;
-  height: 100%;
+  background-image: url("../img/intro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .intro {
   width: 100%;
   height: 100%;
-  background-image: url("../img/intro.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   color: $white;
-  padding: 0 100px 50px;
+  padding-bottom: 85px;
 }
 
 .intro-information {
   padding-top: 365px;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
   max-width: 670px;
+
+  @media (max-width: $desktop1300-width) {
+    padding-top: 200px;
+    max-width: 520px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 100px;
+    max-width: 320px;
+    margin-bottom: 30px;
+  }
 }
 
 .promo-list {
   display: flex;
   gap: 7px;
   max-width: 640px;
-  justify-self: flex-end;
+
+  @media (max-width: $desktop1300-width) {
+    max-width: 500px;
+  }
 }
 
 .promo-list__item {
@@ -49,59 +61,10 @@
       }
     }
   }
-}
-
-@media (max-width: $desktop1300-width) {
-  .intro {
-    padding: 0 40px 50px;
-  }
-
-  .intro-information {
-    padding-top: 200px;
-    max-width: 520px;
-  }
-
-  .promo-list {
-    max-width: 500px;
-  }
-
-  .page-title {
-    font-size: 35px;
-    line-height: 50px;
-
-    span {
-      font-size: 50px;
-      line-height: 50px;
-    }
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .intro-information {
-    padding-top: 100px;
-    max-width: 320px;
-    margin-bottom: 30px;
-  }
-
-  .page-title {
-    font-size: 20px;
-    line-height: 30px;
-
-    span {
-      font-size: 30px;
-      line-height: 30px;
-    }
-  }
 
   @media (max-width: $tablet-width) {
-    .intro {
-      padding: 0 20px 20px;
-    }
-
-    .promo-list__item {
-      .section-text {
-        margin-bottom: 15px;
-      }
+    .section-text {
+      margin-bottom: 15px;
     }
   }
 }
