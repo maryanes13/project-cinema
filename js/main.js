@@ -1,4 +1,6 @@
   // header fixed при скролле
+  let body = document.querySelector('body')
+  let header = document.querySelector(".header")
 
   window.addEventListener("scroll", () => {
     let scrollTop = window.scrollY;
@@ -13,10 +15,9 @@
   })
 
 document.addEventListener('DOMContentLoaded', () => {
-  let body = document.querySelector('body')
-  let header = document.querySelector(".header")
-  let navPage = document.querySelector('.page-header__nav');
-  let navToggle = document.querySelector('.burger-button');
+  let navPage = document.querySelector('.header-nav');
+  let navToggle = document.querySelector('.burger');
+  let navToggleMobil = document.querySelector('.burger-mobil')
   let navClosed = document.querySelector('.button-closed');
   let navFooter = document.querySelector(".footer-navigation");
   let animItems = document.querySelectorAll(".anim-items")
@@ -46,8 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
       span.style.left = relX + 'px';
     });
   })
-
-
 
    /* Animation */
   if (animItems.length > 0) {
@@ -98,12 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    navClosed.addEventListener('click', function () {
-      if (navPage.classList.contains('active')) {
-        navPage.classList.remove('active');
-      }
-    });
-
     // Активная вкладка
     const links = navPage.getElementsByTagName('a');
     for (let i = 0; i < links.length; i++) {
@@ -111,8 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (links[i].href === window.location.href) {
         links[i].classList.add('current-item');
       }
-
-
     }
   }
 
@@ -136,12 +127,12 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 3,
       spaceBetween: 10,
       freeMode: true,
+      watchOverflow: false,
+      slidesPerGroup: 1,
       navigation: {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
       },
-      watchOverflow: false,
-      slidesPerGroup: 1,
       breakpoints: {
         300: {
           slidesPerView: 1,
@@ -154,37 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         1280: {
           slidesPerView: 3,
-        }
-      }
-    });
-  }
-
-  if (document.querySelector(".professors-slider")) {
-
-    let swiper2 = new Swiper(".professors-slider", {
-      slidesPerView: 3,
-      spaceBetween: 0,
-      navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
-      },
-      watchOverflow: false,
-      slidesPerGroup: 1,
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-        },
-        480: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 1.5,
-        },
-        900: {
-          slidesPerView: 1.8,
-        },
-        1280: {
-          slidesPerView: 2.5,
         }
       }
     });
@@ -224,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesPerView: "auto",
       coverflowEffect: {
         rotate: 10,
-        stretch: 500,
+        stretch: 450,
         depth: 200,
         modifier: 1,
         slideShadows: true,
@@ -233,15 +193,15 @@ document.addEventListener('DOMContentLoaded', () => {
       breakpoints: {
         400: {
           coverflowEffect: {
-            stretch: 100,
+            stretch: 450,
             rotate: 10,
-            depth: 200,
+            depth: 250,
             modifier: 1,
           },
         },
         800: {
           coverflowEffect: {
-            stretch: 300,
+            stretch: 350,
             rotate: 10,
             depth: 200,
             modifier: 1,
@@ -250,8 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
         1300: {
           coverflowEffect: {
             rotate: 10,
-            stretch: 600,
-            depth: 200,
+            stretch: 450,
+            depth: 300,
             modifier: 1,
           },
         },
@@ -268,10 +228,6 @@ document.addEventListener('DOMContentLoaded', () => {
       speed: 1000,
       freeMode: false,
       grabCursor: true,
-      navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
-      },
       watchOverflow: false,
       slidesPerGroup: 1,
       breakpoints: {
@@ -286,9 +242,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (document.querySelector(".teacher-page-sliders")) {
-    let swiper6 = new Swiper(".sliders-faculty-one", {
+    let swiper6 = new Swiper(".teacher-page-sliders", {
       slidesPerView: 3,
-      spaceBetween: 10,
+      spaceBetween: 100,
       navigation: {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
@@ -303,44 +259,18 @@ document.addEventListener('DOMContentLoaded', () => {
           slidesPerView: 1,
         },
         768: {
-          slidesPerView: 1,
+          slidesPerView: 2,
+          spaceBetween: 50,
         },
         900: {
           slidesPerView: 2,
+          spaceBetween: 100,
         },
         1280: {
           slidesPerView: 3,
         }
       }
-    });
-
-    let swiper7 = new Swiper(".sliders-faculty-second", {
-      slidesPerView: 3,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
-      },
-      watchOverflow: false,
-      slidesPerGroup: 1,
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-        },
-        480: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 1,
-        },
-        900: {
-          slidesPerView: 2,
-        },
-        1300: {
-          slidesPerView: 3,
-        }
-      }
-    });
+    })
   }
 
   if (document.querySelector(".about-gallery-wrapper")) {
@@ -348,10 +278,6 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 3,
       spaceBetween: 30,
       initialSlide: 0,
-      navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
-      },
       watchOverflow: false,
       slidesPerGroup: 1,
       breakpoints: {
@@ -399,28 +325,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (document.querySelector(".section-tabs")) {
 
-    const tabs = document.querySelectorAll(".tabs-button ");
-    const contents = document.querySelectorAll(".tabs-panel");
+    const tabsButtons = document.querySelectorAll('.tabs-button');
+  const tabsPanels = document.querySelectorAll('.tabs-panel');
 
-    for (let i = 0; i < tabs.length; i++) {
-      tabs[i].addEventListener("click", (event) => {
+  tabsButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      // Убираем активный класс с всех кнопок
+      tabsButtons.forEach(btn => btn.classList.remove('tabs-button-active'));
+      // Добавляем активный класс на текущую кнопку
+      button.classList.add('tabs-button-active');
 
-        let tabsChildren = event.target.parentElement.children;
-        console.log(tabsChildren)
-        for (let t = 0; t < tabsChildren.length; t++) {
-          tabsChildren[t].classList.remove("tabs-button-active");
-        }
+      // Скрываем все панели
+      tabsPanels.forEach(panel => panel.classList.remove('tabs-panel-show'));
 
-        tabs[i].classList.add("tabs-button-active");
-
-        let tabContentChildren = event.target.parentElement.nextElementSibling.children;
-        for (let c = 0; c < tabContentChildren.length; c++) {
-          tabContentChildren[c].classList.remove("tabs-panel-show");
-        }
-
-        contents[i].classList.add("tabs-panel-show");
-      });
-    }
+      // Показываем панель, соответствующую текущей кнопке
+      const targetId = button.getAttribute('data-target-id');
+      const activePanel = document.querySelector(`.tabs-panel[data-id="${targetId}"]`);
+      activePanel.classList.add('tabs-panel-show');
+    });
+  });
   }
 
   if (document.querySelector(".section-courses-slider")) {
