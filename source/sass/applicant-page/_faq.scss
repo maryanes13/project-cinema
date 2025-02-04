@@ -1,6 +1,8 @@
 .section-faq {
   display: flex;
   flex-direction: column;
+  color: $white;
+  padding-top: 60px;
 }
 
 .accordeon-list {
@@ -11,19 +13,11 @@
 .accordion-list__item {
   display: flex;
   flex-direction: column;
-  padding: 30px 80px 30px 105px;
-  border-bottom: 2px solid $white;
+  transition: all 0.3s ease-in-out;
 
-  @media (max-width: $tablet900-width) {
-    padding-left: 50px;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding: 30px;
-  }
-
-  @media (max-width: $mobile480-width) {
-    padding: 20px;
+  .page-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -34,7 +28,7 @@
 }
 
 .accordeon-title {
-  @include fontface-bold;
+  @include fontface-regular;
   font-size: 36px;
   line-height: 34.45px;
   text-transform: uppercase;
@@ -50,17 +44,33 @@
 .accordeon-button {
   background-color: transparent;
   border: none;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/plus.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
+  position: relative;
 
-  @media (max-width: $tablet900-width) {
-    width: 35px;
-    height: 35px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 4px;
+    background-color: $white;
+    transition: all 0.3s ease-in;
+    transform: rotate(0);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 30px;
+    background-color: $white;
+    transition: all 0.3s ease-in;
+    transform: rotate(0);
   }
 }
 
@@ -68,14 +78,30 @@
   padding-right: 120px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s;
+  transition: max-height 0.3s;
 
   @media (max-width: $tablet900-width) {
     padding: 0;
   }
 }
 
-.accordion-list__item.active .accordeon-item__content {
-  max-height: 100px;
-  transition: max-height 0.5s ease;
+.accordion-list__item.active {
+  background-color: $grey-darker;
+
+  .accordeon-button {
+    &::before {
+      transition: all 0.3s ease-in;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transition: all 0.3s ease-in;
+      transform: rotate(45deg);
+    }
+  }
+
+  .accordeon-item__content {
+    max-height: 100px;
+    transition: max-height 0.3s ease-in-out;
+  }
 }

@@ -1,40 +1,16 @@
 .teacher-reputation {
   display: grid;
-  grid-template-columns: 1fr minmax(100px, 500px);
+  gap: 35px;
   color: $white;
-  border-bottom: 2px solid $white;
-
-  @media (max-width: $tablet900-width) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.teacher-reputation__item {
-  padding: 50px 75px 75px 105px;
-
-  &:first-child {
-    border-right: 2px solid $white;
-
-    @media (max-width: $tablet900-width) {
-      border-right: none;
-    }
-  }
-
-  @media (max-width: $desktop1300-width) {
-    padding: 40px 50px 60px;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding: 30px;
-  }
+  max-width: 1350px;
 }
 
 .teacher-page-title {
-  @include fontface-bold;
+  @include fontface-regular;
   font-size: 48px;
-  line-height: 45.94px;
+  line-height: 57.74px;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0;
   padding: 0;
 
   span {
@@ -50,9 +26,8 @@
 .teacher-reputation__item-text {
   @include fontface-regular;
   font-size: 24px;
-  line-height: 22.97px;
-  color: $dark-grey;
-  margin-bottom: 0;
+  line-height: 28.87px;
+  margin: 0;
   padding: 0;
 
   @media (max-width: $tablet-width) {

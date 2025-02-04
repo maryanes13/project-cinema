@@ -3,20 +3,23 @@
   flex-direction: column;
 }
 
+.comment-students-heading {
+  background-color: $black-secondary;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .comment-students-list {
-  padding: 50px 125px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 28px;
 
-  @media (max-width: $tablet900-width) {
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
     flex-direction: column;
-    padding: 50px;
-  }
-
-  @media (max-width: $mobile480-width) {
-    padding: 20px;
   }
 }
 

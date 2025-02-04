@@ -8,18 +8,15 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="reviews-page container">
-      @@include('html/global-html/_header.html')
-      <main>
-        @@include('html/about-page/_about-page-heading.html')
-        @@include('html/about-page/_about-page-missiong.html')
-        @@include('html/about-page/_about-history.html')
-        @@include('html/about-page/_about-page-gallery.html')
-        @@include('html/about-page/_about-page-achievements.html')
-      </main>
-      @@include('html/global-html/_distribution.html')
-      @@include('html/global-html/_footer.html')
-    </div>
+    @@include('html/global-html/_header.html')
+    <main class="about-page">
+      @@include('html/about-page/_about-page-heading.html')
+      @@include('html/about-page/_about-page-missiong.html')
+      @@include('html/about-page/_about-history.html')
+      @@include('html/about-page/_about-page-gallery.html')
+    </main>
+    @@include('html/global-html/_distribution.html')
+    @@include('html/global-html/_footer.html')
     <script src="vendors/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

@@ -189,8 +189,8 @@
   text-decoration-line: underline;
   color: $white;
 
-  @media (max-width: $mobile480-width) {
-    grid-area: 3/2/4/3;
+  &:hover {
+    color: $light-blue;
   }
 }
 
@@ -232,6 +232,8 @@
   padding: 12px;
   height: 66px;
   font-size: 15px;
+  border: 1px solid $white;
+  cursor: pointer;
 }
 
 .registration-page {
@@ -270,4 +272,9 @@
   @media (max-width: $mobile480-width) {
     width: 100%;
   }
+}
+
+/* reviews-page */
+.reviews-link {
+  max-width: 216px;
 }

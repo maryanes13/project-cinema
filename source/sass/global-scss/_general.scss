@@ -1,0 +1,88 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: $black;
+  background-image: url("../img/background.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  color: $white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (min-width: $mobile480-width) {
+    max-width: $tablet-width;
+    margin: 0 auto;
+
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet900-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet900-width) {
+    max-width: $desktop1300-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop1300-width) {
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
+}
+
+.reviews-page,
+.courses-page,
+.courses-actor-page,
+.teacher-page,
+.contact-page,
+.about-page,
+.teacher-name-page {
+  padding-top: 60px;
+
+  @media (max-width: $tablet900-width) {
+    padding-top: 40px;
+  }
+}
+
+.page-contacts {
+  .section-page-form {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.actors-author {
+  @include fontface-regular;
+  font-size: 24px;
+  line-height: 25.31px;
+  margin: 0;
+  padding: 25px 0 25px 65px;
+  overflow: hidden;
+
+  p {
+    margin: 0;
+    max-width: 440px;
+  }
+}

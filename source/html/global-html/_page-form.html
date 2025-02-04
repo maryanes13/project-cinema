@@ -1,55 +1,38 @@
-<section class="section-page-form">
-  <h2 class="visually-hidden">Форма регистрации</h2>
-  <div class="page-form-content">
-    <div class="page-form-content__item">
-      <h3 class="form-page__title heading-title">Записаться на курс<br> Форма онлайн регистрации</h3>
-      <form action="" class="page-form" method="post">
-        <fieldset class="form__group field-group">
-          <ul class="field-group__list">
-            <li class="field-group__item">
-              <label class="field">
-                <input class="field__input" name="name" type="text" placeholder="ваше имя" required="">
-              </label>
-            </li>
-            <li class="field-group__item">
-              <label class="field">
-                <input class="field__input" name="e-mail" type="email" placeholder="ваша почта" required="">
-              </label>
-            </li>
-            <li class="field-group__item">
-              <label class="field">
-                <input class="field__input" name="phone" type="tel" placeholder="ваш номер телефона" required="">
-              </label>
-            </li>
-            <li class="field-group__item">
-              <label class="field">
-                <select class="field__select" name="select-course" required="">
-                  <option value="">выбранный курс</option>
-                  <option value="musical">Мюзикл</option>
-                  <option value="drama">Драма</option>
-                  <option value="comedy">Комедия</option>
-                </select>
-              </label>
-            </li>
-            <li class="field-group__item">
-              <label class="field field-file">
-                <span>Загрузка документов (сканы паспорта, фото).</span>
-                <input class="field__input" name="file" type="file" required="">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="form__footer">
-          <button class="form__button button" type="submit">регистрация</button>
-          <p class="form__additional section-text">нажимая на кнопку, вы даете согласие на обработку персональных данных
-          </p>
-        </div>
-      </form>
-    </div>
-    <div class="page-form-content__item">
-      <div class="page-form-content__item-image">
-        <img src="img/image-form-course.png" alt="девушка у зеркала" width="710" height="830">
+<section class="section-page-form ">
+  <div class="page-form-content container page-section">
+    <h2 class="form-page__title heading-title">Записаться на курс<br> Форма онлайн регистрации</h2>
+    <form action="" class="page-form" method="post">
+      <fieldset class="form__group field-group">
+        <ul class="field-group__list">
+          <li class="field-group__item">
+            <label class="field">
+              <input class="field__input" name="name" type="text" placeholder="ваше имя" required="">
+            </label>
+          </li>
+          <li class="field-group__item">
+            <label class="field">
+              <input class="field__input" name="e-mail" type="email" placeholder="ваша почта" required="">
+            </label>
+          </li>
+          <li class="field-group__item">
+            <label class="field">
+              <select class="field__select" name="select-course" required="">
+                <option value="">выбранный курс</option>
+                <option value="musical">Мюзикл</option>
+                <option value="drama">Драма</option>
+                <option value="comedy">Комедия</option>
+              </select>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="form__footer">
+        <button class="form__button button button-black" type="submit">
+          <span class="button-text">регистрация</span>
+          <span class="button-bg"></span></button>
+        <p class="form__additional section-text">нажимая на кнопку, вы даете согласие на обработку персональных данных
+        </p>
       </div>
-    </div>
+    </form>
   </div>
 </section>

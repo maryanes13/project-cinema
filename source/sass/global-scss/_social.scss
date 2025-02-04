@@ -20,12 +20,8 @@
   height: 50px;
 
   &:hover {
-    background-color: $light-blue;
+    background: $hover-gradient;
   }
-}
-
-.telegram-link {
-  border: 1px solid $white;
 }
 
 .whatsapp-link {
@@ -39,8 +35,13 @@
   }
 
   &:hover {
+
+    rect {
+      fill: $white;
+    }
+
     path {
-      fill: $light-blue;
+      fill: #0b4145;
     }
   }
 }
