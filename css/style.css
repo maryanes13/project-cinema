@@ -274,7 +274,7 @@ li {
 
 .navigation-children-item-link__wrapper {
   position: relative;
-  padding: 0;
+  padding: 0 0 0 40px;
   margin: 0;
 }
 
@@ -304,10 +304,16 @@ li {
   width: 2px;
   height: 16px;
   background-color: #000000;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
 }
 
-.navigation-children-btn.active::before, .navigation-children-btn.active::after {
+.navigation-children-item.submenu-open .navigation-children-btn::before, .navigation-children-item.submenu-open .navigation-children-btn::after {
   background-color: #015055;
+}
+.navigation-children-item.submenu-open .navigation-children-btn::after {
+  transform: rotate(90deg);
+  transition: all 0.3s ease;
 }
 
 .navigation-children-btn.active + .navigation-children-item__link {
@@ -318,7 +324,6 @@ li {
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
-  padding: 5px 0 2px 30px;
   display: block;
   font-family: "Actor", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
@@ -403,8 +408,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-height: 0;
-  transition: max-height 0.3s ease;
+  height: 0;
+  transition: all 0.3s ease;
   overflow: hidden;
 }
 
