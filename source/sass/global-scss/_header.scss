@@ -159,7 +159,7 @@
 
 .navigation-children-item-link__wrapper {
   position: relative;
-  padding: 0;
+  padding: 0 0 0 40px;
   margin: 0;
 }
 
@@ -190,16 +190,27 @@
     width: 2px;
     height: 16px;
     background-color: $black;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
   }
 
 }
 
-.navigation-children-btn.active {
-  &::before,
-  &::after {
-    background-color: $green-special;
+.navigation-children-item.submenu-open {
+  .navigation-children-btn {
+    &::before,
+    &::after {
+      background-color: $green-special;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+      transition: all 0.3s ease;
+    }
   }
 }
+
+
 
 .navigation-children-btn.active + .navigation-children-item__link {
   color: $green-special;
@@ -209,7 +220,6 @@
   text-decoration: none;
   color: $black;
   text-transform: uppercase;
-  padding: 5px 0 2px 30px;
   display: block;
   @include fontface-regular;
   font-size: 24px;
@@ -286,8 +296,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-height: 0;
-  transition: max-height 0.3s ease;
+  height: 0;
+  transition: all 0.3s ease;
   overflow: hidden;
 }
 

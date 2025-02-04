@@ -105,6 +105,34 @@ document.addEventListener('DOMContentLoaded', () => {
         links[i].classList.add('current-item');
       }
     }
+
+    const navChildrenItems = document.querySelectorAll('.navigation-children-item');
+    console.log(navChildrenItems)
+    if (navChildrenItems.length > 0) {
+      navChildrenItems.forEach((item) => {
+        const subMenuBtn = item.querySelector('.navigation-children-btn')
+        subMenuBtn.addEventListener('click', () => {
+          const submenuOpen = document.querySelector('.submenu-open');
+          toggleItem(item)
+
+          if (submenuOpen && submenuOpen !== item) {
+            toggleItem(submenuOpen)
+          }
+        })
+      })
+    }
+
+    const toggleItem = (item) => {
+      const submenuContent = item.querySelector('.submenu');
+
+      if(item.classList.contains('submenu-open')) {
+        submenuContent.removeAttribute('style');
+        item.classList.remove('submenu-open')
+      } else {
+        submenuContent.style.height = submenuContent.scrollHeight + 'px';
+        item.classList.add('submenu-open')
+      }
+    }
   }
 
   // current-item в footer
