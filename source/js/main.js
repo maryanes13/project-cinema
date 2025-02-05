@@ -16,12 +16,13 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   let navPage = document.querySelector('.header-nav');
+  let navMobile = document.querySelector('.header-nav-mobile');
   let navToggle = document.querySelector('.burger');
   let navToggleMobil = document.querySelector('.burger-mobil')
   let navClosed = document.querySelector('.button-closed');
   let navFooter = document.querySelector(".footer-navigation");
   let animItems = document.querySelectorAll(".anim-items")
-
+  const navChildrenItems = document.querySelectorAll('.navigation-children-item');
   /* Hover button */
 
   let btnHovers = document.querySelectorAll('.button');
@@ -87,6 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Menu
+
+
   if (navPage) {
 
     navToggle.addEventListener('click', function () {
@@ -97,6 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    navToggleMobil.addEventListener('click', () => {
+      navMobile.classList.add('active');
+    })
+
+    navClosed.addEventListener('click', () => {
+      navMobile.classList.remove('active');
+    })
+
     // Активная вкладка
     const links = navPage.getElementsByTagName('a');
     for (let i = 0; i < links.length; i++) {
@@ -105,9 +116,10 @@ document.addEventListener('DOMContentLoaded', () => {
         links[i].classList.add('current-item');
       }
     }
+  }
 
-    const navChildrenItems = document.querySelectorAll('.navigation-children-item');
-    console.log(navChildrenItems)
+  // Menu-desktop
+  if(document.querySelector('.header-nav-bottom')) {
     if (navChildrenItems.length > 0) {
       navChildrenItems.forEach((item) => {
         const subMenuBtn = item.querySelector('.navigation-children-btn')
@@ -135,6 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  //menu-mobile
+
+  if(navMobile)
   // current-item в footer
 
   if (navFooter) {
@@ -354,24 +369,24 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector(".section-tabs")) {
 
     const tabsButtons = document.querySelectorAll('.tabs-button');
-  const tabsPanels = document.querySelectorAll('.tabs-panel');
+    const tabsPanels = document.querySelectorAll('.tabs-panel');
 
-  tabsButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      // Убираем активный класс с всех кнопок
-      tabsButtons.forEach(btn => btn.classList.remove('tabs-button-active'));
-      // Добавляем активный класс на текущую кнопку
-      button.classList.add('tabs-button-active');
+    tabsButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        // Убираем активный класс с всех кнопок
+        tabsButtons.forEach(btn => btn.classList.remove('tabs-button-active'));
+        // Добавляем активный класс на текущую кнопку
+        button.classList.add('tabs-button-active');
 
-      // Скрываем все панели
-      tabsPanels.forEach(panel => panel.classList.remove('tabs-panel-show'));
+        // Скрываем все панели
+        tabsPanels.forEach(panel => panel.classList.remove('tabs-panel-show'));
 
-      // Показываем панель, соответствующую текущей кнопке
-      const targetId = button.getAttribute('data-target-id');
-      const activePanel = document.querySelector(`.tabs-panel[data-id="${targetId}"]`);
-      activePanel.classList.add('tabs-panel-show');
+        // Показываем панель, соответствующую текущей кнопке
+        const targetId = button.getAttribute('data-target-id');
+        const activePanel = document.querySelector(`.tabs-panel[data-id="${targetId}"]`);
+        activePanel.classList.add('tabs-panel-show');
+      });
     });
-  });
   }
 
   if (document.querySelector(".section-courses-slider")) {
@@ -379,27 +394,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll(".section-directions__item");
     const contents = document.querySelectorAll(".section-directions-panel");
 
-    for (let i = 0; i < tabs.length; i++) {
-      tabs[i].addEventListener("click", (event) => {
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function () {
+        // Убираем активный класс с всех кнопок
+        tabs.forEach(btn => btn.classList.remove('directions-active'));
+        // Добавляем активный класс на текущую кнопку
+        tab.classList.add('directions-active');
 
-        let tabsChildren = event.target.parentElement.children;
-        console.log(tabsChildren)
-        for (let t = 0; t < tabsChildren.length; t++) {
-          tabsChildren[t].classList.remove("directions-active");
-        }
+        // Скрываем все панели
+        contents.forEach(panel => panel.classList.remove('section-directions-panel-show'));
 
-        tabs[i].classList.add("directions-active");
-
-        let tabContentChildren = event.target.parentElement.nextElementSibling.children;
-        console.log(tabContentChildren)
-
-        for (let c = 0; c < tabContentChildren.length; c++) {
-          tabContentChildren[c].classList.remove("section-directions-panel-show");
-        }
-
-        contents[i].classList.add("section-directions-panel-show");
+        // Показываем панель, соответствующую текущей кнопке
+        const targetId = tab.getAttribute('data-target-id');
+        const activePanel = document.querySelector(`.section-directions-panel[data-id="${targetId}"]`);
+        activePanel.classList.add('section-directions-panel-show');
       });
-    }
+    });
   }
 
   //Modal

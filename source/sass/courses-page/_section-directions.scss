@@ -64,3 +64,11 @@
  background-color: $black-secondary;
  color: $white;
 }
+
+.section-directions-panel {
+  display: none;
+}
+
+.section-directions-panel-show {
+  display: block;
+}
