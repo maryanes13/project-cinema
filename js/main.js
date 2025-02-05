@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let navFooter = document.querySelector(".footer-navigation");
   let animItems = document.querySelectorAll(".anim-items")
   const navChildrenItems = document.querySelectorAll('.navigation-children-item');
+
+  if(navPage.clientWidth < 768) {
+    navPage.classList.remove('active');
+  }
   /* Hover button */
 
   let btnHovers = document.querySelectorAll('.button');
@@ -95,6 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.addEventListener('click', function () {
       if (navPage.classList.contains('active')) {
         navPage.classList.remove('active');
+        if(navPage.clientWidth < 768) {
+          navPage.classList.remove('active');
+        }
       } else {
         navPage.classList.add('active');
       }

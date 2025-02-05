@@ -144,6 +144,7 @@ li {
   align-items: center;
   width: 100%;
   min-height: 100px;
+  height: 100%;
 }
 @media (max-width: 768px) {
   .header-nav-bottom {
