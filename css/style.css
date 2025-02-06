@@ -152,7 +152,7 @@ li {
   }
 }
 
-.header-nav.active .header-nav-bottom {
+.header-nav-bottom.active {
   display: block;
 }
 
@@ -225,6 +225,18 @@ li {
   }
 }
 
+.navigation-item__link.current-item {
+  background: linear-gradient(184.02deg, #00CEDB -156.79%, #000000 113.52%);
+}
+
+.header.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
 .navigation-children-wrapper {
   position: absolute;
   top: 100px;
@@ -274,55 +286,33 @@ li {
 .navigation-children-item:hover .navigation-children-item__link {
   color: #015055;
 }
-.navigation-children-item:hover .navigation-children-btn::before, .navigation-children-item:hover .navigation-children-btn::after {
-  background-color: #015055;
+.navigation-children-item:hover .navigation-children-btn path {
+  stroke: #015055;
 }
 
 .navigation-children-item-link__wrapper {
   position: relative;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 20px;
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .navigation-children-btn {
-  position: absolute;
   cursor: pointer;
-  left: 0;
-  top: calc(50% - 8px);
-  width: 16px;
-  height: 16px;
-  z-index: 5;
-}
-.navigation-children-btn::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 1px);
-  left: calc(50% - 8px);
-  width: 16px;
-  height: 2px;
-  background-color: #000000;
-}
-.navigation-children-btn::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 8px);
-  left: calc(50% - 1px);
-  width: 2px;
-  height: 16px;
-  background-color: #000000;
-  transform: rotate(0deg);
-  transition: all 0.3s ease;
+  width: 19px;
+  height: auto;
 }
 
 .navigation-children-item.submenu-open .navigation-children-item__link {
   color: #015055;
 }
-.navigation-children-item.submenu-open .navigation-children-btn::before, .navigation-children-item.submenu-open .navigation-children-btn::after {
-  background-color: #015055;
+.navigation-children-item.submenu-open .navigation-children-btn {
+  transform: rotate(180deg);
 }
-.navigation-children-item.submenu-open .navigation-children-btn::after {
-  transform: rotate(90deg);
-  transition: all 0.3s ease;
+.navigation-children-item.submenu-open .navigation-children-btn path {
+  stroke: #015055;
 }
 
 .navigation-children-btn.active + .navigation-children-item__link {
@@ -333,15 +323,14 @@ li {
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
   font-family: "Actor", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
   line-height: 24.8px;
-  width: 100%;
-  height: 100%;
 }
 .navigation-children-item__link:focus, .navigation-children-item__link:active {
   color: #015055;
@@ -350,6 +339,15 @@ li {
   .navigation-children-item__link {
     font-size: 20px;
   }
+}
+
+.navigation-children-item__link.current-item,
+.submenu-link.current-item {
+  color: #015055;
+}
+.navigation-children-item__link.current-item::before,
+.submenu-link.current-item::before {
+  background-color: #015055;
 }
 
 .information {
@@ -449,22 +447,15 @@ li {
 .submenu-link:hover {
   color: #015055;
 }
-
-.header.fixed {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 100;
-}
-
-.navigation-item__link.current-item {
-  background: linear-gradient(184.02deg, #00CEDB -156.79%, #000000 113.52%);
-}
-
-.navigation-children-item__link.current-item,
-.submenu-link.current-item {
-  color: #015055;
+.submenu-link:hover::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 2px);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #015055;
 }
 
 .header-nav-mobile {
@@ -1409,7 +1400,7 @@ li {
   border-radius: 50px;
   color: #ffffff;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.775, 0.82, 0.665, 1);
   color: #000000;
   text-decoration: none;
   overflow: hidden;
@@ -1448,7 +1439,7 @@ li {
   height: 0;
   border-radius: 50%;
   background-color: #000000;
-  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.775, 0.82, 0.665, 1);
   transform: translate(-50%, -50%);
   z-index: 1;
 }
@@ -1600,6 +1591,7 @@ li {
   text-align: left;
   justify-content: flex-start;
   border: 1px solid #ffffff;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 @media (max-width: 768px) {
   .distribution-mail__button {

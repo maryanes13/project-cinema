@@ -15,7 +15,7 @@
   })
 
 document.addEventListener('DOMContentLoaded', () => {
-  let navPage = document.querySelector('.header-nav');
+  let navPage = document.querySelector('.header-nav-bottom');
   let navMobile = document.querySelector('.header-nav-mobile');
   let navToggle = document.querySelector('.burger');
   let navToggleMobil = document.querySelector('.burger-mobil')
@@ -24,14 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let animItems = document.querySelectorAll(".anim-items")
   const navChildrenItems = document.querySelectorAll('.navigation-children-item');
 
-  if(navPage.clientWidth < 768) {
-    navPage.classList.remove('active');
-  }
-  /* Hover button */
+    /* Hover button */
 
   let btnHovers = document.querySelectorAll('.button');
 
   btnHovers.forEach((btn)=> {
+
     let span = btn.querySelector('.button-bg');
     btn.addEventListener('mouseenter', function(e) {
       let parentOffset = btn.getBoundingClientRect(),
@@ -52,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       span.style.left = relX + 'px';
     });
   })
+
 
    /* Animation */
   if (animItems.length > 0) {
@@ -93,16 +92,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Menu
 
+  function handleResize() {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 768) {
+        navPage.classList.remove('active');
+      }
+    });
+  }
 
   if (navPage) {
 
     navToggle.addEventListener('click', function () {
       if (navPage.classList.contains('active')) {
         navPage.classList.remove('active');
-        if(navPage.clientWidth < 768) {
-          navPage.classList.remove('active');
-        }
-      } else {
+      }
+      else {
+        handleResize()
         navPage.classList.add('active');
       }
     });
