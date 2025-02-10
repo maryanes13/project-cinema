@@ -10,483 +10,504 @@
 </head>
 
 <body>
-  <div class="registration-page container">
-    <header class="header">
-      <h2 class="visually-hidden">Навигация по сайту</h2>
-      <nav class="header-nav">
-        <div class="header-nav-top container">
-          <button class="burger">
-            <span>
-              <picture>
-                <source srcset="img/burger.svg" type="image/webp">
-                <img src="img/burger.svg" class="burger-img" alt="иконка бургер-меню">
-              </picture>
-            </span>
-            <span class="burger-text">Меню</span>
-          </button>
-          <button class="burger-mobil">
-            <span>
-              <picture>
-                <source srcset="img/burger.svg" type="image/webp">
-                <img src="img/burger.svg" class="burger-img" alt="иконка бургер-меню">
-              </picture>
-            </span>
-            <span class="burger-text">Меню</span>
-          </button>
-          <ul class="user-list">
-            <li class="user-list__item">
-              <a href="registration-page.html" class="user-reg__link">Регистрация</a>
+  <header class="header">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
+    <nav class="header-nav">
+      <div class="header-nav-top container">
+        <button class="burger">
+          <span>
+            <picture>
+              <source srcset="img/burger.svg" type="image/webp">
+              <img src="img/burger.svg" class="burger-img" alt="иконка бургер-меню">
+            </picture>
+          </span>
+          <span class="burger-text">Меню</span>
+        </button>
+        <button class="burger-mobil">
+          <span>
+            <picture>
+              <source srcset="img/burger.svg" type="image/webp">
+              <img src="img/burger.svg" class="burger-img" alt="иконка бургер-меню">
+            </picture>
+          </span>
+          <span class="burger-text">Меню</span>
+        </button>
+        <ul class="user-list">
+          <li class="user-list__item">
+            <a href="registration-page.html" class="user-reg__link">Регистрация</a>
+          </li>
+          <li class="user-list__item">
+            <a href="login-page.html" class="user-log__link">
+              <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M34.0418 36.75C34.0418 29.9845 28.4267 24.5 21.5002 24.5C14.5736 24.5 8.9585 29.9845 8.9585 36.75M21.5002 19.25C17.5421 19.25 14.3335 16.116 14.3335 12.25C14.3335 8.38401 17.5421 5.25 21.5002 5.25C25.4582 5.25 28.6668 8.38401 28.6668 12.25C28.6668 16.116 25.4582 19.25 21.5002 19.25Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <span class="visually-hidden">Войти</span>
+          </li>
+        </ul>
+      </div>
+      <div class="header-nav-bottom">
+        <div class="container">
+          <div class="header-bar">
+            <picture>
+              <source srcset="img/logo.svg" type="image/webp">
+              <img src="img/logo.svg" class="page-header__logo" alt="логотип" width="248" height="87">
+            </picture>
+          </div>
+          <ul class="navigation-desktop">
+            <li class="navigation-item">
+              <a href="index.html" class="navigation-item__link">Главная</a>
             </li>
-            <li class="user-list__item">
-              <a href="login-page.html" class="user-log__link">
-                <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M34.0418 36.75C34.0418 29.9845 28.4267 24.5 21.5002 24.5C14.5736 24.5 8.9585 29.9845 8.9585 36.75M21.5002 19.25C17.5421 19.25 14.3335 16.116 14.3335 12.25C14.3335 8.38401 17.5421 5.25 21.5002 5.25C25.4582 5.25 28.6668 8.38401 28.6668 12.25C28.6668 16.116 25.4582 19.25 21.5002 19.25Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </a>
-              <span class="visually-hidden">Войти</span>
-            </li>
-          </ul>
-        </div>
-        <div class="header-nav-bottom">
-          <div class="container">
-            <div class="header-bar">
-              <picture>
-                <source srcset="img/logo.svg" type="image/webp">
-                <img src="img/logo.svg" class="page-header__logo" alt="логотип" width="248" height="87">
-              </picture>
-            </div>
-            <ul class="navigation-desktop">
-              <li class="navigation-item">
-                <a href="index.html" class="navigation-item__link">Главная</a>
-              </li>
-              <li class="navigation-item navigation-item-parent">
-                <a href="about-page.html" class="navigation-item__link">
-                  <span>О нас</span>
-                  <span class="navigation-item-parent__icon">
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <use href="sprite/sprite.svg#arrow-down"></use>
-                    </svg>
-                  </span>
-                </a>
-                <div class="navigation-children-wrapper">
-                  <div class="container">
-                    <ul class="navigation-children">
-                      <li class="navigation-children-item">
-                        <p class="navigation-children-item-link__wrapper">
-                          <a href="teacher-page.html" class="navigation-children-item__link">
-                            <span>Преподаватели</span>
-                          </a>
-                          <span class="navigation-children-btn">
-                            <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M18.083 0.75L9.58301 9.25L1.08301 0.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                          </span>
-                        </p>
-                        <div class="submenu">
-                          <a href="teacher-name-page.html" class="submenu-link">Оганян Андрей Станиславович</a>
-                          <a href="teacher-name-page.html" class="submenu-link">Гарница Людмила Михайловна</a>
-                          <a href="teacher-name-page.html" class="submenu-link">Орлова Инесса Александровна</a>
-                          <a href="teacher-name-page.html" class="submenu-link">Столбикова Валерия Валериевна</a>
-                        </div>
-                      </li>
-                      <li class="navigation-children-item">
-                        <p class="navigation-children-item-link__wrapper">
-                          <a href="reviews-page.html" class="navigation-children-item__link">
-                            <span>Отзывы</span>
-                          </a>
-                          <span class="navigation-children-btn">
-                            <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M18.083 0.75L9.58301 9.25L1.08301 0.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                          </span>
-                        </p>
-                        <div class="submenu">
-                          <a href="#" class="submenu-link">Отзыв-1</a>
-                          <a href="#" class="submenu-link">Отзыв-2</a>
-                          <a href="#" class="submenu-link">Отзыв-3</a>
-                          <a href="#" class="submenu-link">Отзыв-4</a>
-                        </div>
-                      </li>
-                      <li class="navigation-children-item">
-                        <p class="navigation-children-item-link__wrapper">
-                          <a href="reviews-page.html" class="navigation-children-item__link">
-                            <span>Новости</span>
-                          </a>
-                          <span class="navigation-children-btn">
-                            <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M18.083 0.75L9.58301 9.25L1.08301 0.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                          </span>
-                        </p>
-                        <div class="submenu">
-                          <a href="#" class="submenu-link">Новость-1</a>
-                          <a href="#" class="submenu-link">Новость-2</a>
-                          <a href="#" class="submenu-link">Новость-3</a>
-                          <a href="#" class="submenu-link">Новость-4</a>
-                        </div>
-                      </li>
-                    </ul>
-                    <ul class="information">
-                      <li class="information-item">
-                        <h3 class="information-item-title">Приёмная</h3>
-                        <a href="tel:+79000000000" class="information-phone">+7 (900) 000 00 00</a>
-                        <a href="tel:+79000000000" class="information-phone">+7 (900) 000 00 00</a>
-                      </li>
-                      <li class="information-item">
-                        <h3 class="information-address-title">Адрес</h3>
-                        <p class="information-address-text">Рыбатекст используется дизайнерами</p>
-                        <p class="information-address-text">Рыбатекст используется дизайнерами</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="navigation-item navigation-item-parent">
-                <a href="courses.html" class="navigation-item__link">
-                  <span>Курсы</span>
+            <li class="navigation-item navigation-item-parent">
+              <a href="about-page.html" class="navigation-item__link">
+                <span>О нас</span>
+                <span class="navigation-item-parent__icon">
                   <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use href="sprite/sprite.svg#arrow-down"></use>
                   </svg>
-                </a>
-                <div class="navigation-children-wrapper">
-                  <div class="container">
-                    <ul class="navigation-children">
-                      <li class="navigation-children-item">
-                        <p class="navigation-children-item-link__wrapper">
-                          <a href="reviews-page.html" class="navigation-children-item__link">
-                            <span>Онлайн направления</span>
-                          </a>
-                          <span class="navigation-children-btn">
-                            <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M18.083 0.75L9.58301 9.25L1.08301 0.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                          </span>
-                        </p>
-                        <div class="submenu">
-                          <a href="#" class="submenu-link">Онлайн направление-1</a>
-                          <a href="#" class="submenu-link">Онлайн направления-2</a>
-                        </div>
-                      </li>
-                      <li class="navigation-children-item">
-                        <p class="navigation-children-item-link__wrapper">
-                          <a href="reviews-page.html" class="navigation-children-item__link">
-                            <span>Оффлайн направления</span>
-                          </a>
-                          <span class="navigation-children-btn">
-                            <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M18.083 0.75L9.58301 9.25L1.08301 0.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                          </span>
-                        </p>
-                        <div class="submenu">
-                          <a href="#" class="submenu-link">Оффлайн направление-1</a>
-                          <a href="#" class="submenu-link">Оффлайн направление-2</a>
-                        </div>
-                      </li>
-                    </ul>
-                    <ul class="information">
-                      <li class="information-item">
-                        <h3 class="information-item-title">Приёмная</h3>
-                        <a href="tel:+79000000000" class="information-phone">+7 (900) 000 00 00</a>
-                        <a href="tel:+79000000000" class="information-phone">+7 (900) 000 00 00</a>
-                      </li>
-                      <li class="information-item">
-                        <h3 class="information-address-title">Адрес</h3>
-                        <p class="information-address-text">Рыбатекст используется дизайнерами</p>
-                        <p class="information-address-text">Рыбатекст используется дизайнерами</p>
-                      </li>
-                    </ul>
-                  </div>
+                </span>
+              </a>
+              <div class="navigation-children-wrapper">
+                <div class="container">
+                  <ul class="navigation-children">
+                    <li class="navigation-children-item nav-accordeon">
+                      <p class="navigation-children-item-link__wrapper">
+                        <a href="teacher-page.html" class="navigation-children-item__link">
+                          <span>Преподаватели</span>
+                        </a>
+                        <span class="navigation-children-btn">
+                          <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.083 0.75L9.58301 9.25L1.08301 0.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </p>
+                      <div class="submenu">
+                        <a href="teacher-name-page.html" class="submenu-link">Оганян Андрей Станиславович</a>
+                        <a href="teacher-name-page.html" class="submenu-link">Гарница Людмила Михайловна</a>
+                        <a href="teacher-name-page.html" class="submenu-link">Орлова Инесса Александровна</a>
+                        <a href="teacher-name-page.html" class="submenu-link">Столбикова Валерия Валериевна</a>
+                      </div>
+                    </li>
+                    <li class="navigation-children-item">
+                      <p class="navigation-children-item-link__wrapper">
+                        <a href="reviews-page.html" class="navigation-children-item__link">
+                          <span>Отзывы</span>
+                        </a>
+                      </p>
+                    </li>
+                    <li class="navigation-children-item">
+                      <p class="navigation-children-item-link__wrapper">
+                        <a href="blog-page.html" class="navigation-children-item__link">
+                          <span>Новости</span>
+                        </a>
+                      </p>
+                    </li>
+                  </ul>
+                  <ul class="information">
+                    <li class="information-item">
+                      <h3 class="information-item-title">Приёмная</h3>
+                      <a href="tel:+79000000000" class="information-phone">+7 (900) 000 00 00</a>
+                      <a href="tel:+79000000000" class="information-phone">+7 (900) 000 00 00</a>
+                    </li>
+                    <li class="information-item">
+                      <h3 class="information-address-title">Адрес</h3>
+                      <p class="information-address-text">Рыбатекст используется дизайнерами</p>
+                      <p class="information-address-text">Рыбатекст используется дизайнерами</p>
+                    </li>
+                  </ul>
                 </div>
-              </li>
-              <li class="navigation-item">
-                <a href="applicant-page.html" class="navigation-item__link">Абитуриентам</a>
-              </li>
-              <li class="navigation-item">
-                <a href="contacts.html" class="navigation-item__link">
-                  <span>Контакты</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </li>
+            <li class="navigation-item navigation-item-parent">
+              <a href="courses.html" class="navigation-item__link">
+                <span>Курсы</span>
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="sprite/sprite.svg#arrow-down"></use>
+                </svg>
+              </a>
+              <div class="navigation-children-wrapper">
+                <div class="container">
+                  <ul class="navigation-children">
+                    <li class="navigation-children-item nav-accordeon">
+                      <p class="navigation-children-item-link__wrapper">
+                        <a href="courses-actor.html" class="navigation-children-item__link">
+                          <span>Онлайн направления</span>
+                        </a>
+                        <span class="navigation-children-btn">
+                          <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.083 0.75L9.58301 9.25L1.08301 0.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </p>
+                      <div class="submenu">
+                        <a href="courses-actor.html" class="submenu-link">Онлайн направление-1</a>
+                        <a href="courses-actor.html" class="submenu-link">Онлайн направления-2</a>
+                      </div>
+                    </li>
+                    <li class="navigation-children-item nav-accordeon">
+                      <p class="navigation-children-item-link__wrapper">
+                        <a href="courses-actor.html" class="navigation-children-item__link">
+                          <span>Оффлайн направления</span>
+                        </a>
+                        <span class="navigation-children-btn">
+                          <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.083 0.75L9.58301 9.25L1.08301 0.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </p>
+                      <div class="submenu">
+                        <a href="courses-actor.html" class="submenu-link">Оффлайн направление-1</a>
+                        <a href="courses-actor.html" class="submenu-link">Оффлайн направление-2</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="information">
+                    <li class="information-item">
+                      <h3 class="information-item-title">Приёмная</h3>
+                      <a href="tel:+79000000000" class="information-phone">+7 (900) 000 00 00</a>
+                      <a href="tel:+79000000000" class="information-phone">+7 (900) 000 00 00</a>
+                    </li>
+                    <li class="information-item">
+                      <h3 class="information-address-title">Адрес</h3>
+                      <p class="information-address-text">Рыбатекст используется дизайнерами</p>
+                      <p class="information-address-text">Рыбатекст используется дизайнерами</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="navigation-item">
+              <a href="applicant-page.html" class="navigation-item__link">Абитуриентам</a>
+            </li>
+            <li class="navigation-item">
+              <a href="contacts.html" class="navigation-item__link">
+                <span>Контакты</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="header-nav-mobile">
-          <div class="header-wrapper container">
-            <button class="button-closed">
-              <picture>
-                <source srcset="img/closed.svg" type="image/webp">
-                <img src="img/closed.svg" alt="closed" width="40" height="40">
-              </picture>
-            </button>
-            <div class="header-bar">
-              <picture>
-                <source srcset="img/logo-mobile.webp" type="image/webp">
-                <img src="img/logo-mobile.png" class="mobile-header__logo" alt="логотип" width="196" height="61">
-              </picture>
-            </div>
-            <div class="mobil-title-text">
-              <p class="page-nav-text">первые шаги
-                <br>
-                <span>будущей звезды</span>
-              </p>
-            </div>
-            <ul class="nav-mobil">
-              <li class="nav-mobil-item">
-                <a href="" class="nav-mobil-link">Главная</a>
-              </li>
-              <li class="nav-mobil-item">
-                <a href="" class="nav-mobil-link">О нас</a>
-              </li>
-              <li class="nav-mobil-item">
-                <a href="" class="nav-mobil-link">Преподаватели</a>
-              </li>
-              <li class="nav-mobil-item">
-                <a href="" class="nav-mobil-link">Абитуриентам</a>
-              </li>
-              <li class="nav-mobil-item">
-                <a href="" class="nav-mobil-link">Отзывы</a>
-              </li>
-              <li class="nav-mobil-item">
-                <a href="" class="nav-mobil-link">Курсы</a>
-              </li>
-              <li class="nav-mobil-item">
-                <a href="" class="nav-mobil-link">Новости</a>
-              </li>
-              <li class="nav-mobil-item">
-                <a href="" class="nav-mobil-link">Контакты</a>
-              </li>
-              <li class="nav-mobil-item">
-                <a href="" class="nav-mobil-link nav-reg">Регистрация</a>
-              </li>
-            </ul>
-            <div class="mobil-section-wrapper">
-              <ul class="mobil-social">
-                <li class="mobil-social-item">
-                  <a href="" class="mobil-social-link mobil-telegram">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 50 50">
-                      <path d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"></path>
-                    </svg>
-                  </a>
+      </div>
+      <div class="header-nav-mobile">
+        <div class="header-wrapper container">
+          <button class="button-closed">
+            <picture>
+              <source srcset="img/closed.svg" type="image/webp">
+              <img src="img/closed.svg" alt="closed" width="40" height="40">
+            </picture>
+          </button>
+          <div class="header-bar">
+            <picture>
+              <source srcset="img/logo-mobile.webp" type="image/webp">
+              <img src="img/logo-mobile.png" class="mobile-header__logo" alt="логотип" width="196" height="61">
+            </picture>
+          </div>
+          <div class="mobil-title-text">
+            <p class="page-nav-text">первые шаги
+              <br>
+              <span>будущей звезды</span>
+            </p>
+          </div>
+          <ul class="nav-mobil">
+            <li class="nav-mobil-item">
+              <a href="index.html" class="nav-mobil-link">Главная</a>
+            </li>
+            <li class="nav-mobil-item">
+              <a href="about-page.html" class="nav-mobil-link">О нас</a>
+            </li>
+            <li class="nav-mobil-item">
+              <a href="teacher-page.html" class="nav-mobil-link">Преподаватели</a>
+              <ul class="mobil-submenu">
+                <li>
+                  <a href="teacher-name-page.html">Оганян Андрей Станиславович</a>
                 </li>
-                <li class="mobil-social-item">
-                  <a href="" class="mobil-social-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24">
-                      <path d="M19.1,4.9C17.2,3,14.7,2,12,2C6.5,2,2,6.5,2,12c0,1.8,0.5,3.5,1.3,5L2,22l5.2-1.2C8.7,21.6,10.3,22,12,22	c5.5,0,10-4.5,10-10C22,9.3,21,6.8,19.1,4.9z M16.9,15.6c-0.2,0.6-1.2,1.1-1.7,1.2c-0.5,0-0.9,0.2-3-0.6c-2.5-1-4.1-3.6-4.3-3.8	c-0.1-0.2-1-1.4-1-2.6S7.5,8,7.8,7.7C8,7.4,8.3,7.4,8.5,7.4s0.3,0,0.5,0s0.4,0,0.6,0.4c0.2,0.5,0.7,1.7,0.8,1.9	c0.1,0.2,0.1,0.3,0,0.4c-0.1,0.1-0.1,0.3-0.2,0.4c-0.1,0.1-0.3,0.3-0.4,0.4c-0.1,0.1-0.3,0.3-0.1,0.5c0.1,0.3,0.6,1.1,1.4,1.7	c1,0.9,1.8,1.1,2,1.2c0.3,0.1,0.4,0.1,0.5-0.1c0.1-0.2,0.6-0.7,0.8-1c0.2-0.3,0.3-0.2,0.6-0.1c0.3,0.1,1.5,0.7,1.7,0.8	c0.3,0.1,0.4,0.2,0.5,0.3C17.1,14.5,17.1,15,16.9,15.6z"></path>
-                    </svg>
-                  </a>
+                <li>
+                  <a href="teacher-name-page.html">Гарница Людмила Михайловна</a>
                 </li>
-                <li class="mobil-social-item">
-                  <a href="" class="mobil-social-link mobil-log">
-                    <svg width="43" height="42" viewBox="0 0 43 42" fill="black" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M34.0418 36.75C34.0418 29.9845 28.4267 24.5 21.5002 24.5C14.5736 24.5 8.9585 29.9845 8.9585 36.75M21.5002 19.25C17.5421 19.25 14.3335 16.116 14.3335 12.25C14.3335 8.38401 17.5421 5.25 21.5002 5.25C25.4582 5.25 28.6668 8.38401 28.6668 12.25C28.6668 16.116 25.4582 19.25 21.5002 19.25Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-                    </svg>
-                  </a>
+                <li>
+                  <a href="teacher-name-page.html">Орлова Инесса Александровна</a>
+                </li>
+                <li>
+                  <a href="teacher-name-page.html">Столбикова Валерия Валериевна</a>
                 </li>
               </ul>
-            </div>
-            <div class="mobil-section-wrapper">
-              <div class="mobil-contacts">
-                <h3 class="mobil-contacts-title">Контакты</h3>
-                <a href="tel+79000000000" class="mobil-contacts-phone">+7 (900) 000 00 00</a>
-              </div>
-            </div>
-            <div class="mobil-section-wrapper">
-              <div class="mobil-address">
-                <h3 class="mobil-address-title">Адрес:</h3>
-                <p class="mobil-address-text">Рыбатекст используется дизайнерами</p>
-                <p class="mobil-address-text">Рыбатекст используется дизайнерами</p>
-              </div>
-            </div>
-            <div class="mobil-section-wrapper">
-              <div class="mobil-reviews">
-                <a class="mobil-reviews-link">Оставить <span>ОТЗЫВ</span>
+            </li>
+            <li class="nav-mobil-item">
+              <a href="applicant-page.html" class="nav-mobil-link">Абитуриентам</a>
+            </li>
+            <li class="nav-mobil-item">
+              <a href="reviews-page.html" class="nav-mobil-link">Отзывы</a>
+            </li>
+            <li class="nav-mobil-item">
+              <a href="courses.html" class="nav-mobil-link">Курсы</a>
+              <ul class="mobil-submenu right-mobil-submenu">
+                <li>
+                  <a href="courses-actor.html">Онлайн курсы</a>
+                </li>
+                <li>
+                  <a href="courses-actor.html">Оффлайн курсы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-mobil-item">
+              <a href="blog-page.html" class="nav-mobil-link">Новости</a>
+            </li>
+            <li class="nav-mobil-item">
+              <a href="contacts.html" class="nav-mobil-link">Контакты</a>
+            </li>
+            <li class="nav-mobil-item">
+              <a href="registration-page.html" class="nav-mobil-link nav-reg">Регистрация</a>
+            </li>
+          </ul>
+          <div class="mobil-section-wrapper">
+            <ul class="mobil-social">
+              <li class="mobil-social-item">
+                <a href="#" class="mobil-social-link mobil-telegram">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 50 50">
+                    <path d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"></path>
+                  </svg>
                 </a>
-              </div>
+              </li>
+              <li class="mobil-social-item">
+                <a href="#" class="mobil-social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24">
+                    <path d="M19.1,4.9C17.2,3,14.7,2,12,2C6.5,2,2,6.5,2,12c0,1.8,0.5,3.5,1.3,5L2,22l5.2-1.2C8.7,21.6,10.3,22,12,22	c5.5,0,10-4.5,10-10C22,9.3,21,6.8,19.1,4.9z M16.9,15.6c-0.2,0.6-1.2,1.1-1.7,1.2c-0.5,0-0.9,0.2-3-0.6c-2.5-1-4.1-3.6-4.3-3.8	c-0.1-0.2-1-1.4-1-2.6S7.5,8,7.8,7.7C8,7.4,8.3,7.4,8.5,7.4s0.3,0,0.5,0s0.4,0,0.6,0.4c0.2,0.5,0.7,1.7,0.8,1.9	c0.1,0.2,0.1,0.3,0,0.4c-0.1,0.1-0.1,0.3-0.2,0.4c-0.1,0.1-0.3,0.3-0.4,0.4c-0.1,0.1-0.3,0.3-0.1,0.5c0.1,0.3,0.6,1.1,1.4,1.7	c1,0.9,1.8,1.1,2,1.2c0.3,0.1,0.4,0.1,0.5-0.1c0.1-0.2,0.6-0.7,0.8-1c0.2-0.3,0.3-0.2,0.6-0.1c0.3,0.1,1.5,0.7,1.7,0.8	c0.3,0.1,0.4,0.2,0.5,0.3C17.1,14.5,17.1,15,16.9,15.6z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobil-social-item">
+                <a href="login-page.html" class="mobil-social-link mobil-log">
+                  <svg width="43" height="42" viewBox="0 0 43 42" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34.0418 36.75C34.0418 29.9845 28.4267 24.5 21.5002 24.5C14.5736 24.5 8.9585 29.9845 8.9585 36.75M21.5002 19.25C17.5421 19.25 14.3335 16.116 14.3335 12.25C14.3335 8.38401 17.5421 5.25 21.5002 5.25C25.4582 5.25 28.6668 8.38401 28.6668 12.25C28.6668 16.116 25.4582 19.25 21.5002 19.25Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobil-section-wrapper">
+            <div class="mobil-contacts">
+              <h3 class="mobil-contacts-title">Контакты</h3>
+              <a href="tel+79000000000" class="mobil-contacts-phone">+7 (900) 000 00 00</a>
+            </div>
+          </div>
+          <div class="mobil-section-wrapper">
+            <div class="mobil-address">
+              <h3 class="mobil-address-title">Адрес:</h3>
+              <p class="mobil-address-text">Рыбатекст используется дизайнерами</p>
+              <p class="mobil-address-text">Рыбатекст используется дизайнерами</p>
+            </div>
+          </div>
+          <div class="mobil-section-wrapper">
+            <div class="mobil-reviews">
+              <a class="mobil-reviews-link button">
+                <span class="button-text">Оставить ОТЗЫВ</span>
+                <span class="button-bg"></span>
+              </a>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section class="section-heading">
-        <h2 class="heading-title">Вход и регистрация</h2>
-      </section>
-      <section class="section-page-form">
-        <h2 class="visually-hidden">Форма регистрации</h2>
-        <div class="page-form-content">
-          <div class="page-form-content__item">
-            <div class="page-form-content__item-image">
-              <picture>
-                <source srcset="img/image-reg.webp" type="image/webp">
-                <img src="img/image-reg.png" alt="девушка у зеркала" width="710" height="830">
-              </picture>
+      </div>
+    </nav>
+  </header>
+  <main class="registration-page">
+    <section class="section-heading container page-section">
+      <h2 class="heading-title">Вход и регистрация</h2>
+    </section>
+    <section class="section-page-form container page-section">
+      <h2 class="visually-hidden">Форма регистрации</h2>
+      <div class="page-form-content">
+        <div class="page-form-content__item">
+          <div class="page-form-content__item-image">
+            <picture>
+              <source srcset="img/image-reg.webp" type="image/webp">
+              <img src="img/image-reg.png" alt="девушка у зеркала" width="710" height="830">
+            </picture>
+          </div>
+        </div>
+        <div class="page-form-content__item">
+          <h3 class="form-page__title heading-title">регистрация</h3>
+          <form action="" class="page-form" method="post">
+            <fieldset class="form__group field-group">
+              <ul class="field-group__list">
+                <li class="field-group__item">
+                  <label class="field">
+                    <input class="field__input" name="name" type="text" placeholder="ваше фио" required="">
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <input class="field__input" name="e-mail" type="email" placeholder="ваша почта" required="">
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <select class="field__select" name="select-sex" required="">
+                      <option value="">Ваш пол</option>
+                      <option value="male">Мужской</option>
+                      <option value="female">Женский</option>
+                    </select>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <input class="field__input" name="password" type="password" placeholder="Пароль *" required="">
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <input class="field__input" name="password" type="password" placeholder="Повторить пароль*" required="">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="form__footer">
+              <button class="form__button button" type="submit">
+                <span class="button-text">Регистрация</span>
+                <span class="button-bg"></span>
+                <span class="arrow-right">
+                  <svg width="104" height="16" viewBox="0 0 104 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M102.836 8.70711C103.227 8.31658 103.227 7.68342 102.836 7.29289L96.4722 0.928932C96.0817 0.538408 95.4485 0.538408 95.058 0.928932C94.6675 1.31946 94.6675 1.95262 95.058 2.34315L100.715 8L95.058 13.6569C94.6675 14.0474 94.6675 14.6805 95.058 15.0711C95.4485 15.4616 96.0817 15.4616 96.4722 15.0711L102.836 8.70711ZM0.238281 9H102.129V7H0.238281V9Z" fill="black" />
+                  </svg>
+                </span>
+              </button>
+              <button class="form__button button" type="submit">
+                <span class="button-text">Войти с помощью Google</span>
+                <span class="button-bg"></span>
+                <span class="arrow-right">
+                  <svg width="104" height="16" viewBox="0 0 104 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M102.836 8.70711C103.227 8.31658 103.227 7.68342 102.836 7.29289L96.4722 0.928932C96.0817 0.538408 95.4485 0.538408 95.058 0.928932C94.6675 1.31946 94.6675 1.95262 95.058 2.34315L100.715 8L95.058 13.6569C94.6675 14.0474 94.6675 14.6805 95.058 15.0711C95.4485 15.4616 96.0817 15.4616 96.4722 15.0711L102.836 8.70711ZM0.238281 9H102.129V7H0.238281V9Z" fill="black" />
+                  </svg>
+                </span>
+              </button>
             </div>
-          </div>
-          <div class="page-form-content__item">
-            <h3 class="form-page__title heading-title">регистрация</h3>
-            <form action="" class="page-form" method="post">
-              <fieldset class="form__group field-group">
-                <ul class="field-group__list">
-                  <li class="field-group__item">
-                    <label class="field">
-                      <input class="field__input" name="name" type="text" placeholder="ваше фио" required="">
-                    </label>
-                  </li>
-                  <li class="field-group__item">
-                    <label class="field">
-                      <input class="field__input" name="e-mail" type="email" placeholder="ваша почта" required="">
-                    </label>
-                  </li>
-                  <li class="field-group__item">
-                    <label class="field">
-                      <select class="field__select" name="select-sex" required="">
-                        <option value="">Ваш пол</option>
-                        <option value="male">Мужской</option>
-                        <option value="female">Женский</option>
-                      </select>
-                    </label>
-                  </li>
-                  <li class="field-group__item">
-                    <label class="field">
-                      <input class="field__input" name="password" type="password" placeholder="Пароль *" required="">
-                    </label>
-                  </li>
-                  <li class="field-group__item">
-                    <label class="field">
-                      <input class="field__input" name="password" type="password" placeholder="Повторить пароль*" required="">
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <div class="form__footer">
-                <button class="form__button button" type="submit">Регистрация</button>
-                <button class="form__button button" type="submit">Войти с помощью Google</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-    <section class="section-distribution container">
-      <picture>
-        <source srcset="img/logo.svg" type="image/webp">
-        <img src="img/logo.svg" alt="логотип" class="distribution-logo" width="342" height="113">
-      </picture>
-      <div class="distribution-content">
-        <div class="social">
-          <a href="" class="social-link telegram-link">
-            <svg width="25px" height="25px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g></g>
-              <g stroke-linecap="round" stroke-linejoin="round"></g>
-              <g>
-                <path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z" fill="#FFFFFF"></path>
-              </g>
-            </svg>
-          </a>
-          <a href="" class="social-link whatsapp-link">
-            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_2102_613)">
-                <rect width="43" height="43" fill="black" />
-                <path d="M21.7212 10.1787C15.6173 10.1787 10.6729 15.0891 10.6729 21.1589C10.6729 23.5459 11.4571 25.7965 12.787 27.6038L11.389 31.6958L15.6514 30.3318C17.3905 31.4912 19.5047 32.1391 21.7553 32.1391C27.8592 32.1391 32.8378 27.2287 32.8378 21.1589C32.8037 15.0891 27.8251 10.1787 21.7212 10.1787ZM28.2002 25.6942C27.9274 26.4444 26.5975 27.1605 26.0178 27.2287C25.4381 27.2969 25.4381 27.7061 22.1304 26.4444C18.8568 25.1486 16.7767 21.8409 16.6062 21.6022C16.4357 21.3976 15.2763 19.8631 15.2763 18.2945C15.2763 16.7259 16.0947 15.9416 16.4016 15.6347C16.7085 15.3278 17.0495 15.2255 17.2541 15.2255C17.4587 15.2255 17.6974 15.2596 17.8679 15.2596C18.0725 15.2596 18.3112 15.1573 18.584 15.8052C18.8568 16.4531 19.5047 18.0217 19.5729 18.1922C19.6411 18.3627 19.7093 18.5332 19.607 18.7378C19.5047 18.9424 19.4365 19.0788 19.3001 19.2834C19.1296 19.4539 18.9591 19.6926 18.8227 19.829C18.6522 19.9995 18.4817 20.17 18.6863 20.4769C18.8909 20.7838 19.5388 21.8409 20.4936 22.6934C21.7212 23.7846 22.7783 24.1256 23.0852 24.2961C23.3921 24.4666 23.5967 24.4325 23.7672 24.2279C23.9718 24.0233 24.5856 23.3072 24.7902 22.9662C24.9948 22.6593 25.2335 22.6934 25.5063 22.7957C25.8132 22.898 27.3818 23.6823 27.7228 23.8528C28.0297 24.0233 28.2684 24.0915 28.3366 24.2279C28.4389 24.2961 28.4389 24.944 28.2002 25.6942Z" fill="white" />
-                <path d="M42.0002 0L3.00046 -0.5C-2.93293 -0.5 7.11679e-05 0 0.000132442 10.7841V32.25C0.000132442 38.154 -4.93305 43 1.00034 43H43.0001C48.9335 43 43.0001 38.154 43.0001 32.2159V10.7841C42.966 4.84603 47.9336 0 42.0002 0ZM21.7218 34.2294C19.8875 34.2294 18.16 33.8663 16.5729 33.191C15.77 32.8493 14.8739 32.7411 14.0424 33.0055L13.7528 33.0976C11.3912 33.8486 9.18065 31.5914 9.98089 29.246C10.2686 28.4027 10.1506 27.4837 9.77517 26.6756C8.9934 24.9929 8.55921 23.1193 8.55921 21.1587C8.55921 13.9238 14.4585 8.0881 21.7218 8.0881C28.9851 8.0881 34.8843 13.9238 34.8843 21.1587C34.8843 28.3937 28.9851 34.2294 21.7218 34.2294Z" fill="white" />
-              </g>
-              <defs> </defs>
-            </svg>
-          </a>
-        </div>
-        <div class="distribution-mail">
-          <h6 class="distribution-mail__title">Подписка на рассылку</h6>
-          <a class="button distribution-mail__button button-black" href="#">
-            <span class="button-text">pochta@mail.ru</span>
-            <span class="button-bg"></span>
-          </a>
+          </form>
         </div>
       </div>
     </section>
-    <footer class="footer-page container">
-      <ul class="footer">
-        <li class="footer-item">
-          <h3 class="footer-item__title">Курсы</h3>
-          <ul class="footer-courses">
-            <li class="footer-courses__item">
-              <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-            </li>
-            <li class="footer-courses__item">
-              <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-            </li>
-            <li class="footer-courses__item">
-              <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-            </li>
-            <li class="footer-courses__item">
-              <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-            </li>
-            <li class="footer-courses__item">
-              <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-            </li>
-            <li class="footer-courses__item">
-              <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-            </li>
-            <li class="footer-courses__item">
-              <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-            </li>
-            <li class="footer-courses__item">
-              <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-            </li>
-            <li class="footer-courses__item">
-              <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
-            </li>
-          </ul>
-        </li>
-        <li class="footer-item">
-          <h3 class="footer-item__title">О компании</h3>
-          <ul class="footer-navigation footer-navigation">
-            <li class="footer-navigation__item">
-              <a href="index.html" class="footer-navigation__item-link">Главная</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="applicant-page.html" class="footer-navigation__item-link">Абитуриентам</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="blog-page.html" class="footer-navigation__item-link">Блог</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="reviews-page.html" class="footer-navigation__item-link">Отзывы</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="teacher-page.html" class="footer-navigation__item-link">Преподаватели</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a href="Contacts.html" class="footer-navigation__item-link">Контакты</a>
-            </li>
-          </ul>
-          <a class="button border-link button-black" href="#">
-            <span class="button-text">Оставить ОТЗЫВ</span>
-            <span class="button-bg"></span>
-          </a>
-        </li>
-        <li class="footer-item">
-          <h3 class="footer-item__title">Контакты</h3>
-          <a href="+79000000000" class="phone-link">+7 (900) 000 00 00</a>
-          <div class="footer-address">
-            <h5 class="footer-address__title section-text">Адрес:</h5>
-            <p class="address-text section-text">Рыбатекст используется дизайнерами</p>
-            <p class="address-text section-text">Рыбатекст используется дизайнерами</p>
-          </div>
-        </li>
-        <li class="footer-item">
-          <picture>
-            <source srcset="img/robokassa.webp" type="image/webp">
-            <img src="img/robokassa.png" alt="robokassa" class="footer-robokassa" width="175" height="27">
-          </picture>
-        </li>
-      </ul>
-      <section class="footer-copyright">
-        <a href="#openModal" class="footer-copyright__link section-text">Политика конфиденциальности</a>
-        <a href="#" class="footer-copyright__link section-text">Пользовательское соглашение</a>
-        <a href="#" class="footer-copyright__text section-text">Сделано в tw</a>
-      </section>
-    </footer>
-  </div>
+  </main>
+  <section class="section-distribution container">
+    <picture>
+      <source srcset="img/logo.svg" type="image/webp">
+      <img src="img/logo.svg" alt="логотип" class="distribution-logo" width="342" height="113">
+    </picture>
+    <div class="distribution-content">
+      <div class="social">
+        <a href="" class="social-link telegram-link">
+          <svg width="25px" height="25px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g></g>
+            <g stroke-linecap="round" stroke-linejoin="round"></g>
+            <g>
+              <path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z" fill="#FFFFFF"></path>
+            </g>
+          </svg>
+        </a>
+        <a href="" class="social-link whatsapp-link">
+          <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2102_613)">
+              <rect width="43" height="43" fill="black" />
+              <path d="M21.7212 10.1787C15.6173 10.1787 10.6729 15.0891 10.6729 21.1589C10.6729 23.5459 11.4571 25.7965 12.787 27.6038L11.389 31.6958L15.6514 30.3318C17.3905 31.4912 19.5047 32.1391 21.7553 32.1391C27.8592 32.1391 32.8378 27.2287 32.8378 21.1589C32.8037 15.0891 27.8251 10.1787 21.7212 10.1787ZM28.2002 25.6942C27.9274 26.4444 26.5975 27.1605 26.0178 27.2287C25.4381 27.2969 25.4381 27.7061 22.1304 26.4444C18.8568 25.1486 16.7767 21.8409 16.6062 21.6022C16.4357 21.3976 15.2763 19.8631 15.2763 18.2945C15.2763 16.7259 16.0947 15.9416 16.4016 15.6347C16.7085 15.3278 17.0495 15.2255 17.2541 15.2255C17.4587 15.2255 17.6974 15.2596 17.8679 15.2596C18.0725 15.2596 18.3112 15.1573 18.584 15.8052C18.8568 16.4531 19.5047 18.0217 19.5729 18.1922C19.6411 18.3627 19.7093 18.5332 19.607 18.7378C19.5047 18.9424 19.4365 19.0788 19.3001 19.2834C19.1296 19.4539 18.9591 19.6926 18.8227 19.829C18.6522 19.9995 18.4817 20.17 18.6863 20.4769C18.8909 20.7838 19.5388 21.8409 20.4936 22.6934C21.7212 23.7846 22.7783 24.1256 23.0852 24.2961C23.3921 24.4666 23.5967 24.4325 23.7672 24.2279C23.9718 24.0233 24.5856 23.3072 24.7902 22.9662C24.9948 22.6593 25.2335 22.6934 25.5063 22.7957C25.8132 22.898 27.3818 23.6823 27.7228 23.8528C28.0297 24.0233 28.2684 24.0915 28.3366 24.2279C28.4389 24.2961 28.4389 24.944 28.2002 25.6942Z" fill="white" />
+              <path d="M42.0002 0L3.00046 -0.5C-2.93293 -0.5 7.11679e-05 0 0.000132442 10.7841V32.25C0.000132442 38.154 -4.93305 43 1.00034 43H43.0001C48.9335 43 43.0001 38.154 43.0001 32.2159V10.7841C42.966 4.84603 47.9336 0 42.0002 0ZM21.7218 34.2294C19.8875 34.2294 18.16 33.8663 16.5729 33.191C15.77 32.8493 14.8739 32.7411 14.0424 33.0055L13.7528 33.0976C11.3912 33.8486 9.18065 31.5914 9.98089 29.246C10.2686 28.4027 10.1506 27.4837 9.77517 26.6756C8.9934 24.9929 8.55921 23.1193 8.55921 21.1587C8.55921 13.9238 14.4585 8.0881 21.7218 8.0881C28.9851 8.0881 34.8843 13.9238 34.8843 21.1587C34.8843 28.3937 28.9851 34.2294 21.7218 34.2294Z" fill="white" />
+            </g>
+            <defs> </defs>
+          </svg>
+        </a>
+      </div>
+      <div class="distribution-mail">
+        <h6 class="distribution-mail__title">Подписка на рассылку</h6>
+        <a class="button distribution-mail__button button-black" href="#">
+          <span class="button-text">pochta@mail.ru</span>
+          <span class="button-bg"></span>
+          <span class="arrow-right">
+            <svg width="104" height="16" viewBox="0 0 104 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M102.836 8.70711C103.227 8.31658 103.227 7.68342 102.836 7.29289L96.4722 0.928932C96.0817 0.538408 95.4485 0.538408 95.058 0.928932C94.6675 1.31946 94.6675 1.95262 95.058 2.34315L100.715 8L95.058 13.6569C94.6675 14.0474 94.6675 14.6805 95.058 15.0711C95.4485 15.4616 96.0817 15.4616 96.4722 15.0711L102.836 8.70711ZM0.238281 9H102.129V7H0.238281V9Z" fill="black" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-page container">
+    <ul class="footer">
+      <li class="footer-item">
+        <h3 class="footer-item__title">Курсы</h3>
+        <ul class="footer-courses">
+          <li class="footer-courses__item">
+            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+          </li>
+          <li class="footer-courses__item">
+            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+          </li>
+          <li class="footer-courses__item">
+            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+          </li>
+          <li class="footer-courses__item">
+            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+          </li>
+          <li class="footer-courses__item">
+            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+          </li>
+          <li class="footer-courses__item">
+            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+          </li>
+          <li class="footer-courses__item">
+            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+          </li>
+          <li class="footer-courses__item">
+            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+          </li>
+          <li class="footer-courses__item">
+            <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer-item">
+        <h3 class="footer-item__title">О компании</h3>
+        <ul class="footer-navigation footer-navigation">
+          <li class="footer-navigation__item">
+            <a href="index.html" class="footer-navigation__item-link">Главная</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="applicant-page.html" class="footer-navigation__item-link">Абитуриентам</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="blog-page.html" class="footer-navigation__item-link">Блог</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="reviews-page.html" class="footer-navigation__item-link">Отзывы</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="teacher-page.html" class="footer-navigation__item-link">Преподаватели</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="Contacts.html" class="footer-navigation__item-link">Контакты</a>
+          </li>
+        </ul>
+        <a class="button border-link button-black" href="#">
+          <span class="button-text">Оставить ОТЗЫВ</span>
+          <span class="button-bg"></span>
+        </a>
+      </li>
+      <li class="footer-item">
+        <h3 class="footer-item__title">Контакты</h3>
+        <a href="+79000000000" class="phone-link">+7 (900) 000 00 00</a>
+        <div class="footer-address">
+          <h5 class="footer-address__title section-text">Адрес:</h5>
+          <p class="address-text section-text">Рыбатекст используется дизайнерами</p>
+          <p class="address-text section-text">Рыбатекст используется дизайнерами</p>
+        </div>
+      </li>
+      <li class="footer-item">
+        <picture>
+          <source srcset="img/robokassa.webp" type="image/webp">
+          <img src="img/robokassa.png" alt="robokassa" class="footer-robokassa" width="175" height="27">
+        </picture>
+      </li>
+    </ul>
+    <section class="footer-copyright">
+      <a href="#openModal" class="footer-copyright__link section-text">Политика конфиденциальности</a>
+      <a href="#" class="footer-copyright__link section-text">Пользовательское соглашение</a>
+      <a href="#" class="footer-copyright__link footer-copyright__text section-text">Сделано в tw</a>
+    </section>
+  </footer>
   <script src="vendors/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
