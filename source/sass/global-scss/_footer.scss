@@ -38,6 +38,11 @@
   display: inline-block;
   text-decoration: none;
   color: $white;
+
+  &:hover,
+  &:focus {
+    color: $green-special;
+  }
 }
 
 .footer-navigation {
@@ -56,8 +61,9 @@
   font-size: 16px;
   line-height: 24.8px;
 
-  &:hover {
-    color: $light-blue;
+  &:hover,
+  &:focus {
+    color: $green-special;
   }
 }
 
@@ -69,8 +75,9 @@
   color: $white;
   margin-bottom: 50px;
 
-  &:hover {
-    color: $light-blue;
+  &:hover,
+  &:focus {
+    color: $green-special;
   }
 }
 
@@ -87,5 +94,5 @@
 }
 
 .footer-current-item {
-  color: $light-blue;
+  color: $green-special;
 }

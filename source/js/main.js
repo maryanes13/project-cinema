@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let navClosed = document.querySelector('.button-closed');
   let navFooter = document.querySelector(".footer-navigation");
   let animItems = document.querySelectorAll(".anim-items")
-  const navChildrenItems = document.querySelectorAll('.navigation-children-item');
+  const navChildrenItems = document.querySelectorAll('.nav-accordeon');
 
     /* Hover button */
 
@@ -91,13 +91,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Menu
-
+  //скрытие десктопного меню, которое в активном состоянии при разрешении экрана менее 768px
   function handleResize() {
     window.addEventListener('resize', () => {
       if (window.innerWidth < 768) {
         navPage.classList.remove('active');
       }
     });
+  }
+//скрытие мобильного меню, которое в активном состоянии при разрешении экрана более 768px
+  function handleResizeMobile() {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        navMobile.classList.remove('active');
+      }
+    });
+  }
+
+  // Активная вкладка
+  const links = header.getElementsByTagName('a');
+  for (let i = 0; i < links.length; i++) {
+
+    if (links[i].href === window.location.href) {
+      links[i].classList.add('current-item');
+    }
   }
 
   if (navPage) {
@@ -114,20 +131,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navToggleMobil.addEventListener('click', () => {
       navMobile.classList.add('active');
+      handleResizeMobile()
     })
 
     navClosed.addEventListener('click', () => {
       navMobile.classList.remove('active');
     })
 
-    // Активная вкладка
-    const links = navPage.getElementsByTagName('a');
-    for (let i = 0; i < links.length; i++) {
-
-      if (links[i].href === window.location.href) {
-        links[i].classList.add('current-item');
-      }
-    }
   }
 
   // Menu-desktop

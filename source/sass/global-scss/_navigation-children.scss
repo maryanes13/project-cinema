@@ -46,7 +46,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
 
   &:hover .navigation-children-item__link {
     color: $green-special;
@@ -62,7 +61,7 @@
 .navigation-children-item-link__wrapper {
   position: relative;
   padding: 0 0 0 20px;
-  margin: 0;
+  margin: 0 0 10px;
   display: flex;
   align-items: center;
   gap: 30px;

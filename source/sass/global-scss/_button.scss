@@ -21,7 +21,7 @@
   overflow: hidden;
 
   @media (max-width: $tablet-width) {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 13px;
   }
 
@@ -58,7 +58,6 @@
   border-radius: 50%;
   background-color: $black;
   transition: all 0.5s cubic-bezier(0.775, 0.82, 0.665, 1);
-  // transition: width 0.5s ease, height 0.6s ease-in-out;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
@@ -191,8 +190,9 @@
   text-decoration-line: underline;
   color: $white;
 
-  &:hover {
-    color: $light-blue;
+  &:hover,
+  &:focus {
+    color: $green-special;
   }
 }
 
@@ -205,21 +205,31 @@
   justify-content: flex-start;
   border: 1px solid $white;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  @media (max-width: $tablet-width) {
-    padding: 10px;
+
+  .button-text {
+    font-size: 16px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    right: 20px;
-    top: calc(50% - 15px);
-    width: 100px;
-    height: 30px;
-    background-image: url("../../img/arrow-mail-right.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    z-index: 1;
+  .arrow-right  {
+    display: block;
+    svg {
+      width: 100px;
+    }
+    path {
+      fill: $white
+    }
+  }
+
+  &:hover,
+  &:focus {
+
+    .arrow-right  path {
+      fill: $black
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 10px;
   }
 }
 
@@ -230,38 +240,51 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 12px;
-  height: 66px;
   font-size: 15px;
   border: 1px solid $white;
   cursor: pointer;
-}
 
-.registration-page {
-  .form__button {
-    background-color: $white;
-    color: $black;
-    position: relative;
-    background-image: url("../img/Arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
-    text-transform: none;
-
-    @media (max-width: $desktop1300-width) {
-      background-image: none;
-    }
-
-    @media (max-width: $tablet900-width) {
-      background-image: url("../img/Arrow-right.svg");
-    }
-
-    @media (max-width: $tablet-width) {
-      background-image: none;
+  &:hover {
+    .arrow-right {
+      path {
+        fill: $white;
+        transition: fill 0.5s;
+      }
+      z-index: 10;
     }
   }
 }
 
+.arrow-right {
+  position: absolute;
+  right: 30px;
+  top: calc(50% - 8px);
+  z-index: 10;
+
+  path {
+    fill: $black;
+    transition: fill 0.5s ease;
+  }
+
+  @media (max-width: $desktop1300-width) {
+    right: 15px;
+    svg {
+      width: 50px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    svg {
+      width: 70px;
+    }
+  }
+
+  @media (max-width: $mobile480-width) {
+    display: none;
+  }
+}
 
 .border-link {
   border: 1px solid $white;

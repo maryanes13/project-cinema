@@ -10,14 +10,12 @@
   font-weight: 400;
   color: $white;
 
-  &:hover {
-    color: $light-blue;
+  &:hover,
+  &:focus {
+    color: $green-special;
   }
 }
 
 .footer-copyright__text {
-  text-decoration: none;
   margin-left: auto;
-  font-weight: 400;
-  color: $white;
 }

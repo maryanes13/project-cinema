@@ -110,6 +110,15 @@
   background: $hover-gradient;
 }
 
+.user-reg__link.current-item {
+  color: $green-special;
+}
+
+.user-log__link.current-item {
+  path {
+    stroke: $green-special;
+  }
+}
 
 .header.fixed {
   position: fixed;

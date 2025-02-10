@@ -24,7 +24,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 30px;
+    padding: 20px;
   }
 }
 
@@ -99,7 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 45px 0;
+  position: relative;
 
   &:nth-child(1),
   &:nth-child(4),
@@ -114,7 +114,6 @@
   }
 
   @media (max-width: $tablet-width) {
-   padding: 20px 0;
 
     &:nth-child(3) {
       border-right: 1px solid $black;
@@ -141,6 +140,14 @@
       grid-column: span 2;
     }
   }
+
+  &:hover,
+  &:focus {
+    background-color: $black;
+    .nav-mobil-link {
+      color: $white;
+    }
+  }
 }
 
 .nav-mobil-link {
@@ -155,14 +162,37 @@
   line-height: 24.8px;
   width: 100%;
   height: 100%;
+  padding: 45px 0;
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
     line-height: 1;
+    padding: 20px 0;
+  }
+
+  @media (max-width: $mobile480-width) {
+    font-size: 14px;
   }
 }
 
-.nav-reg {
+.nav-mobil-link.current-item {
+  background-color: $black;
+  color: $white;
+}
+
+.mobil-log:hover,
+.mobil-log:focus {
+    background-color: $black;
+     path {
+      stroke: $white;
+    }
+}
+
+.mobil-log.current-item {
+  background-color: $black;
+  path {
+   stroke: $white;
+ }
 }
 
 .mobil-section-wrapper {
@@ -230,9 +260,14 @@
       height: 25px;
     }
   }
-}
 
-.mobil-log {
+  &:hover,
+  &:focus {
+    background-color: $black;
+    svg {
+      fill: $white;
+    }
+  }
 }
 
 .mobil-contacts {
@@ -283,6 +318,11 @@
   @media (max-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: $green-special;
   }
 }
 
@@ -359,24 +399,26 @@
   }
 }
 
-.mobil-reviews-link {
+.mobil-reviews .mobil-reviews-link {
   @include fontface-regular;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 24.8px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid $black;
-  padding: 25px 35px;
+  padding: 25px 0;
   gap: 10px;
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   height: 100%;
   max-height: 80px;
+  border-radius: 0;
+  cursor: pointer;
 
-  @media (max-width: $tablet-width) {
-    font-size: 20px;
+  @media (max-width: $mobile480-width) {
+    font-size: 18px;
     max-width: 200px;
     max-height: 50px;
   }

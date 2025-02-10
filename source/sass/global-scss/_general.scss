@@ -56,9 +56,12 @@ li {
 .courses-page,
 .courses-actor-page,
 .teacher-page,
-.contact-page,
+.contacts-page,
 .about-page,
-.teacher-name-page {
+.teacher-name-page,
+.login-page,
+.registration-page,
+.blog-page {
   padding-top: 60px;
 
   @media (max-width: $tablet900-width) {

@@ -10,15 +10,15 @@
 </head>
 
 <body>
-  <div class="login-page container">
-    @@include('html/global-html/_header.html')
-    <main>
-      @@include('html/registration-page/_registration-heading.html')
-      @@include('html/login-page/_login-form.html')
-    </main>
-    @@include('html/global-html/_distribution.html')
-    @@include('html/global-html/_footer.html')
-  </div>
+
+  @@include('html/global-html/_header.html')
+  <main class="login-page">
+    @@include('html/registration-page/_registration-heading.html')
+    @@include('html/login-page/_login-form.html')
+  </main>
+  @@include('html/global-html/_distribution.html')
+  @@include('html/global-html/_footer.html')
+
   <script src="vendors/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

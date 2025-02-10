@@ -1,0 +1,60 @@
+
+.mobil-submenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 58px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: $black;
+
+  li {
+    display: flex;
+  }
+
+  a {
+    padding: 20px 0 20px 20px;
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    @include fontface-regular;
+    font-size: 18px;
+    line-height: 1;
+
+    &:hover,
+    &:focus {
+      color: $green-special;
+    }
+
+    @media (max-width: $mobile480-width) {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: $mobile480-width) {
+    width: 320px;
+    top: 53px;
+  }
+}
+
+.right-mobil-submenu {
+  right: 0;
+  left: auto;
+
+  a {
+    justify-content: flex-end;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+}
+
+.nav-mobil-item:hover .mobil-submenu,
+.nav-mobil-item:focus .mobil-submenu {
+  display: flex;
+}
