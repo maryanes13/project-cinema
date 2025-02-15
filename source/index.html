@@ -9,20 +9,23 @@
   </head>
   <body>
     <canvas class="space"></canvas>
-      @@include('html/global-html/_header.html')
-      <main class="page-content">
-        @@include('html/main/_intro.html')
-        @@include('html/main/_courses.html')
-        @@include('html/main/_about-us.html')
-        @@include('html/main/_applicant.html')
-        @@include('html/main/_blog.html')
-        @@include('html/thanks-page/_thanks-content.html')
-      </main>
-      @@include('html/global-html/_distribution.html')
-      @@include('html/global-html/_footer.html')
+    @@include('html/global-html/_header.html')
+    <main class="page-content">
+      @@include('html/main/_intro.html')
+      @@include('html/main/_courses-section.html')
+      @@include('html/main/_about-us.html')
+      @@include('html/main/_applicant-section.html')
+      @@include('html/main/_blog-section.html')
+      @@include('html/thanks-page/_thanks-content.html')
+    </main>
+    @@include('html/global-html/_distribution.html')
+    @@include('html/global-html/_footer.html')
     <script src="vendors/swiper-bundle.min.js"></script>
-    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/gsap.min.js"></script>
+    <script src="vendors/ScrollTrigger.min.js"></script>
     <script src="vendors/canvas.js"></script>
+    <script src="vendors/animate.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
+Co

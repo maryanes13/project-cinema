@@ -3,10 +3,6 @@ body {
   height: 100%;
   margin: 0 auto;
   background-color: $black;
-  background-image: url("../img/background.png");
-  background-repeat: repeat;
-  background-position: center;
-  background-size: cover;
   color: $white;
 }
 
@@ -52,23 +48,6 @@ li {
   }
 }
 
-.reviews-page,
-.courses-page,
-.courses-actor-page,
-.teacher-page,
-.contacts-page,
-.about-page,
-.teacher-name-page,
-.login-page,
-.registration-page,
-.blog-page {
-  padding-top: 60px;
-
-  @media (max-width: $tablet900-width) {
-    padding-top: 40px;
-  }
-}
-
 .page-contacts {
   .section-page-form {
     padding-bottom: 0;
@@ -88,4 +67,46 @@ li {
     margin: 0;
     max-width: 440px;
   }
+}
+
+.element-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.5s;
+}
+
+.element-animation:nth-child(2).element-show {
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.element-animation:nth-child(3).element-show {
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+.element-animation:nth-child(4).element-show {
+  -webkit-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+}
+
+.element-animation:nth-child(5).element-show {
+  -webkit-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
+}
+
+.element-animation:nth-child(6).element-show {
+  -webkit-transition-delay: 2.5s;
+  -o-transition-delay: 2.5s;
+  transition-delay: 2.5s;
+}
+
+.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
 }

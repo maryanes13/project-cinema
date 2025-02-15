@@ -9,6 +9,10 @@
   height: 100%;
   color: $white;
   padding-bottom: 85px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .intro-information {
@@ -35,6 +39,10 @@
 
   @media (max-width: $desktop1300-width) {
     max-width: 500px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
   }
 }
 

@@ -3,52 +3,58 @@ var context;
 var screenH;
 var screenW;
 var stars = [];
-var fps = 50;
-var numStars = 4000;
+var fps = 60;
+var numStars = 3000;
 
-$('document').ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
+  // Получаем канвас и контекст
+  canvas = document.querySelector('.space');
+  context = canvas.getContext('2d');
 
-  // Calculate the screen size
-	screenH = $(window).height();
-	screenW = $(window).width();
+  // Функция для установки размеров канваса
+  function setCanvasSize() {
+    screenH = window.innerHeight;
+    screenW = window.innerWidth;
+    canvas.height = screenH;
+    canvas.width = screenW;
+  }
 
-	// Get the canvas
-	canvas = $('.space');
+  // Устанавливаем размер канваса при загрузке страницы
+  setCanvasSize();
 
-	// Fill out the canvas
-	canvas.attr('height', screenH);
-	canvas.attr('width', screenW);
-	context = canvas[0].getContext('2d');
+  // Обновляем размеры канваса при изменении размера окна
+  window.addEventListener('resize', function() {
+    setCanvasSize();
+  });
 
-	// Create all the stars
-	for(var i = 0; i < numStars; i++) {
-		var x = Math.round(Math.random() * screenW);
-		var y = Math.round(Math.random() * screenH);
-		var length = 1 + Math.random() * 2;
-		var opacity = Math.random();
+  // Создаем все звезды
+  for (var i = 0; i < numStars; i++) {
+    var x = Math.round(Math.random() * screenW);
+    var y = Math.round(Math.random() * screenH);
+    var length = 1 + Math.random() * 2;
+    var opacity = Math.random();
 
-		// Create a new star and draw
-		var star = new Star(x, y, length, opacity);
+    // Создаем новую звезду и добавляем её в массив
+    var star = new Star(x, y, length, opacity);
+    stars.push(star);
+  }
 
-		// Add the the stars array
-		stars.push(star);
-	}
-
-	setInterval(animate, 1000 / fps);
+  // Запускаем анимацию
+  setInterval(animate, 1000 / fps);
 });
 
 /**
- * Animate the canvas
+ * Анимация канваса
  */
 function animate() {
-	context.clearRect(0, 0, screenW, screenH);
-	$.each(stars, function() {
-		this.draw(context);
-	})
+  context.clearRect(0, 0, screenW, screenH);
+  stars.forEach(function(star) {
+    star.draw(context);
+  });
 }
 
 /**
- * Star
+ * Конструктор для звезды
  *
  * @param int x
  * @param int y
@@ -56,59 +62,56 @@ function animate() {
  * @param opacity
  */
 function Star(x, y, length, opacity) {
-	this.x = parseInt(x);
-	this.y = parseInt(y);
-	this.length = parseInt(length);
-	this.opacity = opacity;
-	this.factor = 1;
-	this.increment = Math.random() * .03;
+  this.x = parseInt(x);
+  this.y = parseInt(y);
+  this.length = parseInt(length);
+  this.opacity = opacity;
+  this.factor = 1;
+  this.increment = Math.random() * 0.03;
 }
 
 /**
- * Draw a star
- *
- * This function draws a start.
- * You need to give the contaxt as a parameter
+ * Метод для рисования звезды
  *
  * @param context
  */
 Star.prototype.draw = function() {
-	context.rotate((Math.PI * 1 / 10));
+  context.rotate(Math.PI * 1 / 10);
 
-	// Save the context
-	context.save();
+  // Сохраняем контекст
+  context.save();
 
-	// move into the middle of the canvas, just to make room
-	context.translate(this.x, this.y);
+  // Перемещаем начало координат в точку звезды
+  context.translate(this.x, this.y);
 
-	// Change the opacity
-	if(this.opacity > 1) {
-		this.factor = -1;
-	}
-	else if(this.opacity <= 0) {
-		this.factor = 1;
+  // Изменяем прозрачность звезды
+  if (this.opacity > 1) {
+    this.factor = -1;
+  } else if (this.opacity <= 0) {
+    this.factor = 1;
+    this.x = Math.round(Math.random() * screenW);
+    this.y = Math.round(Math.random() * screenH);
+  }
 
-		this.x = Math.round(Math.random() * screenW);
-		this.y = Math.round(Math.random() * screenH);
-	}
+  this.opacity += this.increment * this.factor;
 
-	this.opacity += this.increment * this.factor;
+  // Рисуем звезду
+  context.beginPath();
+  for (var i = 5; i--;) {
+    context.lineTo(0, this.length);
+    context.translate(0, this.length);
+    context.rotate(Math.PI * 2 / 10);
+    context.lineTo(0, -this.length);
+    context.translate(0, -this.length);
+    context.rotate(-(Math.PI * 6 / 10));
+  }
+  context.lineTo(0, this.length);
+  context.closePath();
+  context.fillStyle = "rgba(255, 255, 255, " + this.opacity + ")";
+  context.shadowBlur = 5;
+  context.shadowColor = '#ffffff';
+  context.fill();
 
-	context.beginPath()
-	for (var i = 5; i--;) {
-		context.lineTo(0, this.length);
-		context.translate(0, this.length);
-		context.rotate((Math.PI * 2 / 10));
-		context.lineTo(0, - this.length);
-		context.translate(0, - this.length);
-		context.rotate(-(Math.PI * 6 / 10));
-	}
-	context.lineTo(0, this.length);
-	context.closePath();
-	context.fillStyle = "rgba(255, 255, 255, " + this.opacity + ")";
-	context.shadowBlur = 5;
-	context.shadowColor = '#ffffff';
-	context.fill();
-
-	context.restore();
+  // Восстанавливаем контекст
+  context.restore();
 }

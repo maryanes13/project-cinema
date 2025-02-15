@@ -116,13 +116,13 @@
 .button-promo {
   width: 220px;
 
-  @media (max-width: $desktop1300-width) {
+  @media (max-width: $tablet900-width) {
     width: 190px;
   }
+}
 
-  @media (max-width: $tablet-width) {
-    width: 120px;
-  }
+.promo-list a {
+  opacity: 0;
 }
 
 /* Courses */
