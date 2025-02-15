@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <canvas class="space"></canvas>
   <header class="header">
     <h2 class="visually-hidden">Навигация по сайту</h2>
     <nav class="header-nav">
@@ -310,10 +311,10 @@
   </header>
   <main class="contacts-page">
     <section class="section-heading container page-section">
-      <h2 class="heading-title">Контакты</h2>
+      <h2 class="heading-title element-animation">Контакты</h2>
     </section>
     <section class="section-contacts-map container page-section">
-      <div class="contacts-info">
+      <div class="contacts-info element-animation">
         <div class="contacts-phone">
           <p class="contacts-phone__text">Телефоны:</p>
           <a href="+79000000000" class="contacts-phone__link">+7(900)-000-00-00</a>
@@ -335,13 +336,13 @@
           </p>
         </div>
       </div>
-      <div class="contacts-map">
+      <div class="contacts-map element-animation">
         <picture>
           <source srcset="img/map.webp" type="image/webp">
           <img src="img/map.png" alt="карта" width="498" height="455">
         </picture>
       </div>
-      <div class="contacts-location">
+      <div class="contacts-location element-animation">
         <h4 class="contacts-location__title">где находимся и как связаться</h4>
         <ul class="contacts-location-list">
           <li class="contacts-location__item">
@@ -360,7 +361,7 @@
         <p class="contacts-location__text">От любой из вышеперечисленных станций до нас можно дойти пешком за 10-15 минут. Так же можно добраться на трамвае (от ....) и на автобусе (от ...). Рядом есть городская платная парковка.</p>
       </div>
     </section>
-    <section class="section-page-form">
+    <section class="section-page-form element-animation">
       <h2 class="visually-hidden">Форма регистрации</h2>
       <div class="page-form-content container page-section">
         <div class="page-form-content__item">
@@ -524,6 +525,7 @@
     </section>
   </footer>
   <script src="vendors/swiper-bundle.min.js"></script>
+  <script src="vendors/canvas.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

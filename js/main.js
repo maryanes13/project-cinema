@@ -1,18 +1,18 @@
-  // header fixed при скролле
-  let body = document.querySelector('body')
-  let header = document.querySelector(".header")
+// header fixed при скролле
+let body = document.querySelector('body')
+let header = document.querySelector(".header")
 
-  window.addEventListener("scroll", () => {
-    let scrollTop = window.scrollY;
+window.addEventListener("scroll", () => {
+  let scrollTop = window.scrollY;
 
-    if (scrollTop >= header.offsetHeight * 3) {
-      header.classList.add("fixed")
-      body.style.marginTop = `${header.offsetHeight}px`
-    } else {
-      header.classList.remove("fixed")
-      body.style.marginTop = `0px`
-    }
-  })
+  if (scrollTop >= header.offsetHeight) {
+    header.classList.add("fixed")
+    body.style.marginTop = `${header.offsetHeight}px`
+  } else {
+    header.classList.remove("fixed")
+    body.style.marginTop = `0px`
+  }
+})
 
 document.addEventListener('DOMContentLoaded', () => {
   let navPage = document.querySelector('.header-nav-bottom');
@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let navToggleMobil = document.querySelector('.burger-mobil')
   let navClosed = document.querySelector('.button-closed');
   let navFooter = document.querySelector(".footer-navigation");
-  let animItems = document.querySelectorAll(".anim-items")
-  const navChildrenItems = document.querySelectorAll('.nav-accordeon');
+  let navChildrenItems = document.querySelectorAll('.nav-accordeon');
 
     /* Hover button */
 
@@ -51,46 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   })
 
-
-   /* Animation */
-  if (animItems.length > 0) {
-    window.addEventListener("scroll", animOnScroll);
-    function animOnScroll(params) {
-      for (let index = 0; index < animItems.length; index++) {
-        const animItem = animItems[index];
-        const animItemHeight = animItem.offsetHeight;
-        const animItemOffset = offset(animItem).top;
-        const animStart = 4;
-
-        let animItemPoint = window.innerHeight - animItemHeight / animStart;
-
-        if (animItemHeight > window.innerHeight) {
-          animItemPoint = window.innerHeight - window.innerHeight / animStart;
-        }
-
-        if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-          animItem.classList.add("anim-active")
-        } else {
-          animItem.classList.remove("anim-active")
-        }
-      }
-    }
-
-    // функция получения позиции сверху или слева
-    function offset(el) {
-      const rect = el.getBoundingClientRect(),
-        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-    }
-
-    setTimeout(() => {
-      animOnScroll()
-    }, 500)
-
-  }
-
-  // Menu
+// Menu
   //скрытие десктопного меню, которое в активном состоянии при разрешении экрана менее 768px
   function handleResize() {
     window.addEventListener('resize', () => {
@@ -477,4 +437,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', progressBar);
   }
+
+// Анимация в виде появления
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.3] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
 })
+
+
+
+

@@ -23,10 +23,6 @@ body {
   height: 100%;
   margin: 0 auto;
   background-color: #000000;
-  background-image: url("../img/background.png");
-  background-repeat: repeat;
-  background-position: center;
-  background-size: cover;
   color: #ffffff;
 }
 
@@ -75,33 +71,6 @@ li {
   }
 }
 
-.reviews-page,
-.courses-page,
-.courses-actor-page,
-.teacher-page,
-.contacts-page,
-.about-page,
-.teacher-name-page,
-.login-page,
-.registration-page,
-.blog-page {
-  padding-top: 60px;
-}
-@media (max-width: 900px) {
-  .reviews-page,
-  .courses-page,
-  .courses-actor-page,
-  .teacher-page,
-  .contacts-page,
-  .about-page,
-  .teacher-name-page,
-  .login-page,
-  .registration-page,
-  .blog-page {
-    padding-top: 40px;
-  }
-}
-
 .page-contacts .section-page-form {
   padding-bottom: 0;
   border-bottom: none;
@@ -120,6 +89,48 @@ li {
 .actors-author p {
   margin: 0;
   max-width: 440px;
+}
+
+.element-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.5s;
+}
+
+.element-animation:nth-child(2).element-show {
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.element-animation:nth-child(3).element-show {
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+.element-animation:nth-child(4).element-show {
+  -webkit-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+}
+
+.element-animation:nth-child(5).element-show {
+  -webkit-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
+}
+
+.element-animation:nth-child(6).element-show {
+  -webkit-transition-delay: 2.5s;
+  -o-transition-delay: 2.5s;
+  transition-delay: 2.5s;
+}
+
+.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
 }
 
 .header {
@@ -1423,11 +1434,16 @@ li {
 }
 
 .page-section {
-  padding: 0 90px 50px;
+  padding: 50px 90px 50px;
 }
 @media (max-width: 900px) {
   .page-section {
-    padding: 0 40px 20px;
+    padding: 40px 40px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .page-section {
+    padding: 20px 20px;
   }
 }
 
@@ -1613,15 +1629,14 @@ li {
 .button-promo {
   width: 220px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
   .button-promo {
     width: 190px;
   }
 }
-@media (max-width: 768px) {
-  .button-promo {
-    width: 120px;
-  }
+
+.promo-list a {
+  opacity: 0;
 }
 
 /* Courses */
@@ -2184,6 +2199,11 @@ li {
   color: #ffffff;
   padding-bottom: 85px;
 }
+@media (max-width: 768px) {
+  .intro {
+    padding-bottom: 30px;
+  }
+}
 
 .intro-information {
   padding-top: 365px;
@@ -2212,6 +2232,11 @@ li {
 @media (max-width: 1300px) {
   .promo-list {
     max-width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .promo-list {
+    flex-direction: column;
   }
 }
 
@@ -2264,6 +2289,7 @@ li {
   padding: 45px 31px;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.5s;
   background-color: #0c0c0c;
 }
 .courses-slider-list-item .section-text {
@@ -2692,6 +2718,7 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.5s;
 }
 .blog-list__item .section-text {
   margin-bottom: 20px;
@@ -5144,10 +5171,6 @@ li {
   color: #ffffff;
 }
 
-.about-history-content {
-  margin-top: 50px;
-}
-
 .about-history {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -5665,11 +5688,12 @@ li {
 /**** Эффекты ****/
 /* Canvas */
 .space {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  bottom: 0;
   z-index: -1;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
