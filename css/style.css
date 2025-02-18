@@ -6076,7 +6076,7 @@ li {
   height: 100%;
   background-color: #ffffff;
   z-index: 115;
-  display: none;
+  display: flex;
   overflow: hidden;
 }
 
