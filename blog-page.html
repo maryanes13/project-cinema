@@ -10,6 +10,15 @@
 </head>
 
 <body>
+  <div class="loader">
+    <div class="loader-title">
+      <h2>КиноТеатр</h2>
+      <p>арт-лаборатория</p>
+    </div>
+    <div class="loader-item"></div>
+    <div class="loader-item"></div>
+    <div class="loader-item"></div>
+  </div>
   <canvas class="space"></canvas>
   <header class="header">
     <h2 class="visually-hidden">Навигация по сайту</h2>
@@ -310,18 +319,30 @@
     </nav>
   </header>
   <main class="blog-page">
-    <section class="section-heading container page-section">
-      <h2 class="heading-title">Новости</h2>
+    <section class="section-heading container page-section element-animation">
+      <h2 class="heading-title element-animation">Новости</h2>
     </section>
-    <section class="section-tabs" id="tab-1">
-      <div class="tabs-navigations-wrapper">
+    <section class="section-tabs element-animation">
+      <div class="blur blur-left">
+        <picture>
+          <source srcset="img/blur2.svg" type="image/webp">
+          <img src="img/blur2.svg" alt="blur">
+        </picture>
+      </div>
+      <div class="blur">
+        <picture>
+          <source srcset="img/blur1.svg" type="image/webp">
+          <img src="img/blur1.svg" alt="blur">
+        </picture>
+      </div>
+      <div class="tabs-navigations-wrapper element-animation">
         <div class="tabs-navigations container page-section">
-          <button type="button" class="tabs-button tabs-button-active" data-target-id="0">Новости школы</button>
-          <button type="button" class="tabs-button" data-target-id="1">Советы актерам</button>
-          <button type="button" class="tabs-button" data-target-id="2">Интервью с преподавателями</button>
+          <button type="button" class="tabs-button tabs-button-active element-animation" data-target-id="0">Новости школы</button>
+          <button type="button" class="tabs-button element-animation" data-target-id="1">Советы актерам</button>
+          <button type="button" class="tabs-button element-animation" data-target-id="2">Интервью с преподавателями</button>
         </div>
       </div>
-      <div class="tabs-content container page-section">
+      <div class="tabs-content container page-section element-animation">
         <div class="tabs-panel tabs-panel-show" data-id="0">
           <h3 class="tabs-panel-title">Новости школы</h3>
           <ul class="blog-list">
@@ -469,11 +490,11 @@
   <section class="section-distribution container">
     <picture>
       <source srcset="img/logo.svg" type="image/webp">
-      <img src="img/logo.svg" alt="логотип" class="distribution-logo" width="342" height="113">
+      <img src="img/logo.svg" alt="логотип" class="distribution-logo element-animation" width="342" height="113">
     </picture>
-    <div class="distribution-content">
-      <div class="social">
-        <a href="" class="social-link telegram-link">
+    <div class="distribution-content element-animation">
+      <div class="social element-animation">
+        <a href="" class="social-link telegram-link element-animation">
           <svg width="25px" height="25px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g></g>
             <g stroke-linecap="round" stroke-linejoin="round"></g>
@@ -482,7 +503,7 @@
             </g>
           </svg>
         </a>
-        <a href="" class="social-link whatsapp-link">
+        <a href="" class="social-link whatsapp-link element-animation">
           <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2102_613)">
               <rect width="43" height="43" fill="black" />
@@ -493,7 +514,7 @@
           </svg>
         </a>
       </div>
-      <div class="distribution-mail">
+      <div class="distribution-mail element-animation">
         <h6 class="distribution-mail__title">Подписка на рассылку</h6>
         <a class="button distribution-mail__button button-black" href="#">
           <span class="button-text">pochta@mail.ru</span>
@@ -508,89 +529,94 @@
     </div>
   </section>
   <footer class="footer-page container">
-    <ul class="footer">
-      <li class="footer-item">
-        <h3 class="footer-item__title">Курсы</h3>
-        <ul class="footer-courses">
-          <li class="footer-courses__item">
+    <ul class="footer element-animation element-animation">
+      <li class="footer-item element-animation">
+        <h3 class="footer-item__title element-animation">Курсы</h3>
+        <ul class="footer-courses element-animation">
+          <li class="footer-courses__item element-animation">
             <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
           </li>
-          <li class="footer-courses__item">
+          <li class="footer-courses__item element-animation">
             <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
           </li>
-          <li class="footer-courses__item">
+          <li class="footer-courses__item element-animation">
             <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
           </li>
-          <li class="footer-courses__item">
+          <li class="footer-courses__item element-animation">
             <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
           </li>
-          <li class="footer-courses__item">
+          <li class="footer-courses__item element-animation">
             <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
           </li>
-          <li class="footer-courses__item">
+          <li class="footer-courses__item element-animation">
             <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
           </li>
-          <li class="footer-courses__item">
+          <li class="footer-courses__item element-animation">
             <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
           </li>
-          <li class="footer-courses__item">
+          <li class="footer-courses__item element-animation">
             <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
           </li>
-          <li class="footer-courses__item">
+          <li class="footer-courses__item element-animation">
             <a href="" class="footer-courses__item-link section-text">Рыбатекст используется дизайнерами</a>
           </li>
         </ul>
       </li>
-      <li class="footer-item">
-        <h3 class="footer-item__title">О компании</h3>
-        <ul class="footer-navigation footer-navigation">
-          <li class="footer-navigation__item">
+      <li class="footer-item element-animation">
+        <h3 class="footer-item__title element-animation">О компании</h3>
+        <ul class="footer-navigation footer-navigation element-animation">
+          <li class="footer-navigation__item element-animation">
             <a href="index.html" class="footer-navigation__item-link">Главная</a>
           </li>
-          <li class="footer-navigation__item">
+          <li class="footer-navigation__item element-animation">
             <a href="applicant-page.html" class="footer-navigation__item-link">Абитуриентам</a>
           </li>
-          <li class="footer-navigation__item">
+          <li class="footer-navigation__item element-animation">
             <a href="blog-page.html" class="footer-navigation__item-link">Блог</a>
           </li>
-          <li class="footer-navigation__item">
+          <li class="footer-navigation__item element-animation">
             <a href="reviews-page.html" class="footer-navigation__item-link">Отзывы</a>
           </li>
-          <li class="footer-navigation__item">
+          <li class="footer-navigation__item element-animation">
             <a href="teacher-page.html" class="footer-navigation__item-link">Преподаватели</a>
           </li>
-          <li class="footer-navigation__item">
+          <li class="footer-navigation__item element-animation">
             <a href="Contacts.html" class="footer-navigation__item-link">Контакты</a>
           </li>
         </ul>
-        <a class="button border-link button-black" href="#">
+        <a class="button border-link button-black element-animation" href="#">
           <span class="button-text">Оставить ОТЗЫВ</span>
           <span class="button-bg"></span>
         </a>
       </li>
-      <li class="footer-item">
-        <h3 class="footer-item__title">Контакты</h3>
-        <a href="+79000000000" class="phone-link">+7 (900) 000 00 00</a>
-        <div class="footer-address">
-          <h5 class="footer-address__title section-text">Адрес:</h5>
+      <li class="footer-item element-animation">
+        <h3 class="footer-item__title element-animation">Контакты</h3>
+        <a href="+79000000000" class="phone-link element-animation">+7 (900) 000 00 00</a>
+        <div class="footer-address element-animation">
+          <h5 class="footer-address__title section-text element-animation">Адрес:</h5>
           <p class="address-text section-text">Рыбатекст используется дизайнерами</p>
           <p class="address-text section-text">Рыбатекст используется дизайнерами</p>
         </div>
       </li>
-      <li class="footer-item">
-        <picture>
-          <source srcset="img/robokassa.webp" type="image/webp">
-          <img src="img/robokassa.png" alt="robokassa" class="footer-robokassa" width="175" height="27">
-        </picture>
+      <li class="footer-item element-animation">
+        <a href="#" class="footer-kassa">
+          <picture>
+            <source srcset="../img/kassa-Colored.svg" type="image/webp">
+            <img src="../img/kassa-Colored.svg" alt="you-kassa" width="175" height="27">
+          </picture>
+        </a>
       </li>
     </ul>
-    <section class="footer-copyright">
-      <a href="#openModal" class="footer-copyright__link section-text">Политика конфиденциальности</a>
-      <a href="#" class="footer-copyright__link section-text">Пользовательское соглашение</a>
-      <a href="#" class="footer-copyright__link footer-copyright__text section-text">Сделано в tw</a>
+    <section class="footer-copyright element-animation">
+      <a href="#openModal" class="footer-copyright__link section-text element-animation">Политика конфиденциальности</a>
+      <a href="#" class="footer-copyright__link section-text element-animation">Пользовательское соглашение</a>
+      <a href="#" class="footer-copyright__link footer-copyright__text section-text element-animation">Сделано в tw</a>
     </section>
   </footer>
   <script src="vendors/swiper-bundle.min.js"></script>
+  <script src="vendors/gsap.min.js" defer></script>
+  <script src="vendors/ScrollTrigger.min.js" defer></script>
+  <script src="vendors/animate-gsap.js" defer></script>
   <script src="vendors/canvas.js"></script>
   <script src="js/main.min.js"></script>
 </body>

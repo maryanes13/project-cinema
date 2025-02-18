@@ -438,23 +438,31 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', progressBar);
   }
 
-// Анимация в виде появления
-function onEntry(entry) {
-  entry.forEach(change => {
-    if (change.isIntersecting) {
-     change.target.classList.add('element-show');
+  // Анимация в виде появления
+  function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+      change.target.classList.add('element-show');
+      }
+      // else {
+      //   change.target.classList.remove('element-show');
+      // }
+    });
+  }
+
+  function animEntry() {
+    let options = {
+      threshold: [0.3] };
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = document.querySelectorAll('.element-animation');
+
+    for (let elm of elements) {
+      observer.observe(elm);
     }
-  });
-}
+  }
 
-let options = {
-  threshold: [0.3] };
-let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.element-animation');
 
-for (let elm of elements) {
-  observer.observe(elm);
-}
+  setTimeout(animEntry, 4000);
 
 })
 
