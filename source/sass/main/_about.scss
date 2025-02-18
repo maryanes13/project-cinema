@@ -1,8 +1,23 @@
 .section-about {
+  position: relative;
+  .blur {
+    width: 600px;
+    height: 600px;
+    right: -100px;
+    top: calc(50% - 200px);
+    animation: moveBlur 6s linear infinite;
+  }
+}
+
+.section-about .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: $white;
   gap: 20px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+  }
 
   @media (max-width: $mobile480-width) {
     gap: 10px;
@@ -16,6 +31,10 @@
   @media (max-width: $tablet-width) {
     grid-column: span 2;
   }
+}
+
+.section-about-content {
+  margin-top: 200px;
 }
 
 .about-text {
@@ -113,3 +132,4 @@
     align-items: center;
   }
 }
+

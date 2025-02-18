@@ -1,4 +1,16 @@
 .section-applicant {
+  position: relative;
+
+  .blur {
+    width: 500px;
+    height: 500px;
+    left: -300px;
+    top: calc(50% - 250px);
+    animation: moveBlur 6s linear infinite;
+  }
+}
+
+.section-applicant .container {
   padding-bottom: 50px;
   color: $white;
 

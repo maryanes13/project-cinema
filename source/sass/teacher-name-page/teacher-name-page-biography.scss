@@ -1,5 +1,30 @@
 .section-teacher-biography {
   color: $white;
+  position: relative;
+
+  .blur {
+    width: 600px;
+    height: 600px;
+    right: -350px;
+    top: calc(50% - 200px);
+    animation: moveBlur 6s linear infinite;
+  }
+
+  .blur-left:nth-child(1) {
+    width: 600px;
+    height: 600px;
+    left: -350px;
+    top: calc(50% - 200px);
+    animation: moveBlurTop 6s linear infinite;
+  }
+
+  .blur-left:nth-child(2) {
+    width: 500px;
+    height: 500px;
+    left: -250px;
+    top: calc(50% - 200px);
+    animation: moveBlurBottom 6s linear infinite;
+  }
 }
 
 .teacher-biography-image {
@@ -18,7 +43,7 @@
 }
 
 .teacher-biography {
-  padding: 100px 50px;
+  padding: 60px 50px;
   display: grid;
   grid-template-columns: 1fr 500px;
   gap: 50px;
@@ -34,7 +59,7 @@
   }
 
   @media (max-width: $tablet900-width) {
-    padding: 50px;
+    padding: 40px;
     grid-template-columns: 1fr;
   }
 

@@ -1,5 +1,58 @@
 /**** Эффекты ****/
 
+// Blur
+.blur {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: $tablet900-width) {
+    display: none;
+  }
+}
+
+@keyframes moveBlurTop {
+  0% {
+    top: calc(5% + 50px);
+  }
+  50% {
+    top: calc(10% + 100px);
+  }
+  100% {
+    top: calc(5% + 50px);
+  }
+}
+
+@keyframes moveBlur {
+  0% {
+    top: calc(50% - 200px);
+  }
+  50% {
+    top: calc(50% - 300px);
+  }
+  100% {
+    top: calc(50% - 200px);
+  }
+}
+
+@keyframes moveBlurBottom {
+  0% {
+    top: calc(65%);
+  }
+  50% {
+    top: calc(55%);
+  }
+  100% {
+    top: calc(65%);
+  }
+}
+
 /* Canvas */
 .space {
   position: fixed;
@@ -10,5 +63,120 @@
   z-index: -1;
   width: 100%;
   height: 100vh;
+}
+
+/* loader */
+.loader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  z-index: 115;
+  display: none;
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.loader-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 38px;
+  @include fontface-regular;
+  line-height: 40px;
+  z-index: 6;
+  color: $black;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  p {
+    margin: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  @media (max-width: $mobile480-width) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+.loader-item {
+  flex: 1 1 auto;
+  z-index: 7;
+  background-color: $black-secondary;
+}
+
+/* animate-fade */
+.element-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s ease;
+}
+
+.element-animation:nth-child(2).element-show {
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.element-animation:nth-child(3).element-show {
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.element-animation:nth-child(4).element-show {
+  -webkit-transition-delay: 0.9s;
+  -o-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+
+.element-animation:nth-child(5).element-show {
+  -webkit-transition-delay: 1.2s;
+  -o-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+
+.element-animation:nth-child(6).element-show {
+  -webkit-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+}
+
+.element-animation:nth-child(7).element-show {
+  -webkit-transition-delay: 1.8s;
+  -o-transition-delay: 1.8s;
+  transition-delay: 1.8s;
+}
+
+.element-animation:nth-child(8).element-show {
+  -webkit-transition-delay: 2.1s;
+  -o-transition-delay: 2.1s;
+  transition-delay: 2.1s;
+}
+
+.element-animation:nth-child(9).element-show {
+  -webkit-transition-delay: 2.4s;
+  -o-transition-delay: 2.4s;
+  transition-delay: 2.4s;
+}
+
+.element-show {
+  opacity: 1;
+  transition: opacity 0.8s, transform 0.8s ease;
+  transform: translateY(0%);
 }
 

@@ -1,4 +1,5 @@
 .section-hero {
+  position: relative;
   width: 100%;
   min-height: 767px;
   background-image: url("../img/course-actor.png");
@@ -8,5 +9,22 @@
 
   @media (max-width: $tablet900-width) {
     background-position: 25% 50%;
+  }
+
+  .blur {
+    width: 500px;
+    height: 500px;
+    right: -200px;
+    top: calc(50% - 300px);
+    animation: moveBlurBottom 6s linear infinite;
+    z-index: 2;
+  }
+
+  .blur-left {
+    width: 400px;
+    height: 400px;
+    left: -150px;
+    animation: moveBlurTop 6s linear infinite;
+    z-index: 2;
   }
 }

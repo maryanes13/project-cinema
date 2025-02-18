@@ -1,4 +1,16 @@
 .course-detail {
+  position: relative;
+
+  .blur-left {
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    top: calc(50% - 200px);
+    animation: moveBlur 6s linear infinite;
+  }
+}
+
+.course-detail .container {
   display: flex;
   flex-direction: column;
   color: $white;

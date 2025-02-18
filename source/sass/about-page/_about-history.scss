@@ -1,4 +1,24 @@
 .section-about-history {
+  position: relative;
+
+  .blur {
+    width: 600px;
+    height: 600px;
+    right: -300px;
+    top: calc(50% - 200px);
+    animation: moveBlur 6s linear infinite;
+  }
+
+  .blur-left {
+    width: 500px;
+    height: 500px;
+    left: -300px;
+    top: calc(50% - 200px);
+    animation: moveBlurBottom 6s linear infinite;
+  }
+}
+
+.section-about-history .container{
   display: flex;
   flex-direction: column;
   color: $white;

@@ -26,6 +26,10 @@
   @media (max-width: $tablet-width) {
     padding: 20px;
   }
+
+  @media (max-width: $mobile480-width) {
+    padding: 10px 20px;
+  }
 }
 
 .header-nav-mobile.active {
@@ -72,7 +76,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 15px 0;
+    padding: 5px 0;
     font-size: 16px;
     line-height: 30px;
     span {
@@ -172,6 +176,7 @@
 
   @media (max-width: $mobile480-width) {
     font-size: 14px;
+    padding: 15px 0;
   }
 }
 

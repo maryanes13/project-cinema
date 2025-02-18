@@ -8,16 +8,28 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <canvas class="space"></canvas>
-    @@include('html/global-html/_header.html')
-    <main class="teacher-page container">
-      @@include('html/teacher-page/_techer-heading.html')
-      @@include('html/teacher-page/_techer-reputation.html')
-      @@include('html/teacher-page/_teacher-sliders.html')
-    </main>
-    @@include('html/global-html/_distribution.html')
-    @@include('html/global-html/_footer.html')
+  <div class="loader">
+    <div class="loader-title">
+      <h2>КиноТеатр</h2>
+      <p>арт-лаборатория</p>
+    </div>
+    <div class="loader-item"></div>
+    <div class="loader-item"></div>
+    <div class="loader-item"></div>
+  </div>
+  <canvas class="space"></canvas>
+  @@include('html/global-html/_header.html')
+  <main class="teacher-page">
+    @@include('html/teacher-page/_techer-heading.html')
+    @@include('html/teacher-page/_techer-reputation.html')
+    @@include('html/teacher-page/_teacher-sliders.html')
+  </main>
+  @@include('html/global-html/_distribution.html')
+  @@include('html/global-html/_footer.html')
   <script src="vendors/swiper-bundle.min.js"></script>
+  <script src="vendors/gsap.min.js" defer></script>
+  <script src="vendors/ScrollTrigger.min.js" defer></script>
+  <script src="vendors/animate-gsap.js" defer></script>
   <script src="vendors/canvas.js"></script>
   <script src="js/main.min.js"></script>
 </body>

@@ -9,6 +9,15 @@
 </head>
 
 <body>
+  <div class="loader">
+    <div class="loader-title">
+      <h2>КиноТеатр</h2>
+      <p>арт-лаборатория</p>
+    </div>
+    <div class="loader-item"></div>
+    <div class="loader-item"></div>
+    <div class="loader-item"></div>
+  </div>
   <canvas class="space"></canvas>
     @@include('html/global-html/_header.html')
     <main class="registration-page">
@@ -17,7 +26,9 @@
     </main>
     @@include('html/global-html/_distribution.html')
     @@include('html/global-html/_footer.html')
-  <script src="vendors/swiper-bundle.min.js"></script>
+  <script src="vendors/gsap.min.js" defer></script>
+  <script src="vendors/ScrollTrigger.min.js" defer></script>
+  <script src="vendors/animate-gsap.js" defer></script>
   <script src="vendors/canvas.js"></script>
   <script src="js/main.min.js"></script>
 </body>

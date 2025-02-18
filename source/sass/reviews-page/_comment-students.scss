@@ -1,6 +1,23 @@
 .section-comment-students {
   display: flex;
   flex-direction: column;
+  position: relative;
+  padding-bottom: 50px;
+  .blur {
+    width: 600px;
+    height: 600px;
+    right: -350px;
+    top: calc(50% - 200px);
+    animation: moveBlur 6s linear infinite;
+  }
+
+  .blur-left {
+    width: 600px;
+    height: 600px;
+    left: -350px;
+    top: calc(50% - 200px);
+    animation: moveBlur 6s linear infinite;
+  }
 }
 
 .comment-students-heading {

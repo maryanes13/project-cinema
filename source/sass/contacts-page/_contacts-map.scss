@@ -1,4 +1,16 @@
 .section-contacts-map {
+  position: relative;
+
+  .blur-left {
+    width: 400px;
+    height: 400px;
+    left: -250px;
+    top: calc(50% - 200px);
+    animation: moveBlur 6s linear infinite;
+  }
+}
+
+.section-contacts-map .container {
   display: grid;
   grid-template-columns: max-content max-content 1fr;
   color: $white;

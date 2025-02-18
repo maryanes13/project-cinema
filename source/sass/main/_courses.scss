@@ -1,9 +1,16 @@
 /* Section-courses */
 .section-courses {
   padding-top: 60px;
+  position: relative;
 
   @media (max-width: $tablet900-width) {
     padding-top: 20px;
+  }
+
+  .blur {
+    left: -100px;
+    top: calc(50% - 200px);
+    animation: moveBlur 6s linear infinite;
   }
 }
 
@@ -135,3 +142,6 @@
     fill: $grey-lighter;
   }
 }
+
+
+

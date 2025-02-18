@@ -6,7 +6,7 @@
   font-size: 48px;
   line-height: 71px;
   margin-bottom: 10px;
-
+  max-width: 600px;
   span {
     @include fontface-regular;
     font-size: 64px;
@@ -102,14 +102,22 @@
 }
 
 .page-section {
-  padding: 50px 90px 50px;
+  padding: 50px 90px 0;
 
   @media (max-width: $tablet900-width) {
-    padding: 40px 40px 20px;
+    padding: 40px 40px 0;
   }
 
   @media (max-width: $tablet-width) {
     padding: 20px 20px;
+  }
+}
+
+.section-page-form .page-section {
+  padding-bottom: 50px;
+
+  @media (max-width: $tablet900-width) {
+    padding-bottom: 20px;
   }
 }
 
@@ -133,7 +141,9 @@
   color: $white;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
 
   span {
     @include fontface-regular;

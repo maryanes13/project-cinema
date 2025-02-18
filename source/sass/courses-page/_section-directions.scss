@@ -1,10 +1,29 @@
-.section-directions {
+.section-courses-slider {
+  position: relative;
+
+  .blur {
+    width: 700px;
+    height: 700px;
+    right: -450px;
+    top: calc(50% - 300px);
+    animation: moveBlurBottom 6s linear infinite;
+  }
+
+  .blur-left {
+    width: 700px;
+    height: 700px;
+    left: -450px;
+    top: calc(50% - 300px);
+    animation: moveBlurTop 6s linear infinite;
+  }
+}
+
+.section-directions.container {
  display: flex;
  flex-direction: column;
  align-items: flex-start;
  justify-content: center;
  color: $white;
- margin-bottom: 60px;
 }
 
 .section-directions-title {

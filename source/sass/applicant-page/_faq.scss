@@ -3,6 +3,16 @@
   flex-direction: column;
   color: $white;
   padding-top: 60px;
+  position: relative;
+
+  .blur-left {
+    width: 600px;
+    height: 600px;
+    left: -350px;
+    top: calc(50% - 200px);
+    animation: moveBlurTop 6s linear infinite;
+    z-index: 20;
+  }
 }
 
 .accordeon-list {

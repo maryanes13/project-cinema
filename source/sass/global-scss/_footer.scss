@@ -88,9 +88,16 @@
   max-width: 290px;
 }
 
-.footer-robokassa {
+.footer-kassa {
+  display: block;
   margin-top: 30px;
-  filter: grayscale(100%);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      max-width: 200px;
+    }
 }
 
 .footer-current-item {

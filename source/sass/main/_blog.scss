@@ -1,5 +1,14 @@
 .section-blog {
   padding-bottom: 15px;
+  position: relative;
+
+  .blur {
+    width: 400px;
+    height: 400px;
+    right: -100px;
+    top: calc(50% - 200px);
+    animation: moveBlur 6s linear infinite;
+  }
 }
 
 .blog-heading {

@@ -1,4 +1,15 @@
 .section-missions {
+  position: relative;
+  .blur {
+    width: 700px;
+    height: 700px;
+    right: -450px;
+    top: calc(50% - 300px);
+    animation: moveBlur 6s linear infinite;
+  }
+}
+
+.section-missions .container {
   display: flex;
   flex-direction: column;
   color: $white;

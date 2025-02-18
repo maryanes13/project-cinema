@@ -2,13 +2,22 @@
   display: flex;
   flex-direction: column;
   color: $white;
+  position: relative;
+  padding-bottom: 50px;
+
+  .blur {
+    width: 600px;
+    height: 600px;
+    right: -350px;
+    top: calc(50% - 200px);
+    animation: moveBlurTop 6s linear infinite;
+  }
 }
 
 .application-process-list {
   padding-top: 25px;
   display: flex;
   flex-direction: column;
-  background-color: $black;
   gap: 60px;
 
   @media (max-width: $tablet-width) {
@@ -51,7 +60,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 15px;
-
+  max-width: 980px;
   @media (max-width: $tablet-width) {
     gap: 10px;
   }

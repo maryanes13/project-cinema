@@ -2,6 +2,15 @@
   display: flex;
   flex-direction: column;
   color: $white;
+  position: relative;
+
+  .blur-left {
+    width: 600px;
+    height: 600px;
+    left: -350px;
+    top: calc(50% - 200px);
+    animation: moveBlurTop 6s linear infinite;
+  }
 }
 
 .admission-heading {
@@ -28,36 +37,49 @@
 .admission-list__item {
   width: 100%;
   max-width: 980px;
-}
 
-.admission-list-heading {
-  position: relative;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: flex-end;
-  min-height: 85px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 85px;
-    height: 85px;
-    background-color: $black-secondary;
-  }
-
-  @media (max-width: $mobile480-width) {
-    min-height: 50px;
+  .admission-list-heading {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    min-height: 85px;
 
     &::before {
-      width: 50px;
-      height: 50px;
+      content: "";
+      position: absolute;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 85px;
+      height: 85px;
+    }
+
+    @media (max-width: $mobile480-width) {
+      min-height: 50px;
+
+      &::before {
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 
+  &:nth-child(1) .admission-list-heading::before {
+    background-image: url("../img/applicant-icon1.svg");
+  }
+
+  &:nth-child(2) .admission-list-heading::before {
+    background-image: url("../img/applicant-icon2.svg");
+  }
+
+  &:nth-child(3) .admission-list-heading::before {
+    background-image: url("../img/applicant-icon3.svg");
+  }
 }
+
 
 .admission-list__item-title {
   @include fontface-regular;

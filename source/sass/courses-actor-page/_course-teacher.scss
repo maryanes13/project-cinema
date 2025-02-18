@@ -1,4 +1,24 @@
 .section-course-teacher {
+  position: relative;
+
+  .blur {
+    width: 600px;
+    height: 600px;
+    right: -300px;
+    top: calc(50% - 200px);
+    animation: moveBlurTop 6s linear infinite;
+  }
+
+  .blur-left {
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    top: calc(50% - 200px);
+    animation: moveBlurBottom 6s linear infinite;
+  }
+}
+
+.section-course-teacher .container {
   color: $white;
   padding-top: 50px;
   display: grid;

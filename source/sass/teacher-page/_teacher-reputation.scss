@@ -1,8 +1,19 @@
 .teacher-reputation {
+  position: relative;
+
+  .blur {
+    width: 600px;
+    height: 600px;
+    right: -350px;
+    top: calc(50% - 200px);
+    animation: moveBlur 6s linear infinite;
+  }
+}
+
+.teacher-reputation .container {
   display: grid;
   gap: 35px;
   color: $white;
-  max-width: 1350px;
 }
 
 .teacher-page-title {
@@ -12,9 +23,14 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-
+  max-width: 1170px;
   span {
     text-transform: lowercase;
+  }
+
+  @media (max-width: $tablet900-width) {
+    font-size: 35px;
+    line-height: 40px;
   }
 
   @media (max-width: $tablet-width) {
@@ -29,6 +45,7 @@
   line-height: 28.87px;
   margin: 0;
   padding: 0;
+  max-width: 1170px;
 
   @media (max-width: $tablet-width) {
     font-size: 20px;
